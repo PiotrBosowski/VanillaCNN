@@ -6,12 +6,11 @@ class Neuron
 {
 private:
 	double value;
-	std::vector<std::shared_ptr<Connection>> inputs;
+	std::vector<std::shared_ptr<Connection>> incommingConnections;
 
 public:
-	void acceptConnection(Connection * connection);
+	void acceptConnection(std::shared_ptr<Connection>);
 	//seems like outputs not needed
 	//activation function
-	~Neuron();
 };
 

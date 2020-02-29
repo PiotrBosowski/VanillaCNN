@@ -1,10 +1,6 @@
 #include "Neuron.h"
 
-void Neuron::acceptConnection(Connection * connection)
+void Neuron::acceptConnection(std::shared_ptr<Connection> connection)
 {
-	inputs.push_back(connection);
-}
-
-Neuron::~Neuron()
-{
+	incommingConnections.push_back(connection);
 }

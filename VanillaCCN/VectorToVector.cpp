@@ -4,26 +4,23 @@
 #include "Connection.h"
 #include <vector>
 
-std::vector<std::unique_ptr<Connection>> VectorToVector::connect(std::unique_ptr<Layer>& first, std::unique_ptr<Layer>& second)
+void VectorToVector::connect(std::unique_ptr<Layer>& preceding, std::unique_ptr<Layer>& following)
 {
 	
 	std::cout << "connecting vector to vector: ";
-	Layer1D* firstLayer1D = static_cast<Layer1D*>(first.get());
-	Layer1D* secondLayer1D = static_cast<Layer1D*>(second.get());
-	std::vector<std::unique_ptr<Neuron>>& firstVector = firstLayer1D->getNeurons();
-	std::vector<std::unique_ptr<Neuron>>& secondVector = secondLayer1D->getNeurons();
-	std::vector<std::unique_ptr<Connection>> output;
+	Layer1D* precedingLayer1D = static_cast<Layer1D*>(preceding.get());
+	Layer1D* followingLayer1D = static_cast<Layer1D*>(following.get());
+	std::vector<std::unique_ptr<Neuron>>& precedingVector = precedingLayer1D->getNeurons();
+	std::vector<std::unique_ptr<Neuron>>& followingVector = followingLayer1D->getNeurons();
+	std::vector<std::shared_ptr<Connection>> output;
 	int counter = 0;
-	for (auto& secondNeuron: secondVector)
+	for (auto& followingNeuron: followingVector)
 	{
-		for (auto& firstNeuron : firstVector)
+		for (auto& precedingNeuron : precedingVector)
 		{
-			//output.push_back(std::move(std::unique_ptr<Connection>{new Connection{ firstNeuron, secondNeuron }}));
+			Connection(precedingNeuron, followingNeuron); //saved to following neuron
 			counter++;
 		}
 	}
 	std::cout << counter << " connections made"<< std::endl;
-	//return output;
-	
-	return std::vector<std::unique_ptr<Connection>>();
 }
