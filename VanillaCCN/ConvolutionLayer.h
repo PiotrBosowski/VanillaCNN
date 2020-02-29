@@ -2,7 +2,6 @@
 #include "Layer2D.h"
 #include <vector>
 #include <memory>
-#include "ConnectingModes.h"
 
 
 class ConvolutionLayer : public Layer2D
@@ -13,7 +12,6 @@ public:
 private:
 	int featureDetectorHeight;
 	int featureDetectorWidth;
-	ConnectingModes mode = ONE_TO_MANY;
 public:
 	int getFeatureDetectorHeight();
 	int getFeatureDetectorWidth();

@@ -125,7 +125,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ConnectingEngine.h" />
-    <ClInclude Include="ConnectingModes.h" />
     <ClInclude Include="ConnectingStrategy.h" />
     <ClInclude Include="Connection.h" />
     <ClInclude Include="ConvolutionLayer.h" />

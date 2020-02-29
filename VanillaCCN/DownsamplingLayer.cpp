@@ -34,12 +34,9 @@ void DownsamplingLayer::populateNeurons(std::unique_ptr<Layer>& previousLayer)
 void DownsamplingLayer::print()
 {
 	Layer2D::print();
-	std::cout << "    DownsamplingLayer: downsamplerHeight(" << downsamplerHeight << "), downsamplerWidth(" << downsamplerWidth << "), mode(" << mode << ")" << std::endl;
+	std::cout << "    DownsamplingLayer: downsamplerHeight(" << downsamplerHeight << "), downsamplerWidth(" << downsamplerWidth << ")" << std::endl;
 }
 
 DownsamplingLayer::~DownsamplingLayer()
 {
 }
-
-
-

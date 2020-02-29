@@ -1,6 +1,5 @@
 #pragma once
 #include "Layer2D.h"
-#include "ConnectingModes.h"
 #include <memory>
 
 class DownsamplingLayer : public Layer2D
@@ -11,7 +10,6 @@ public:
 private:
 	int downsamplerHeight;
 	int downsamplerWidth;
-	ConnectingModes mode = ONE_TO_ONE;
 public: 
 	int getDownsamplerHeight();
 	int getDownsamplerWidth();

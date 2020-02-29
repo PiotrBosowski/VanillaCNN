@@ -70,9 +70,6 @@
     <ClInclude Include="Layer2D.h">
       <Filter>Source Files\Model\Layers\Layers2D</Filter>
     </ClInclude>
-    <ClInclude Include="ConnectingModes.h">
-      <Filter>Source Files\Model\Enums</Filter>
-    </ClInclude>
     <ClInclude Include="ConnectingEngine.h">
       <Filter>Source Files\Model\ConnectingEngine</Filter>
     </ClInclude>

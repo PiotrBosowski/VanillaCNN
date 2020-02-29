@@ -31,6 +31,6 @@ void ConvolutionLayer::populateNeurons(std::unique_ptr<Layer>& previousLayer)
 void ConvolutionLayer::print()
 {
 	Layer2D::print();
-	std::cout << "    ConvolutionLayer, featureDetectorHeight(" << featureDetectorHeight << "), featureDetectorWidth(" << featureDetectorWidth << "), mode(" << mode << ")" << std::endl;
+	std::cout << "    ConvolutionLayer, featureDetectorHeight(" << featureDetectorHeight << "), featureDetectorWidth(" << featureDetectorWidth << ")" << std::endl;
 }
 
