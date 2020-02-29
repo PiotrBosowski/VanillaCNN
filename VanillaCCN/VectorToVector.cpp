@@ -12,7 +12,6 @@ void VectorToVector::connect(std::unique_ptr<Layer>& preceding, std::unique_ptr<
 	Layer1D* followingLayer1D = static_cast<Layer1D*>(following.get());
 	std::vector<std::unique_ptr<Neuron>>& precedingVector = precedingLayer1D->getNeurons();
 	std::vector<std::unique_ptr<Neuron>>& followingVector = followingLayer1D->getNeurons();
-	std::vector<std::shared_ptr<Connection>> output;
 	int counter = 0;
 	for (auto& followingNeuron: followingVector)
 	{

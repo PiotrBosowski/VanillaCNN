@@ -18,5 +18,5 @@ private:
 public:
 	int getMatrixHeight();
 	int getMatrixWidth();
-	//std::vector<std::vector<std::unique_ptr<Neuron>>>& getMatrix();
+	std::vector<std::vector<std::unique_ptr<Neuron>>>& getMatrix();
 };

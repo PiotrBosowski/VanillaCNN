@@ -20,3 +20,8 @@ int Matrix::getMatrixWidth()
 {
 	return matrixWidth;
 }
+
+std::vector<std::vector<std::unique_ptr<Neuron>>>& Matrix::getMatrix()
+{
+	return matrix;
+}
