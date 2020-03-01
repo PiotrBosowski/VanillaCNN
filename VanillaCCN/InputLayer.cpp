@@ -3,7 +3,6 @@
 
 InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D(1, inputHeight, inputWidth)
 {
-	
 }
 
 void InputLayer::print()

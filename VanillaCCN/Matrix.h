@@ -12,6 +12,7 @@ private:
 	int matrixHeight;
 	int matrixWidth;
 	std::vector<std::vector<std::unique_ptr<Neuron>>> matrix;
+	Neuron* table; //TODO: simplify implementation of neurons matrix
 	//std::vector<std::unique_ptr<Neuron>> matrix;
 	//std::unique_ptr<Neuron> matrix;
 	//Neuron matrix;

@@ -1,0 +1,11 @@
+TODO:
+WSZYSTKIE neurony tworzone podczas kompilacji sieci, nie podczas deklarowania warstw CHECK
+
+	//std::optional<Matrix> matrix; ???????????????
+dlaczego to kurwa nie działa CHECK
+
+connectowanie się warstw CHECK
+
+uproszczenie modelu - wykluczenie warstwy "Connect"
+
+mozliwosc zapisu modelu do pliku
