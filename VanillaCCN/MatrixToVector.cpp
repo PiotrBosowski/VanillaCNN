@@ -3,24 +3,25 @@
 #include "Layer2D.h"
 #include "Layer1D.h"
 
-void MatrixToVector::connect(std::unique_ptr<Layer>& preceding, std::unique_ptr<Layer>& following)
+void MatrixToVector::connect(Layer& preceding, Layer& following)
 {
 	std::cout << "connecting matrix to vector: ";
-	Layer2D* precedingLayer2D = static_cast<Layer2D*>(preceding.get());
-	Layer1D* followingLayer1D = static_cast<Layer1D*>(following.get());
-	auto& precedingMatrices = precedingLayer2D->getMatrices();
-	auto& followingNeurons = followingLayer1D->getNeurons();
+	Layer2D& precedingLayer2D = static_cast<Layer2D&>(preceding);
+	Layer1D& followingLayer1D = static_cast<Layer1D&>(following);
+	auto& precedingMatrices = precedingLayer2D.getMatrices();
+	auto& followingNeurons = followingLayer1D.getNeurons();
 	int counter = 0;
-	for (auto& precedingMatrix : precedingMatrices)
+	for (auto& precedingMatrixPtr : precedingMatrices)
 	{
-		auto& matrix = precedingMatrix.get()->getMatrix();
-		for (auto& row : matrix)
+		Matrix& perceding = *precedingMatrixPtr;
+		for (int i = 0; i < perceding.getMatrixHeight(); i++)
 		{
-			for (auto& neuron : row)
+			for (int j = 0; j < perceding.getMatrixWidth(); j++)
 			{
+				Neuron& precedingNeuron = perceding.getNeuron(i, j);
 				for (auto& followingNeuron : followingNeurons)
 				{
-					Connection(neuron, followingNeuron);
+					(*followingNeuron).acceptConnection(precedingNeuron);
 					counter++;
 				}
 			}

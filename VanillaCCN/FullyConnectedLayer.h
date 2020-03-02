@@ -6,8 +6,7 @@ class FullyConnectedLayer : public Layer1D
 {
 public:
 	FullyConnectedLayer(int numberOfNeurons);
-
-public:
+	void populateNeurons();
 	void print() override;
 };
 

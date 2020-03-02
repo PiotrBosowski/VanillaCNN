@@ -5,6 +5,11 @@ FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons) : Layer1D(numberOf
 {
 }
 
+void FullyConnectedLayer::populateNeurons()
+{
+	throw std::exception{ "bad fully connected layer init: it cannot be initialized without any layers before!" };
+}
+
 void FullyConnectedLayer::print()
 {
 	Layer1D::print();

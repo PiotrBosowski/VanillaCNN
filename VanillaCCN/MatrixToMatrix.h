@@ -11,11 +11,11 @@
 class MatrixToMatrix : public ConnectingStrategy
 {
 public:
-	void connect(std::unique_ptr<Layer>& first, std::unique_ptr<Layer>& second) override;
+	void connect(Layer& first, Layer& second) override;
 
 private:
-	int connectToConvolution(Layer2D* preceding, ConvolutionLayer* following);
-	int connectMatrices(std::unique_ptr<Matrix>& preceding, std::unique_ptr<Matrix>& downsampling, int featureHeight, int featureWidth);
-	int connectToDownsampling(Layer2D* preceding, DownsamplingLayer* following);
+	int connectToConvolution(Layer2D& preceding, ConvolutionLayer& following);
+	int connectMatricesDownsampling(std::unique_ptr<Matrix>& preceding, std::unique_ptr<Matrix>& downsampling, int featureHeight, int featureWidth);
+	int connectToDownsampling(Layer2D& preceding, DownsamplingLayer& following);
 };
 

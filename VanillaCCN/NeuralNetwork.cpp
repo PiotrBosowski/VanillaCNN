@@ -27,8 +27,7 @@ void NeuralNetwork::addLayer(Layer * layer)
 void NeuralNetwork::connectLayers(){
 	for (unsigned int i = 0; i < layers.size() - 1; i++)
 	{
-		auto newConnections = ConnectingEngine(layers[i], layers[i + 1]).run();
-		connections.insert(connections.end(), std::make_move_iterator(newConnections.begin()), std::make_move_iterator(newConnections.end()));  //connections.insert(connections.end(), newConnections.begin(), newConnections.end()); doesnt work for unique_ptrs since they are copied
+		ConnectingEngine(*(layers[i]), *(layers[i + 1])).run();
 	}
 }
 
@@ -51,15 +50,15 @@ void NeuralNetwork::compile()
 
 void NeuralNetwork::populateLayers()
 {
-	std::unique_ptr<Layer> dummy{ nullptr };
-	layers[0]->populateNeurons(dummy);
+	if (layers.size() < 1) throw std::exception{ "no layers included" };
+	layers[0]->populateNeurons();
 	for (unsigned int i = 1; i < layers.size(); i++)
-		layers[i]->populateNeurons(layers[i - 1]);
+		layers[i]->populateNeurons(*(layers[i - 1]));
 }
 
 void NeuralNetwork::print()
 {
-	for (auto&& layer : layers) {
+	for (auto& layer : layers) {
 		layer->print();
 	}
 }

@@ -9,6 +9,7 @@ public:
 
 public:
 	void print() override;
+	void populateNeurons() override;
 	~OutputLayer();
 };
 

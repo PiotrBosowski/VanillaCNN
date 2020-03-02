@@ -1,23 +1,19 @@
 #include "VectorToVector.h"
 #include <iostream>
 #include "Layer1D.h"
-#include "Connection.h"
 #include <vector>
 
-void VectorToVector::connect(std::unique_ptr<Layer>& preceding, std::unique_ptr<Layer>& following)
+void VectorToVector::connect(Layer& preceding, Layer& following)
 {
-	
 	std::cout << "connecting vector to vector: ";
-	Layer1D* precedingLayer1D = static_cast<Layer1D*>(preceding.get());
-	Layer1D* followingLayer1D = static_cast<Layer1D*>(following.get());
-	std::vector<std::unique_ptr<Neuron>>& precedingVector = precedingLayer1D->getNeurons();
-	std::vector<std::unique_ptr<Neuron>>& followingVector = followingLayer1D->getNeurons();
+	Layer1D& precedingLayer1D = static_cast<Layer1D&>(preceding);
+	Layer1D& followingLayer1D = static_cast<Layer1D&>(following);
 	int counter = 0;
-	for (auto& followingNeuron: followingVector)
+	for (auto& followingNeuron: followingLayer1D.getNeurons())
 	{
-		for (auto& precedingNeuron : precedingVector)
+		for (auto& precedingNeuron : precedingLayer1D.getNeurons())
 		{
-			Connection(precedingNeuron, followingNeuron); //saved to following neuron
+			(*followingNeuron).acceptConnection((*precedingNeuron));
 			counter++;
 		}
 	}

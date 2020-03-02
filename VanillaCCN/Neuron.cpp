@@ -1,6 +1,6 @@
 #include "Neuron.h"
 
-void Neuron::acceptConnection(std::shared_ptr<Connection> connection)
+double Neuron::getValue()
 {
-	incommingConnections.push_back(connection);
+	return value;
 }

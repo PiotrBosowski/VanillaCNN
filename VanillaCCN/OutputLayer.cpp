@@ -11,6 +11,11 @@ void OutputLayer::print()
 	std::cout << "    OutputLayer" << std::endl;
 }
 
+void OutputLayer::populateNeurons()
+{
+	throw std::exception{ "bad outputlayer init: it cannot be first layer" };
+}
+
 OutputLayer::~OutputLayer()
 {
 }

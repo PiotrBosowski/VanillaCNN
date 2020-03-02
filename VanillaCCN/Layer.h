@@ -5,7 +5,8 @@
 class Layer
 {
 public:
-	virtual void populateNeurons(std::unique_ptr<Layer>& previousLayer) = 0;
+	virtual void populateNeurons(Layer& previousLayer) = 0;
+	virtual void populateNeurons() = 0;
 
 	virtual void print();
 };

@@ -15,6 +15,7 @@ public:
 	int getNumberOfNeurons();
 	std::vector<std::unique_ptr<Neuron>>& getNeurons();
 
-	void populateNeurons(std::unique_ptr<Layer>& previousLayer) override;
+	void populateNeurons(Layer& previousLayer) override;
+	void populateNeurons() override = 0;
 	void print();
 };

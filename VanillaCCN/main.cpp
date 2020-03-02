@@ -30,5 +30,4 @@ int main()
 	{
 		std::cout << "unknown error" << std::endl;
 	}
-
 }

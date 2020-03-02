@@ -1,37 +1,36 @@
 
 #include "ConnectingEngine.h"
 #include "Layer2D.h"
+#include "Layer.h"
 #include "ConnectingStrategy.h"
 #include "MatrixToMatrix.h"
 #include "MatrixToVector.h"
 #include "VectorToMatrix.h"
 #include "VectorToVector.h"
-#include "Connection.h"
 #include <memory>
 
-ConnectingEngine::ConnectingEngine(std::unique_ptr<Layer>& first, std::unique_ptr<Layer>& second)
+ConnectingEngine::ConnectingEngine(Layer& first, Layer& second)
 	: first{ first }, second{second}
 {
 	strategy = evaluateStrategy();
 }
 
-std::vector<std::unique_ptr<Connection>> ConnectingEngine::run()
+void ConnectingEngine::run()
 {
 	strategy->connect(first, second);
-	return std::vector<std::unique_ptr<Connection>>();
 }
 
-std::unique_ptr<ConnectingStrategy> ConnectingEngine::evaluateStrategy()
+std::unique_ptr<ConnectingStrategy> ConnectingEngine::evaluateStrategy() //i dislike this function
 {
-	if (dynamic_cast<Layer2D*>(first.get()))
+	if (dynamic_cast<Layer2D*>(&first))
 	{
-		if (dynamic_cast<Layer2D*>(second.get()))
+		if (dynamic_cast<Layer2D*>(&second))
 			return std::make_unique<MatrixToMatrix>();
 		else return std::make_unique<MatrixToVector>();
 	}
 	else
 	{
-		if (dynamic_cast<Layer2D*>(second.get()))
+		if (dynamic_cast<Layer2D*>(&second))
 			return std::make_unique<VectorToMatrix>();
 		else return std::make_unique<VectorToVector>();
 	}

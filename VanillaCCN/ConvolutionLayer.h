@@ -1,6 +1,7 @@
 #pragma once
 #include "Layer2D.h"
 #include <vector>
+#include "FeatureDetector.h"
 #include <memory>
 
 
@@ -16,6 +17,7 @@ public:
 	int getFeatureDetectorHeight();
 	int getFeatureDetectorWidth();
 
-	void populateNeurons(std::unique_ptr<Layer>& previousLayer) override;
+	void populateNeurons(Layer& previousLayer) override;
+	void populateNeurons() override;
 	void print() override;
 };

@@ -1,6 +1,7 @@
 #include "Layer1D.h"
 #include <iostream>
 #include <memory>
+#include "NeuronRegular.h"
 
 Layer1D::Layer1D(int numberOfNeurons)
 	: numberOfNeurons{ numberOfNeurons }
@@ -18,10 +19,10 @@ std::vector<std::unique_ptr<Neuron>>& Layer1D::getNeurons()
 	return neurons;
 }
 
-void Layer1D::populateNeurons(std::unique_ptr<Layer>&)
+void Layer1D::populateNeurons(Layer& _)
 {
 	for (int i = 0; i < numberOfNeurons; i++)
-		neurons.push_back(std::move(std::unique_ptr<Neuron>{new Neuron{}}));
+		neurons.push_back(std::move(std::unique_ptr<Neuron>{new NeuronRegular{}}));
 }
 
 void Layer1D::print()

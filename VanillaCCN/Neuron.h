@@ -1,16 +1,17 @@
 #pragma once
 #include <vector>
-#include "Connection.h"
+#include <random>
 
+/*
+Base class for all neuron types.
+Contains neuron's value.
+*/
 class Neuron
 {
-private:
+protected:
 	double value;
-	std::vector<std::shared_ptr<Connection>> incommingConnections;
-
 public:
-	void acceptConnection(std::shared_ptr<Connection>);
-	//seems like outputs not needed
-	//activation function
+	double getValue();
+	virtual void acceptConnection(Neuron& preceding) = 0;
+	virtual void calculateValue() = 0;
 };
-

@@ -26,9 +26,6 @@
     <Filter Include="Source Files\Model\Layers\Layers1D">
       <UniqueIdentifier>{624cb7c0-2869-425f-a93d-3112aa530eaf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Model\Connections">
-      <UniqueIdentifier>{26840985-330e-4eb4-89ff-f2193f30fae1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Model\ConnectingEngine">
       <UniqueIdentifier>{c0c9afec-af22-4f01-b4fd-48755a41d82a}</UniqueIdentifier>
     </Filter>
@@ -88,11 +85,23 @@
     <ClInclude Include="VectorToVector.h">
       <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
     </ClInclude>
-    <ClInclude Include="Connection.h">
-      <Filter>Source Files\Model\Connections</Filter>
-    </ClInclude>
     <ClInclude Include="NeuralNetwork.h">
       <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixConv.h">
+      <Filter>Source Files\Model\Matrices</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureDetector.h">
+      <Filter>Source Files\Model\Matrices</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuronConv.h">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClInclude>
+    <ClInclude Include="Container.h">
+      <Filter>Source Files\Model\Matrices</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuronRegular.h">
+      <Filter>Source Files\Model\Neurons</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -147,11 +156,23 @@
     <ClCompile Include="VectorToVector.cpp">
       <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
     </ClCompile>
-    <ClCompile Include="Connection.cpp">
-      <Filter>Source Files\Model\Connections</Filter>
-    </ClCompile>
     <ClCompile Include="NeuralNetwork.cpp">
       <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixConv.cpp">
+      <Filter>Source Files\Model\Matrices</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureDetector.cpp">
+      <Filter>Source Files\Model\Matrices</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronConv.cpp">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="Container.cpp">
+      <Filter>Source Files\Model\Matrices</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronRegular.cpp">
+      <Filter>Source Files\Model\Neurons</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

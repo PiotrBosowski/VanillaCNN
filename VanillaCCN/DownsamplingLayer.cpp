@@ -20,15 +20,20 @@ DownsamplingLayer::DownsamplingLayer(int downsamplerHeight, int downsamplerWidth
 	if (downsamplerHeight < 1 || downsamplerWidth < 1) throw std::exception("ERROR: bad DownsamplingLayer initialization");
 }
 
-void DownsamplingLayer::populateNeurons(std::unique_ptr<Layer>& previousLayer)
+void DownsamplingLayer::populateNeurons(Layer& previousLayer)
 {
-	Layer2D* previousLayer2D = static_cast<Layer2D*>(previousLayer.get());
-	this->matrixHeight = previousLayer2D->getMatrixHeight() / this->getDownsamplerHeight(); //(31 -> 15 etc.) 
-	this->matrixWidth = previousLayer2D->getMatrixWidth() / this->getDownsamplerWidth();
-	this->numberOfMatrices = previousLayer2D->getNumberOfMatrices();
+	Layer2D& previousLayer2D = static_cast<Layer2D&>(previousLayer);
+	this->matrixHeight = previousLayer2D.getMatrixHeight() / this->getDownsamplerHeight(); //(31 -> 15 etc.) 
+	this->matrixWidth = previousLayer2D.getMatrixWidth() / this->getDownsamplerWidth();
+	this->numberOfMatrices = previousLayer2D.getNumberOfMatrices();
 	matrices = std::vector<std::unique_ptr<Matrix>>();
 	for (int h = 0; h < numberOfMatrices; h++)
 		matrices.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
+}
+
+void DownsamplingLayer::populateNeurons()
+{
+	throw std::exception{ "bad downsampling layer initialization: it cannot be the first layer of the network!" };
 }
 
 void DownsamplingLayer::print()

@@ -18,7 +18,8 @@ public:
 	int getMatrixWidth();
 	std::vector<std::unique_ptr<Matrix>>& getMatrices();
 
-	void populateNeurons(std::unique_ptr<Layer>& previousLayer) override;
+	void populateNeurons(Layer& previousLayer) override = 0;
+	void populateNeurons() override = 0;
 	void print() override;
 
 public:

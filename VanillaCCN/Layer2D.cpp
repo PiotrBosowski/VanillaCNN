@@ -28,12 +28,12 @@ std::vector<std::unique_ptr<Matrix>>& Layer2D::getMatrices()
 	return matrices;
 }
 
-void Layer2D::populateNeurons(std::unique_ptr<Layer>&)
-{
-	matrices = std::vector<std::unique_ptr<Matrix>>();
-	for (int i = 0; i < numberOfMatrices; i++)
-		matrices.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
-}
+//void Layer2D::populateNeurons(Layer& _)
+//{
+	//matrices = std::vector<std::unique_ptr<Matrix&>>();
+	//for (int i = 0; i < numberOfMatrices; i++)
+	//	matrices.push_back(std::make_unique<Matrix&>(matrixHeight, matrixWidth));
+//}
 
 void Layer2D::print()
 {

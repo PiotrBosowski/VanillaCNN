@@ -10,7 +10,8 @@ class InputLayer : public Layer2D
    
 public:
 	InputLayer(int inputHeight, int inputWidth);
-
+	void populateNeurons(Layer& previousLayer) override;
+	void populateNeurons() override;
 	void print() override;
 	~InputLayer();
 };
