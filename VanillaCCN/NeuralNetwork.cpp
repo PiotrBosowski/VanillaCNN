@@ -35,8 +35,11 @@ void NeuralNetwork::compile()
 {
 	try 
 	{
+		print();
 		populateLayers();
+		print();
 		connectLayers();
+		print();
 	}
 	catch (std::exception ex)
 	{
