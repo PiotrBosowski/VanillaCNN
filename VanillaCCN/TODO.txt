@@ -1,4 +1,4 @@
-TODO:
+﻿TODO:
 WSZYSTKIE neurony tworzone podczas kompilacji sieci, nie podczas deklarowania warstw CHECK
 
 	//std::optional<Matrix> matrix; ???????????????
