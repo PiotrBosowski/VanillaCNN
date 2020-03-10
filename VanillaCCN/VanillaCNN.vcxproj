@@ -116,7 +116,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
       <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
@@ -148,6 +148,7 @@
     <ClInclude Include="TBDMarkerEnum.h" />
     <ClInclude Include="VectorToMatrix.h" />
     <ClInclude Include="VectorToVector.h" />
+    <ClInclude Include="WeightedNeuron.h" />
     <ClInclude Include="Weights.h" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +174,7 @@
     <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="VectorToMatrix.cpp" />
     <ClCompile Include="VectorToVector.cpp" />
+    <ClCompile Include="WeightedNeuron.cpp" />
     <ClCompile Include="Weights.cpp" />
   </ItemGroup>
   <ItemGroup>

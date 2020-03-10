@@ -103,6 +103,9 @@
     <ClInclude Include="Weights.h">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClInclude>
+    <ClInclude Include="WeightedNeuron.h">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -172,6 +175,9 @@
       <Filter>Source Files\Model\Neurons</Filter>
     </ClCompile>
     <ClCompile Include="Weights.cpp">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightedNeuron.cpp">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClCompile>
   </ItemGroup>

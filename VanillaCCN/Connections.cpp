@@ -14,3 +14,8 @@ Neuron & Connections::get(int index)
 {
 	return connections[index];
 }
+
+double Connections::getValue(int index)
+{
+	return connections[index].get().getValue();
+}

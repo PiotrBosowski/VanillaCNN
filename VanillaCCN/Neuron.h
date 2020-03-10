@@ -19,7 +19,7 @@ public:
 	Neuron(); //if neuron is used as regular neuron
 	Neuron(Weights& weights); //if neuron is used as convolutional, it needs to be delivered weights matrix (pattern recognizer)
 private:
-	std::optional<int> pampam;
+	const Weights& weights;
 	Connections connections;
 	double value;
 public:

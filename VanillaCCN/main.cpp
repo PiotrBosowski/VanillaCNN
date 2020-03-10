@@ -9,6 +9,8 @@
 
 int main()
 {
+	std::optional<int> liczba;
+
 	try
 	{
 		NeuralNetwork firstOfTheYear;

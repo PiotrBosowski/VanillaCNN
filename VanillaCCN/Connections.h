@@ -11,4 +11,5 @@ public:
 	void add(Neuron & newConnection);
 	int size();
 	Neuron& get(int index);
+	double getValue(int index);
 };
