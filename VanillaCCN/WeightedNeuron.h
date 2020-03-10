@@ -1,7 +1,14 @@
 #pragma once
-class WeightedNeuron
+#include "Neuron.h"
+class WeightedNeuron :
+	public Neuron
 {
+public:
 	WeightedNeuron();
-	WeightedNeuron()
+private:
+	Weights weights;
+
+public:
+	void calculateValue() override;
 };
 

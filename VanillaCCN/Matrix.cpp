@@ -1,5 +1,4 @@
 #include "Matrix.h"
-#include "NeuronRegular.h"
 
 Matrix::Matrix(int matrixHeight, int matrixWidth)
 	: matrixHeight{matrixHeight}, matrixWidth{matrixWidth}

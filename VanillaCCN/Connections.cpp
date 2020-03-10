@@ -1,4 +1,5 @@
 #include "Connections.h"
+#include "Neuron.h"
 
 void Connections::add(Neuron & newConnection)
 {
@@ -7,10 +8,10 @@ void Connections::add(Neuron & newConnection)
 
 int Connections::size()
 {
-	return connections.size();
+	return (int)connections.size();
 }
 
-Neuron & Connections::get(int index)
+const Neuron & Connections::get(int index)
 {
 	return connections[index];
 }

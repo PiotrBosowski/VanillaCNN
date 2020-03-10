@@ -32,8 +32,8 @@ int MatrixToMatrix::connectToConvolution(Layer2D& preceding, ConvolutionLayer& c
 	int featureWidth = convolution.getFeatureDetectorWidth();
 	auto& precedingMatrices = preceding.getMatrices();
 	auto& convolutionMatrices = convolution.getMatrices();
-	int precedingSize = precedingMatrices.size();
-	int convolutionSize = convolutionMatrices.size();
+	int precedingSize = (int)precedingMatrices.size();
+	int convolutionSize = (int)convolutionMatrices.size();
 	for (int i = 0; i < convolutionSize; i++)
 		for (int j = 0; j < precedingSize; j++)
 			counter += connectMatricesDownsampling(precedingMatrices[j], convolutionMatrices[i], featureHeight, featureWidth); //to jest zle, bedzie sie psuc
@@ -63,7 +63,7 @@ int MatrixToMatrix::connectToDownsampling(Layer2D& preceding, DownsamplingLayer&
 	int counter = 0;
 	int featureHeight = downsampling.getDownsamplerHeight();
 	int featureWidth = downsampling.getDownsamplerWidth();
-	int numberOfMatrices = downsampling.getMatrices().size();
+	int numberOfMatrices = (int)downsampling.getMatrices().size();
 	auto& precedingMatrices = preceding.getMatrices();
 	auto& downsamplingMatrices = downsampling.getMatrices();
 	if(precedingMatrices.size() != downsamplingMatrices.size()) throw std::exception{ "ERROR: sizes of layers doesnt match for OneToOne connection" };
