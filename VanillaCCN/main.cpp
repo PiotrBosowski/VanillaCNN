@@ -5,6 +5,7 @@
 #include "DownsamplingLayer.h"
 #include "FullyConnectedLayer.h"
 #include "OutputLayer.h"
+#include <optional>
 
 int main()
 {

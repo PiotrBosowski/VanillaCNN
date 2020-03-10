@@ -9,3 +9,6 @@ connectowanie się warstw CHECK
 uproszczenie modelu - wykluczenie warstwy "Connect"
 
 mozliwosc zapisu modelu do pliku
+
+
+uproscic strukture klas neuronow

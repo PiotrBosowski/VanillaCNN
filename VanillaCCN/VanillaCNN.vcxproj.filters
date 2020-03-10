@@ -94,13 +94,13 @@
     <ClInclude Include="FeatureDetector.h">
       <Filter>Source Files\Model\Matrices</Filter>
     </ClInclude>
-    <ClInclude Include="NeuronConv.h">
-      <Filter>Source Files\Model\Neurons</Filter>
-    </ClInclude>
     <ClInclude Include="Container.h">
       <Filter>Source Files\Model\Matrices</Filter>
     </ClInclude>
-    <ClInclude Include="NeuronRegular.h">
+    <ClInclude Include="Connections.h">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClInclude>
+    <ClInclude Include="Weights.h">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClInclude>
   </ItemGroup>
@@ -165,14 +165,19 @@
     <ClCompile Include="FeatureDetector.cpp">
       <Filter>Source Files\Model\Matrices</Filter>
     </ClCompile>
-    <ClCompile Include="NeuronConv.cpp">
-      <Filter>Source Files\Model\Neurons</Filter>
-    </ClCompile>
     <ClCompile Include="Container.cpp">
       <Filter>Source Files\Model\Matrices</Filter>
     </ClCompile>
-    <ClCompile Include="NeuronRegular.cpp">
+    <ClCompile Include="Connections.cpp">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClCompile>
+    <ClCompile Include="Weights.cpp">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

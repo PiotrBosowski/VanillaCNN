@@ -1,6 +1,10 @@
 #pragma once
 #include <vector>
 #include <random>
+#include <functional>
+#include "Weights.h"
+#include "Connections.h"
+#include <optional>
 
 /*
 Base class for all neuron types.
@@ -8,10 +12,18 @@ Contains neuron's value.
 */
 class Neuron
 {
-protected:
+
+
+
+public:
+	Neuron(); //if neuron is used as regular neuron
+	Neuron(Weights& weights); //if neuron is used as convolutional, it needs to be delivered weights matrix (pattern recognizer)
+private:
+	std::optional<int> pampam;
+	Connections connections;
 	double value;
 public:
 	double getValue();
-	virtual void acceptConnection(Neuron& preceding) = 0;
-	virtual void calculateValue() = 0;
+	void acceptConnection(Neuron& preceding);
+	void calculateValue();
 };

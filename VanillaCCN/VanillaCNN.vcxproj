@@ -116,6 +116,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,6 +128,7 @@
   <ItemGroup>
     <ClInclude Include="ConnectingEngine.h" />
     <ClInclude Include="ConnectingStrategy.h" />
+    <ClInclude Include="Connections.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="ConvolutionLayer.h" />
     <ClInclude Include="DownsamplingLayer.h" />
@@ -140,17 +143,17 @@
     <ClInclude Include="MatrixToMatrix.h" />
     <ClInclude Include="MatrixToVector.h" />
     <ClInclude Include="Neuron.h" />
-    <ClInclude Include="NeuronConv.h" />
-    <ClInclude Include="NeuronRegular.h" />
     <ClInclude Include="OutputLayer.h" />
     <ClInclude Include="NeuralNetwork.h" />
     <ClInclude Include="TBDMarkerEnum.h" />
     <ClInclude Include="VectorToMatrix.h" />
     <ClInclude Include="VectorToVector.h" />
+    <ClInclude Include="Weights.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConnectingEngine.cpp" />
     <ClCompile Include="ConnectingStrategy.cpp" />
+    <ClCompile Include="Connections.cpp" />
     <ClCompile Include="Container.cpp" />
     <ClCompile Include="ConvolutionLayer.cpp" />
     <ClCompile Include="DownsamplingLayer.cpp" />
@@ -166,12 +169,14 @@
     <ClCompile Include="MatrixToMatrix.cpp" />
     <ClCompile Include="MatrixToVector.cpp" />
     <ClCompile Include="Neuron.cpp" />
-    <ClCompile Include="NeuronConv.cpp" />
-    <ClCompile Include="NeuronRegular.cpp" />
     <ClCompile Include="OutputLayer.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="VectorToMatrix.cpp" />
     <ClCompile Include="VectorToVector.cpp" />
+    <ClCompile Include="Weights.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
