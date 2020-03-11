@@ -4,7 +4,7 @@ Matrix::Matrix(int matrixHeight, int matrixWidth)
 	: matrixHeight{matrixHeight}, matrixWidth{matrixWidth}
 {
 	if (matrixHeight < 1 || matrixWidth < 1) throw std::exception("bad matrix initialization");
-	table = std::vector<std::unique_ptr<Neuron>>(matrixHeight * matrixWidth);
+	table = std::vector<std::unique_ptr<Neuron>>((long)matrixHeight * (long)matrixWidth);
 }
 
 int Matrix::getMatrixHeight()
@@ -19,5 +19,5 @@ int Matrix::getMatrixWidth()
 
 Neuron& Matrix::getNeuron(unsigned int row, unsigned int column)
 {
-	return *(table[row * matrixWidth + column]);
+	return *(table[(unsigned long)row * (unsigned long)matrixWidth + column]);
 }

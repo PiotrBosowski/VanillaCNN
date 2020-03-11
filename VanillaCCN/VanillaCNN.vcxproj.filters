@@ -32,6 +32,21 @@
     <Filter Include="Source Files\Model\ConnectingEngine\Strategies">
       <UniqueIdentifier>{ab4b1753-3790-4f5d-8c94-1417e8812bf8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\Layers\Layers1D\FullyConnectedLayer">
+      <UniqueIdentifier>{79a937a8-a777-47e0-97d4-55c069cadbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Layers\Layers1D\OutputLayer">
+      <UniqueIdentifier>{d4af9c1e-dba9-4343-9e01-09ada48f2c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Layers\Layers2D\ConvolutionLayer">
+      <UniqueIdentifier>{2d926859-c317-4102-bb59-9134c4b41856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Layers\Layers2D\DownsamplingLayer">
+      <UniqueIdentifier>{2c96a3f4-91ad-4029-a138-cfcb642a7663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Layers\Layers2D\InputLayer">
+      <UniqueIdentifier>{1a3dd664-6a9a-4b71-83e1-3ded8224d149}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Layer.h">
@@ -46,23 +61,8 @@
     <ClInclude Include="Neuron.h">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClInclude>
-    <ClInclude Include="FullyConnectedLayer.h">
-      <Filter>Source Files\Model\Layers\Layers1D</Filter>
-    </ClInclude>
     <ClInclude Include="Layer1D.h">
       <Filter>Source Files\Model\Layers\Layers1D</Filter>
-    </ClInclude>
-    <ClInclude Include="OutputLayer.h">
-      <Filter>Source Files\Model\Layers\Layers1D</Filter>
-    </ClInclude>
-    <ClInclude Include="ConvolutionLayer.h">
-      <Filter>Source Files\Model\Layers\Layers2D</Filter>
-    </ClInclude>
-    <ClInclude Include="DownsamplingLayer.h">
-      <Filter>Source Files\Model\Layers\Layers2D</Filter>
-    </ClInclude>
-    <ClInclude Include="InputLayer.h">
-      <Filter>Source Files\Model\Layers\Layers2D</Filter>
     </ClInclude>
     <ClInclude Include="Layer2D.h">
       <Filter>Source Files\Model\Layers\Layers2D</Filter>
@@ -109,6 +109,36 @@
     <ClInclude Include="UnweightedNeuron.h">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClInclude>
+    <ClInclude Include="FullyConnectedLayer.h">
+      <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="FullyConnectedLayerConnector.h">
+      <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputLayerConnector.h">
+      <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputLayer.h">
+      <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayer.h">
+      <Filter>Source Files\Model\Layers\Layers2D\InputLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DownsamplingLayer.h">
+      <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvolutionLayer.h">
+      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvolutionLayerConnector.h">
+      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DownsamplingLayerConnector.h">
+      <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayerConnector.h">
+      <Filter>Source Files\Model\Layers\Layers2D\InputLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -123,23 +153,8 @@
     <ClCompile Include="Neuron.cpp">
       <Filter>Source Files\Model\Neurons</Filter>
     </ClCompile>
-    <ClCompile Include="FullyConnectedLayer.cpp">
-      <Filter>Source Files\Model\Layers\Layers1D</Filter>
-    </ClCompile>
     <ClCompile Include="Layer1D.cpp">
       <Filter>Source Files\Model\Layers\Layers1D</Filter>
-    </ClCompile>
-    <ClCompile Include="OutputLayer.cpp">
-      <Filter>Source Files\Model\Layers\Layers1D</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvolutionLayer.cpp">
-      <Filter>Source Files\Model\Layers\Layers2D</Filter>
-    </ClCompile>
-    <ClCompile Include="DownsamplingLayer.cpp">
-      <Filter>Source Files\Model\Layers\Layers2D</Filter>
-    </ClCompile>
-    <ClCompile Include="InputLayer.cpp">
-      <Filter>Source Files\Model\Layers\Layers2D</Filter>
     </ClCompile>
     <ClCompile Include="Layer2D.cpp">
       <Filter>Source Files\Model\Layers\Layers2D</Filter>
@@ -185,6 +200,36 @@
     </ClCompile>
     <ClCompile Include="UnweightedNeuron.cpp">
       <Filter>Source Files\Model\Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="FullyConnectedLayer.cpp">
+      <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="FullyConnectedLayerConnector.cpp">
+      <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputLayerConnector.cpp">
+      <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputLayer.cpp">
+      <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayer.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\InputLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="DownsamplingLayer.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvolutionLayer.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvolutionLayerConnector.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="DownsamplingLayerConnector.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayerConnector.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\InputLayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

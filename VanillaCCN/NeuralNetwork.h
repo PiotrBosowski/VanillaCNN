@@ -6,18 +6,19 @@
 class NeuralNetwork
 {
 public:
-	NeuralNetwork();
+	NeuralNetwork(bool printEnabled = true);
 
 private:
 	std::vector<std::unique_ptr<Layer>> layers;
+	bool printEnabled;
 
 public:
 	void addLayer(Layer* newLayer); //then transformed into unique_ptr
 	void compile();
-	void print();
 
 private:
 	void populateLayers();
 	void connectLayers();
+	void print(std::string description = "");
+	void printError(std::string error);
 };
-

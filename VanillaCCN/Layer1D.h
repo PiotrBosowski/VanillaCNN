@@ -17,5 +17,6 @@ public:
 
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override = 0;
+	void connect(Layer& previousLayer) override = 0;
 	void print();
 };

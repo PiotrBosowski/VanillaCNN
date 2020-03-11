@@ -8,3 +8,10 @@ X uproszczenie modelu - wykluczenie warstwy "Connect"
 mozliwosc zapisu modelu do pliku
 
 X uproscic strukture klas neuronow
+
+X przerobić łączenie się warstw:
+	albo warstwy łączą się same -> dodanie nowego typu warstwy wiąże się ze zmianą kodu innych warstw
+	albo łączenie się nadzoruje ConnectingEngine -> dodanie nowego typu warstwy wiąże się ze zmianą kodu connectingEngine
+
+	nowy pomysł: każda klasa ma skojarzoną klasę ...Connector, która odpowiada za łączenie z poprzednią warstwą
+	vector i matrix dziedziczą ze wspólnej klasy "container" np.

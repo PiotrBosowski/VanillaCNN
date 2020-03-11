@@ -8,5 +8,6 @@ public:
 	FullyConnectedLayer(int numberOfNeurons);
 	void populateNeurons();
 	void print() override;
+	void connect(Layer& previousLayer) override;
 };
 

@@ -132,10 +132,14 @@
     <ClInclude Include="Connections.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="ConvolutionLayer.h" />
+    <ClInclude Include="ConvolutionLayerConnector.h" />
     <ClInclude Include="DownsamplingLayer.h" />
+    <ClInclude Include="DownsamplingLayerConnector.h" />
     <ClInclude Include="FeatureDetector.h" />
     <ClInclude Include="FullyConnectedLayer.h" />
+    <ClInclude Include="FullyConnectedLayerConnector.h" />
     <ClInclude Include="InputLayer.h" />
+    <ClInclude Include="InputLayerConnector.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Layer1D.h" />
     <ClInclude Include="Layer2D.h" />
@@ -146,6 +150,7 @@
     <ClInclude Include="Neuron.h" />
     <ClInclude Include="OutputLayer.h" />
     <ClInclude Include="NeuralNetwork.h" />
+    <ClInclude Include="OutputLayerConnector.h" />
     <ClInclude Include="TBDMarkerEnum.h" />
     <ClInclude Include="UnweightedNeuron.h" />
     <ClInclude Include="VectorToMatrix.h" />
@@ -159,10 +164,14 @@
     <ClCompile Include="Connections.cpp" />
     <ClCompile Include="Container.cpp" />
     <ClCompile Include="ConvolutionLayer.cpp" />
+    <ClCompile Include="ConvolutionLayerConnector.cpp" />
     <ClCompile Include="DownsamplingLayer.cpp" />
+    <ClCompile Include="DownsamplingLayerConnector.cpp" />
     <ClCompile Include="FeatureDetector.cpp" />
     <ClCompile Include="FullyConnectedLayer.cpp" />
+    <ClCompile Include="FullyConnectedLayerConnector.cpp" />
     <ClCompile Include="InputLayer.cpp" />
+    <ClCompile Include="InputLayerConnector.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="Layer1D.cpp" />
     <ClCompile Include="Layer2D.cpp" />
@@ -174,6 +183,7 @@
     <ClCompile Include="Neuron.cpp" />
     <ClCompile Include="OutputLayer.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
+    <ClCompile Include="OutputLayerConnector.cpp" />
     <ClCompile Include="UnweightedNeuron.cpp" />
     <ClCompile Include="VectorToMatrix.cpp" />
     <ClCompile Include="VectorToVector.cpp" />
