@@ -2,6 +2,7 @@
 #include <optional>
 #include "Layer.h"
 #include "matrix.h"
+#include "Vector.h"
 
 class Layer1D : public Layer
 {
@@ -10,10 +11,10 @@ public:
 
 protected:
 	int numberOfNeurons;
-	std::vector<std::unique_ptr<Neuron>> neurons;
+	Vector neurons;
 public:
 	int getNumberOfNeurons();
-	std::vector<std::unique_ptr<Neuron>>& getNeurons();
+	Vector& getNeurons();
 
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override = 0;

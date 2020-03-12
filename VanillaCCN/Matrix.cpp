@@ -19,5 +19,14 @@ int Matrix::getMatrixWidth()
 
 Neuron& Matrix::getNeuron(unsigned int row, unsigned int column)
 {
-	return *(table[(unsigned long)row * (unsigned long)matrixWidth + column]);
+	return *table[(unsigned long)row * (unsigned long)matrixWidth + column];
+}
+
+void Matrix::addNeuron(std::unique_ptr<Neuron> newNeuron)
+{
+	table.push_back(std::move(newNeuron));
+}
+
+void Matrix::connect(Container& preceeding)
+{
 }

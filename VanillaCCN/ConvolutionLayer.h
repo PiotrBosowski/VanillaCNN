@@ -2,6 +2,7 @@
 #include "Layer2D.h"
 #include <vector>
 #include "FeatureDetector.h"
+#include "ConvolutionLayerConnector.h"
 #include <memory>
 
 
@@ -19,5 +20,6 @@ public:
 
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override;
+	void connect(Layer& previousLayer) override;
 	void print() override;
 };

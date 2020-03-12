@@ -2,6 +2,8 @@
 #include "Neuron.h"
 #include <memory>
 
+class Connector;
+
 class Layer
 {
 public:

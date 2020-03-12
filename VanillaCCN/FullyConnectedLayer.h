@@ -10,4 +10,3 @@ public:
 	void print() override;
 	void connect(Layer& previousLayer) override;
 };
-

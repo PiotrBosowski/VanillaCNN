@@ -35,6 +35,11 @@ void ConvolutionLayer::populateNeurons()
 	throw std::exception{ "convolution layer bad initialization - it cannot be the first layer of the network!" };
 }
 
+void ConvolutionLayer::connect(Layer& previousLayer)
+{
+	ConvolutionLayerConnector(*this).connect(previousLayer);
+}
+
 void ConvolutionLayer::print()
 {
 	Layer2D::print();

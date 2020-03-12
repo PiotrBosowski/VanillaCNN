@@ -14,9 +14,6 @@
     <Filter Include="Source Files\Model\Layers">
       <UniqueIdentifier>{9ab9e4ca-a1b2-44b8-beff-6553d003ab8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Model\Matrices">
-      <UniqueIdentifier>{aeacabb7-2ae9-4077-aa95-ca809969b75c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Model\Neurons">
       <UniqueIdentifier>{c83a96a7-aa72-419b-9cf5-24d8dc0752e7}</UniqueIdentifier>
     </Filter>
@@ -25,12 +22,6 @@
     </Filter>
     <Filter Include="Source Files\Model\Layers\Layers1D">
       <UniqueIdentifier>{624cb7c0-2869-425f-a93d-3112aa530eaf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Model\ConnectingEngine">
-      <UniqueIdentifier>{c0c9afec-af22-4f01-b4fd-48755a41d82a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Model\ConnectingEngine\Strategies">
-      <UniqueIdentifier>{ab4b1753-3790-4f5d-8c94-1417e8812bf8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Model\Layers\Layers1D\FullyConnectedLayer">
       <UniqueIdentifier>{79a937a8-a777-47e0-97d4-55c069cadbf2}</UniqueIdentifier>
@@ -47,6 +38,15 @@
     <Filter Include="Source Files\Model\Layers\Layers2D\InputLayer">
       <UniqueIdentifier>{1a3dd664-6a9a-4b71-83e1-3ded8224d149}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\Containers">
+      <UniqueIdentifier>{aeacabb7-2ae9-4077-aa95-ca809969b75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Containers\Matrices">
+      <UniqueIdentifier>{69c3e1d3-1b8f-4689-8bd8-42408da594a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Containers\Vectors">
+      <UniqueIdentifier>{942d8e1d-8ee9-4326-82ff-070b7d3d444f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Layer.h">
@@ -54,9 +54,6 @@
     </ClInclude>
     <ClInclude Include="TBDMarkerEnum.h">
       <Filter>Source Files\Model\Enums</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrix.h">
-      <Filter>Source Files\Model\Matrices</Filter>
     </ClInclude>
     <ClInclude Include="Neuron.h">
       <Filter>Source Files\Model\Neurons</Filter>
@@ -67,35 +64,11 @@
     <ClInclude Include="Layer2D.h">
       <Filter>Source Files\Model\Layers\Layers2D</Filter>
     </ClInclude>
-    <ClInclude Include="ConnectingEngine.h">
-      <Filter>Source Files\Model\ConnectingEngine</Filter>
-    </ClInclude>
-    <ClInclude Include="ConnectingStrategy.h">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClInclude>
-    <ClInclude Include="MatrixToMatrix.h">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClInclude>
-    <ClInclude Include="MatrixToVector.h">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClInclude>
-    <ClInclude Include="VectorToMatrix.h">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClInclude>
-    <ClInclude Include="VectorToVector.h">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClInclude>
     <ClInclude Include="NeuralNetwork.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
-    <ClInclude Include="MatrixConv.h">
-      <Filter>Source Files\Model\Matrices</Filter>
-    </ClInclude>
-    <ClInclude Include="FeatureDetector.h">
-      <Filter>Source Files\Model\Matrices</Filter>
-    </ClInclude>
     <ClInclude Include="Container.h">
-      <Filter>Source Files\Model\Matrices</Filter>
+      <Filter>Source Files\Model\Containers</Filter>
     </ClInclude>
     <ClInclude Include="Connections.h">
       <Filter>Source Files\Model\Neurons</Filter>
@@ -136,8 +109,20 @@
     <ClInclude Include="DownsamplingLayerConnector.h">
       <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
     </ClInclude>
-    <ClInclude Include="InputLayerConnector.h">
-      <Filter>Source Files\Model\Layers\Layers2D\InputLayer</Filter>
+    <ClInclude Include="Connector.h">
+      <Filter>Source Files\Model\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Source Files\Model\Containers\Matrices</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixConv.h">
+      <Filter>Source Files\Model\Containers\Matrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Source Files\Model\Containers\Vectors</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureDetector.h">
+      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -146,9 +131,6 @@
     </ClCompile>
     <ClCompile Include="Layer.cpp">
       <Filter>Source Files\Model\Layers</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>Source Files\Model\Matrices</Filter>
     </ClCompile>
     <ClCompile Include="Neuron.cpp">
       <Filter>Source Files\Model\Neurons</Filter>
@@ -159,35 +141,11 @@
     <ClCompile Include="Layer2D.cpp">
       <Filter>Source Files\Model\Layers\Layers2D</Filter>
     </ClCompile>
-    <ClCompile Include="ConnectingEngine.cpp">
-      <Filter>Source Files\Model\ConnectingEngine</Filter>
-    </ClCompile>
-    <ClCompile Include="ConnectingStrategy.cpp">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClCompile>
-    <ClCompile Include="MatrixToMatrix.cpp">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClCompile>
-    <ClCompile Include="MatrixToVector.cpp">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClCompile>
-    <ClCompile Include="VectorToMatrix.cpp">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClCompile>
-    <ClCompile Include="VectorToVector.cpp">
-      <Filter>Source Files\Model\ConnectingEngine\Strategies</Filter>
-    </ClCompile>
     <ClCompile Include="NeuralNetwork.cpp">
       <Filter>Source Files\Model</Filter>
     </ClCompile>
-    <ClCompile Include="MatrixConv.cpp">
-      <Filter>Source Files\Model\Matrices</Filter>
-    </ClCompile>
-    <ClCompile Include="FeatureDetector.cpp">
-      <Filter>Source Files\Model\Matrices</Filter>
-    </ClCompile>
     <ClCompile Include="Container.cpp">
-      <Filter>Source Files\Model\Matrices</Filter>
+      <Filter>Source Files\Model\Containers</Filter>
     </ClCompile>
     <ClCompile Include="Connections.cpp">
       <Filter>Source Files\Model\Neurons</Filter>
@@ -228,8 +186,20 @@
     <ClCompile Include="DownsamplingLayerConnector.cpp">
       <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
     </ClCompile>
-    <ClCompile Include="InputLayerConnector.cpp">
-      <Filter>Source Files\Model\Layers\Layers2D\InputLayer</Filter>
+    <ClCompile Include="Connector.cpp">
+      <Filter>Source Files\Model\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files\Model\Containers\Matrices</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixConv.cpp">
+      <Filter>Source Files\Model\Containers\Matrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Source Files\Model\Containers\Vectors</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureDetector.cpp">
+      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

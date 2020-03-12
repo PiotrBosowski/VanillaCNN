@@ -4,7 +4,7 @@
 #include "WeightedNeuron.h"
 
 Layer1D::Layer1D(int numberOfNeurons)
-	: numberOfNeurons{ numberOfNeurons }
+	: numberOfNeurons{ numberOfNeurons }, neurons{ Vector{numberOfNeurons} }
 {
 	if (numberOfNeurons < 1) throw std::exception("ERROR: incorrect 1D layer dimensions");
 }
@@ -14,7 +14,7 @@ int Layer1D::getNumberOfNeurons()
 	return numberOfNeurons;
 }
 
-std::vector<std::unique_ptr<Neuron>>& Layer1D::getNeurons()
+Vector& Layer1D::getNeurons()
 {
 	return neurons;
 }
@@ -22,7 +22,7 @@ std::vector<std::unique_ptr<Neuron>>& Layer1D::getNeurons()
 void Layer1D::populateNeurons(Layer& previousLayer)
 {
 	for (int i = 0; i < numberOfNeurons; i++)
-		neurons.push_back(std::make_unique<WeightedNeuron>());
+		neurons.addNeuron(std::make_unique<WeightedNeuron>());
 }
 
 void Layer1D::print()

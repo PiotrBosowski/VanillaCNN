@@ -1,5 +1,6 @@
 #pragma once
 #include "Layer2D.h"
+#include "DownsamplingLayerConnector.h"
 #include <memory>
 
 class DownsamplingLayer : public Layer2D
@@ -17,5 +18,6 @@ public:
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override;
 	void print() override;
+	void connect(Layer& previousLayer) override;
 	virtual ~DownsamplingLayer();
 };

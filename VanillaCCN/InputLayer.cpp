@@ -21,6 +21,11 @@ void InputLayer::print()
 	std::cout << "    InputLayer" << std::endl;
 }
 
+void InputLayer::connect(Layer& previousLayer)
+{
+	throw std::exception{"cannot connect anything to input layer"};
+}
+
 InputLayer::~InputLayer()
 {
 }

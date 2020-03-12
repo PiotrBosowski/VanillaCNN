@@ -15,3 +15,30 @@ X przerobić łączenie się warstw:
 
 	nowy pomysł: każda klasa ma skojarzoną klasę ...Connector, która odpowiada za łączenie z poprzednią warstwą
 	vector i matrix dziedziczą ze wspólnej klasy "container" np.
+
+
+Możliwe połączenia:
+FullyConnectedLayer:
+	FullyconnectedLayer
+	InputLayer
+	ConvolutionLayer
+	DownsamplingLayer
+
+OutputLayer:
+	FullyConnectedLayer
+	InputLayer
+	ConvolutionLayer
+	DownsamplingLayer
+
+ConvolutionLayer:
+	InputLayer
+	ConvolutionLayer
+	DownsamplingLayer
+
+DownsamplingLayer:
+	ConvolutionLayer
+	DownsamplingLayer
+	InputLayer
+
+InputLayer:
+	-

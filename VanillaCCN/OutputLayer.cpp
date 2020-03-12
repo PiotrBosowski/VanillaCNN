@@ -16,6 +16,7 @@ void OutputLayer::populateNeurons()
 	throw std::exception{ "bad outputlayer init: it cannot be first layer" };
 }
 
-OutputLayer::~OutputLayer()
+void OutputLayer::connect(Layer& previousLayer)
 {
+	OutputLayerConnector(*this).connect(previousLayer);
 }

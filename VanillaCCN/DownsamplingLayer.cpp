@@ -42,6 +42,11 @@ void DownsamplingLayer::print()
 	std::cout << "    DownsamplingLayer: downsamplerHeight(" << downsamplerHeight << "), downsamplerWidth(" << downsamplerWidth << ")" << std::endl;
 }
 
+void DownsamplingLayer::connect(Layer& previousLayer)
+{
+	DownsamplingLayerConnector(*this).connect(previousLayer);	
+}
+
 DownsamplingLayer::~DownsamplingLayer()
 {
 }
