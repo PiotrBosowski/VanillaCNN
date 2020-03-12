@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClInclude Include="Connections.h" />
     <ClInclude Include="Connector.h" />
+    <ClInclude Include="ConsolePrinter.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="ConvolutionLayer.h" />
     <ClInclude Include="ConvolutionLayerConnector.h" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="Connections.cpp" />
     <ClCompile Include="Connector.cpp" />
+    <ClCompile Include="ConsolePrinter.cpp" />
     <ClCompile Include="Container.cpp" />
     <ClCompile Include="ConvolutionLayer.cpp" />
     <ClCompile Include="ConvolutionLayerConnector.cpp" />

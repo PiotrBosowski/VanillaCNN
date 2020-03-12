@@ -17,7 +17,7 @@ public:
 
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override;
-	void print() override;
+	std::string getSummary() override;
 	void connect(Layer& previousLayer) override;
 	virtual ~DownsamplingLayer();
 };

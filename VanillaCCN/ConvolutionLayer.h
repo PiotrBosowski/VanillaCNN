@@ -21,5 +21,5 @@ public:
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override;
 	void connect(Layer& previousLayer) override;
-	void print() override;
+	std::string getSummary() override;
 };

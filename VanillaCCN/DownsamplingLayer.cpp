@@ -36,10 +36,11 @@ void DownsamplingLayer::populateNeurons()
 	throw std::exception{ "bad downsampling layer initialization: it cannot be the first layer of the network!" };
 }
 
-void DownsamplingLayer::print()
+std::string DownsamplingLayer::getSummary()
 {
-	Layer2D::print();
-	std::cout << "    DownsamplingLayer: downsamplerHeight(" << downsamplerHeight << "), downsamplerWidth(" << downsamplerWidth << ")" << std::endl;
+	std::string result = Layer2D::getSummary() + "\t\tDownsamplingLayer: downsamplerHeight(" + std::to_string(downsamplerHeight)
+		+ "), downsamplerWidth(" + std::to_string(downsamplerWidth) + ")\n";
+	return result;
 }
 
 void DownsamplingLayer::connect(Layer& previousLayer)

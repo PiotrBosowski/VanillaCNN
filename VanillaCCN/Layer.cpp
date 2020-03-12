@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Connector.h"
 
-void Layer::print()
+std::string Layer::getSummary()
 {
-	std::cout << "Layer:" << std::endl;
+	return "Layer:\n";
 }

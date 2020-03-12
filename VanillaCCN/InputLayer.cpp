@@ -15,10 +15,10 @@ void InputLayer::populateNeurons()
 	matrices.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
 }
 
-void InputLayer::print()
+std::string InputLayer::getSummary()
 {
-	Layer2D::print();
-	std::cout << "    InputLayer" << std::endl;
+	std::string result = Layer2D::getSummary() + "\t\tInputLayer\n";
+	return result;
 }
 
 void InputLayer::connect(Layer& previousLayer)

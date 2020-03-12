@@ -2,23 +2,22 @@
 #include "Layer.h"
 #include <vector>
 #include <memory>
+#include "ConsolePrinter.h"
 
 class NeuralNetwork
 {
 public:
-	NeuralNetwork(bool printEnabled = true);
+	NeuralNetwork(bool printingEnabled = true);
 
 private:
 	std::vector<std::unique_ptr<Layer>> layers;
-	bool printEnabled;
-
+	std::unique_ptr<ConsolePrinter> printer;
 public:
 	void addLayer(Layer* newLayer); //then transformed into unique_ptr
+	const std::vector<std::unique_ptr<Layer>>& getStructure() const;
 	void compile();
 
 private:
 	void populateLayers();
 	void connectLayers();
-	void print(std::string description = "");
-	void printError(std::string error);
 };

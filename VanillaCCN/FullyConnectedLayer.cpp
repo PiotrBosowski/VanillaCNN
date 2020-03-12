@@ -11,10 +11,10 @@ void FullyConnectedLayer::populateNeurons()
 	throw std::exception{ "bad fully connected layer init: it cannot be initialized without any layers before!" };
 }
 
-void FullyConnectedLayer::print()
+std::string FullyConnectedLayer::getSummary()
 {
-	Layer1D::print();
-	std::cout << "    FullyConnectedLayer" << std::endl;
+	std::string result = Layer1D::getSummary() + "\t\tFullyConnectedLayer\n";
+	return result;
 }
 
 void FullyConnectedLayer::connect(Layer& previousLayer)

@@ -42,3 +42,7 @@ DownsamplingLayer:
 
 InputLayer:
 	-
+
+Oddzielić funkcjonalność drukowania outputu od modelu
+
+przerobić warstwy na propotypy

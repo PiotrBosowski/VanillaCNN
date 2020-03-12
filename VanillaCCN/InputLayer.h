@@ -11,7 +11,7 @@ public:
 	InputLayer(int inputHeight, int inputWidth);
 	void populateNeurons(Layer& previousLayer) override;
 	void populateNeurons() override;
-	void print() override;
+	std::string getSummary() override;
 	void connect(Layer& previousLayer) override; //connects previous layer to this one
 	~InputLayer();
 };

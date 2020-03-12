@@ -2,6 +2,7 @@
 #include <iostream>
 #include <memory>
 #include "WeightedNeuron.h"
+#include <string>
 
 Layer1D::Layer1D(int numberOfNeurons)
 	: numberOfNeurons{ numberOfNeurons }, neurons{ Vector{numberOfNeurons} }
@@ -25,8 +26,8 @@ void Layer1D::populateNeurons(Layer& previousLayer)
 		neurons.addNeuron(std::make_unique<WeightedNeuron>());
 }
 
-void Layer1D::print()
+std::string Layer1D::getSummary()
 {
-	Layer::print();
-	std::cout << "  Layer1D: numberOfNeurons(" << numberOfNeurons << ")" << std::endl;
+	std::string result = Layer::getSummary() + "\tLayer2D: numberOfNeurons(" + std::to_string(numberOfNeurons) + ")\n";
+	return result;
 }

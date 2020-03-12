@@ -11,5 +11,5 @@ public:
 	virtual void populateNeurons() = 0;
 	virtual void connect(Layer& previousLayer) = 0;
 
-	virtual void print();
+	virtual std::string getSummary();
 };

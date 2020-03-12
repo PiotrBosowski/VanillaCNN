@@ -47,6 +47,9 @@
     <Filter Include="Source Files\Model\Containers\Vectors">
       <UniqueIdentifier>{942d8e1d-8ee9-4326-82ff-070b7d3d444f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Output">
+      <UniqueIdentifier>{314376bf-8d27-482b-9716-b3fc1e3050b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Layer.h">
@@ -124,6 +127,9 @@
     <ClInclude Include="FeatureDetector.h">
       <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
     </ClInclude>
+    <ClInclude Include="ConsolePrinter.h">
+      <Filter>Source Files\Output</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -200,6 +206,9 @@
     </ClCompile>
     <ClCompile Include="FeatureDetector.cpp">
       <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsolePrinter.cpp">
+      <Filter>Source Files\Output</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

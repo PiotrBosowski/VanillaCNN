@@ -5,10 +5,10 @@ OutputLayer::OutputLayer(int numberOfNeurons) : Layer1D(numberOfNeurons)
 {
 }
 
-void OutputLayer::print()
+std::string OutputLayer::getSummary()
 {
-	Layer1D::print();
-	std::cout << "    OutputLayer" << std::endl;
+	std::string result = Layer1D::getSummary() + "\t\tOutputLayer\n";
+	return result;
 }
 
 void OutputLayer::populateNeurons()

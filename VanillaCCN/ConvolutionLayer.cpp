@@ -3,6 +3,7 @@
 #include "TBDMarkerEnum.h"
 #include <vector>
 #include "MatrixConv.h"
+#include <string>
 
 ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
 	: Layer2D(numberOfFeatureDetectors, TBD, TBD), featureDetectorHeight{ featureDetectorHeight }, featureDetectorWidth{ featureDetectorWidth }
@@ -40,9 +41,10 @@ void ConvolutionLayer::connect(Layer& previousLayer)
 	ConvolutionLayerConnector(*this).connect(previousLayer);
 }
 
-void ConvolutionLayer::print()
+std::string ConvolutionLayer::getSummary()
 {
-	Layer2D::print();
-	std::cout << "    ConvolutionLayer, featureDetectorHeight(" << featureDetectorHeight << "), featureDetectorWidth(" << featureDetectorWidth << ")" << std::endl;
+	std::string result = Layer2D::getSummary() + "\t\tConvolutionLayer, featureDetectorHeight(" + std::to_string(featureDetectorHeight)
+		+ "), featureDetectorWidth(" + std::to_string(featureDetectorWidth) + ")\n";
+	return result;
 }
 

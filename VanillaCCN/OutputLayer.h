@@ -9,7 +9,7 @@ public:
 	OutputLayer(int numberOfNeurons);
 
 public:
-	void print() override;
+	std::string getSummary() override;
 	void populateNeurons() override;
 	void connect(Layer& previousLayer) override;
 };

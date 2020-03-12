@@ -1,6 +1,7 @@
 #include "Layer2D.h"
 #include <iostream>
 #include <vector>
+#include <string>
 
 Layer2D::Layer2D(int numberOfMatrices, int matrixHeight, int matrixWidth)
 	: numberOfMatrices{ numberOfMatrices }, matrixHeight{ matrixHeight }, matrixWidth{ matrixWidth }
@@ -35,12 +36,9 @@ std::vector<std::unique_ptr<Matrix>>& Layer2D::getMatrices()
 	//	matrices.push_back(std::make_unique<Matrix&>(matrixHeight, matrixWidth));
 //}
 
-void Layer2D::print()
+std::string Layer2D::getSummary()
 {
-	Layer::print();
-	std::cout << "  Layer2D: numberOfMatrices(" << numberOfMatrices << "), matrixHeight(" << matrixHeight << "), matrixWidth(" << matrixWidth << ")" << std::endl;
-}
-
-Layer2D::~Layer2D()
-{
+	std::string result = Layer::getSummary() + "\tLayer2D: numberOfMatrices(" + std::to_string(numberOfMatrices)
+		+ "), matrixHeight(" + std::to_string(matrixHeight) + "), matrixWidth(" + std::to_string(matrixWidth) + ")\n";
+	return result;
 }

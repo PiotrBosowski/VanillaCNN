@@ -4,25 +4,10 @@
 #include <memory>
 #include <iostream>
 
-constexpr char RESET[]   { "\033[0m" };
-constexpr char RED[]     { "\033[31m" };  
-constexpr char GREEN[]   { "\033[32m" };    
-constexpr char YELLOW[]  { "\033[33m" };     
-constexpr char BLUE[]    { "\033[34m" }; 
-constexpr char MAGENTA[] { "\033[35m" };  
-constexpr char CYAN[]    { "\033[36m" };   
-constexpr char WHITE[]   { "\033[37m" };
-constexpr char BOLDBLACK[]   { "\033[1m\033[30m" };
-constexpr char BOLDRED[]     { "\033[1m\033[31m" };
-constexpr char BOLDGREEN[]   {"\033[1m\033[32m"   };
-constexpr char BOLDYELLOW[]  { "\033[1m\033[33m" };
-constexpr char BOLDBLUE[]    { "\033[1m\033[34m" };
-constexpr char BOLDMAGENTA[] { "\033[1m\033[35m" };
-constexpr char BOLDCYAN[]    { "\033[1m\033[36m" };
-constexpr char BOLDWHITE[]   { "\033[1m\033[37m" };
 
-NeuralNetwork::NeuralNetwork(bool printEnabled)
-	: printEnabled{printEnabled}
+
+NeuralNetwork::NeuralNetwork(bool printingEnabled)
+	: printer{ std::make_unique<ConsolePrinter>(*this, printingEnabled) }
 {
 	srand((unsigned int)time(NULL));
 }
@@ -38,27 +23,32 @@ void NeuralNetwork::addLayer(Layer * layer)
 	}
 	catch (const std::exception & ex)
 	{
-		printError(ex.what());
+		printer->printError(ex.what());
 	}
+}
+
+const std::vector<std::unique_ptr<Layer>>& NeuralNetwork::getStructure() const
+{
+	return layers;
 }
 
 void NeuralNetwork::compile()
 {
 	try
 	{
-		print("Before populating neurons:");
+		printer->print("Before populating neurons:");
 		populateLayers();
-		print("Before connecting layers:");
+		printer->print("Before connecting layers:");
 		connectLayers();
-		print("After connecting layers:");
+		printer->print("After connecting layers:");
 	}
 	catch (const std::exception & ex)
 	{
-		printError(ex.what());
+		printer->printError(ex.what());
 	}
 	catch (...)
 	{
-		printError("Unknown error.");
+		printer->printError("Unknown error.");
 	}
 }
 
@@ -78,21 +68,4 @@ void NeuralNetwork::populateLayers()
 	layers[0]->populateNeurons();
 	for (unsigned int i = 1; i < layers.size(); i++)
 		layers[i]->populateNeurons(*(layers[i - 1]));
-}
-
-void NeuralNetwork::print(std::string description)
-{
-	if(description != "")
-		std::cout << BOLDGREEN << description << RESET << std::endl;
-	if(printEnabled)
-		for (auto& layer : layers) {
-			layer->print();
-		}
-	if (description != "")
-		std::cout << std::endl;
-}
-
-void NeuralNetwork::printError(std::string error)
-{
-	std::cerr << RED << "ERROR: {" << error << "}" << RESET << std::endl;
 }
