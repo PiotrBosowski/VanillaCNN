@@ -1,5 +1,6 @@
 #include "OutputLayer.h"
 #include <iostream>
+#include "Exceptions.h"
 
 OutputLayer::OutputLayer(int numberOfNeurons) : Layer1D(numberOfNeurons)
 {
@@ -13,7 +14,7 @@ std::string OutputLayer::getSummary()
 
 void OutputLayer::populateNeurons()
 {
-	throw std::exception{ "bad outputlayer init: it cannot be first layer" };
+	throw PopulatingException{ "bad outputlayer init: it cannot be first layer" };
 }
 
 void OutputLayer::connect(Layer& previousLayer)

@@ -3,6 +3,7 @@
 #include "NeuralNetwork.h"
 #include "TBDMarkerEnum.h"
 #include <vector>
+#include "Exceptions.h"
 
 int DownsamplingLayer::getDownsamplerHeight()
 {
@@ -17,7 +18,7 @@ int DownsamplingLayer::getDownsamplerWidth()
 DownsamplingLayer::DownsamplingLayer(int downsamplerHeight, int downsamplerWidth)
 	: Layer2D(TBD, TBD, TBD), downsamplerHeight{ downsamplerHeight }, downsamplerWidth{ downsamplerWidth }
 {
-	if (downsamplerHeight < 1 || downsamplerWidth < 1) throw std::exception("ERROR: bad DownsamplingLayer initialization");
+	if (downsamplerHeight < 1 || downsamplerWidth < 1) throw LayerCreatingException("ERROR: bad DownsamplingLayer initialization");
 }
 
 void DownsamplingLayer::populateNeurons(Layer& previousLayer)
@@ -33,7 +34,7 @@ void DownsamplingLayer::populateNeurons(Layer& previousLayer)
 
 void DownsamplingLayer::populateNeurons()
 {
-	throw std::exception{ "bad downsampling layer initialization: it cannot be the first layer of the network!" };
+	throw PopulatingException{ "bad downsampling layer initialization: it cannot be the first layer of the network!" };
 }
 
 std::string DownsamplingLayer::getSummary()

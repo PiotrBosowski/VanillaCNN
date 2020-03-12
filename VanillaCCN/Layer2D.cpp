@@ -2,11 +2,12 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "Exceptions.h"
 
 Layer2D::Layer2D(int numberOfMatrices, int matrixHeight, int matrixWidth)
 	: numberOfMatrices{ numberOfMatrices }, matrixHeight{ matrixHeight }, matrixWidth{ matrixWidth }
 {
-	if (matrixHeight < 1 || matrixWidth < 1 || numberOfMatrices < 1) throw std::exception("ERROR: incorrect layer dimensions");
+	if (matrixHeight < 1 || matrixWidth < 1 || numberOfMatrices < 1) throw LayerCreatingException("ERROR: incorrect layer dimensions");
 }
 
 int Layer2D::getNumberOfMatrices()

@@ -3,11 +3,12 @@
 #include <memory>
 #include "WeightedNeuron.h"
 #include <string>
+#include "Exceptions.h"
 
 Layer1D::Layer1D(int numberOfNeurons)
 	: numberOfNeurons{ numberOfNeurons }, neurons{ Vector{numberOfNeurons} }
 {
-	if (numberOfNeurons < 1) throw std::exception("ERROR: incorrect 1D layer dimensions");
+	if (numberOfNeurons < 1) throw LayerCreatingException("ERROR: incorrect 1D layer dimensions");
 }
 
 int Layer1D::getNumberOfNeurons()
@@ -28,6 +29,6 @@ void Layer1D::populateNeurons(Layer& previousLayer)
 
 std::string Layer1D::getSummary()
 {
-	std::string result = Layer::getSummary() + "\tLayer2D: numberOfNeurons(" + std::to_string(numberOfNeurons) + ")\n";
+	std::string result = Layer::getSummary() + "\tLayer1D: numberOfNeurons(" + std::to_string(numberOfNeurons) + ")\n";
 	return result;
 }

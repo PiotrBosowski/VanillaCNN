@@ -1,5 +1,6 @@
 #include "InputLayer.h"
 #include <iostream>
+#include "Exceptions.h"
 
 InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D(1, inputHeight, inputWidth)
 {
@@ -7,7 +8,7 @@ InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D(1, inputHeight
 
 void InputLayer::populateNeurons(Layer & previousLayer)
 {
-	throw std::exception{ "incorrect initialization of input layer - it should have got no previous layers" };
+	throw PopulatingException{ "incorrect initialization of input layer - it should have got no previous layers" };
 }
 
 void InputLayer::populateNeurons()
@@ -23,7 +24,7 @@ std::string InputLayer::getSummary()
 
 void InputLayer::connect(Layer& previousLayer)
 {
-	throw std::exception{"cannot connect anything to input layer"};
+	throw ConnectingException{"cannot connect anything to input layer"};
 }
 
 InputLayer::~InputLayer()

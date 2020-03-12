@@ -50,6 +50,9 @@
     <Filter Include="Source Files\Output">
       <UniqueIdentifier>{314376bf-8d27-482b-9716-b3fc1e3050b2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\Exceptions">
+      <UniqueIdentifier>{29de006e-12ca-4d14-bfb3-3b7131e90265}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Layer.h">
@@ -130,6 +133,9 @@
     <ClInclude Include="ConsolePrinter.h">
       <Filter>Source Files\Output</Filter>
     </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Source Files\Model\Exceptions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -209,6 +215,9 @@
     </ClCompile>
     <ClCompile Include="ConsolePrinter.cpp">
       <Filter>Source Files\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="Exceptions.cpp">
+      <Filter>Source Files\Model\Exceptions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

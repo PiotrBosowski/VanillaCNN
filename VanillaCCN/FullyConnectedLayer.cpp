@@ -1,6 +1,7 @@
 #include "FullyConnectedLayer.h"
 #include "FullyConnectedLayerConnector.h"
 #include <iostream>
+#include "Exceptions.h"
 
 FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons) : Layer1D(numberOfNeurons)
 {
@@ -8,7 +9,7 @@ FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons) : Layer1D(numberOf
 
 void FullyConnectedLayer::populateNeurons()
 {
-	throw std::exception{ "bad fully connected layer init: it cannot be initialized without any layers before!" };
+	throw PopulatingException{ "bad fully connected layer init: it cannot be initialized without any layers before!" };
 }
 
 std::string FullyConnectedLayer::getSummary()

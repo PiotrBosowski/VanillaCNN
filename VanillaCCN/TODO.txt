@@ -1,11 +1,8 @@
-﻿TODO:
-WSZYSTKIE neurony tworzone podczas kompilacji sieci, nie podczas deklarowania warstw CHECK
+﻿X WSZYSTKIE neurony tworzone podczas kompilacji sieci, nie podczas deklarowania warstw
 
 X connectowanie się warstw
 
 X uproszczenie modelu - wykluczenie warstwy "Connect"
-
-mozliwosc zapisu modelu do pliku
 
 X uproscic strukture klas neuronow
 
@@ -17,32 +14,54 @@ X przerobić łączenie się warstw:
 	vector i matrix dziedziczą ze wspólnej klasy "container" np.
 
 
-Możliwe połączenia:
-FullyConnectedLayer:
-	FullyconnectedLayer
-	InputLayer
-	ConvolutionLayer
-	DownsamplingLayer
+X Możliwe połączenia:
+	FullyConnectedLayer:
+		FullyconnectedLayer
+		InputLayer
+		ConvolutionLayer
+		DownsamplingLayer
 
-OutputLayer:
-	FullyConnectedLayer
-	InputLayer
-	ConvolutionLayer
-	DownsamplingLayer
+	OutputLayer:
+		FullyConnectedLayer
+		InputLayer
+		ConvolutionLayer
+		DownsamplingLayer
 
-ConvolutionLayer:
-	InputLayer
-	ConvolutionLayer
-	DownsamplingLayer
+	ConvolutionLayer:
+		InputLayer
+		ConvolutionLayer
+		DownsamplingLayer
 
-DownsamplingLayer:
-	ConvolutionLayer
-	DownsamplingLayer
-	InputLayer
+	DownsamplingLayer:
+		ConvolutionLayer
+		DownsamplingLayer
+		InputLayer
 
-InputLayer:
-	-
+	InputLayer:
+		-
 
-Oddzielić funkcjonalność drukowania outputu od modelu
+X Oddzielić funkcjonalność drukowania outputu od modelu
+
+zrobić custom exceptions
 
 przerobić warstwy na propotypy
+
+wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
+
+InputLayer - prototyp
+_InputLayer - faktyczna warstwa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mozliwosc zapisu modelu do pliku

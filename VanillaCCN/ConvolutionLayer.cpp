@@ -4,11 +4,12 @@
 #include <vector>
 #include "MatrixConv.h"
 #include <string>
+#include "Exceptions.h"
 
 ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
 	: Layer2D(numberOfFeatureDetectors, TBD, TBD), featureDetectorHeight{ featureDetectorHeight }, featureDetectorWidth{ featureDetectorWidth }
 {
-	if (featureDetectorHeight < 1 || featureDetectorWidth < 1) throw std::exception("ERROR: bad ConvolutionLayer initialization");
+	if (featureDetectorHeight < 1 || featureDetectorWidth < 1) throw LayerCreatingException("ERROR: bad ConvolutionLayer initialization");
 	//featureDetectors = std::vector<FeatureDetector>(numberOfFeatureDetectors, FeatureDetector{ featureDetectorHeight, featureDetectorWidth });
 }
 
@@ -33,7 +34,7 @@ void ConvolutionLayer::populateNeurons(Layer& previousLayer)
 
 void ConvolutionLayer::populateNeurons()
 {
-	throw std::exception{ "convolution layer bad initialization - it cannot be the first layer of the network!" };
+	throw PopulatingException{ "convolution layer bad initialization - it cannot be the first layer of the network!" };
 }
 
 void ConvolutionLayer::connect(Layer& previousLayer)

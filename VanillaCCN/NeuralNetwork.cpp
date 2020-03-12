@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <memory>
 #include <iostream>
+#include "Exceptions.h"
 
 
 
@@ -17,7 +18,7 @@ void NeuralNetwork::addLayer(Layer * layer)
 	try
 	{
 		if (!dynamic_cast<Layer*>(layer)) //checks if null also
-			throw std::exception("ERROR: Bad Layer initialization, nothing was added.");
+			throw LayerCreatingException("ERROR: Bad Layer initialization, nothing was added.");
 		//layers.push_back(std::move(std::unique_ptr<Layer>(layer))); //has to be like this because, cant transform to make_unique; this doesnt work: std::unique_ptr<Layer> newLayer = std::unique_ptr<Layer>(layer);
 		layers.push_back(std::unique_ptr<Layer>(layer)); //has to be like this because, cant transform to make_unique; this doesnt work: std::unique_ptr<Layer> newLayer = std::unique_ptr<Layer>(layer);
 	}
@@ -36,9 +37,8 @@ void NeuralNetwork::compile()
 {
 	try
 	{
-		printer->print("Before populating neurons:");
 		populateLayers();
-		printer->print("Before connecting layers:");
+		printer->print("After populating layers:");
 		connectLayers();
 		printer->print("After connecting layers:");
 	}
@@ -54,7 +54,7 @@ void NeuralNetwork::compile()
 
 void NeuralNetwork::connectLayers()
 {
-	if (layers.size() < 1) throw std::exception{ "no layers to connect" };
+	if (layers.size() < 1) throw ConnectingException{ "no layers to connect" };
 	for (unsigned int i = 1; i < layers.size(); i++)
 	{
 		layers[i]->connect(*layers[i - 1]);
@@ -64,7 +64,7 @@ void NeuralNetwork::connectLayers()
 
 void NeuralNetwork::populateLayers()
 {
-	if (layers.size() < 1) throw std::exception{ "no layers to populate" };
+	if (layers.size() < 1) throw PopulatingException{ "no layers to populate" };
 	layers[0]->populateNeurons();
 	for (unsigned int i = 1; i < layers.size(); i++)
 		layers[i]->populateNeurons(*(layers[i - 1]));

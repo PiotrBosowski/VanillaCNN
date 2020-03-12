@@ -148,6 +148,7 @@
     <ClInclude Include="OutputLayer.h" />
     <ClInclude Include="NeuralNetwork.h" />
     <ClInclude Include="OutputLayerConnector.h" />
+    <ClInclude Include="Exceptions.h" />
     <ClInclude Include="TBDMarkerEnum.h" />
     <ClInclude Include="UnweightedNeuron.h" />
     <ClInclude Include="Vector.h" />
@@ -163,6 +164,7 @@
     <ClCompile Include="ConvolutionLayerConnector.cpp" />
     <ClCompile Include="DownsamplingLayer.cpp" />
     <ClCompile Include="DownsamplingLayerConnector.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
     <ClCompile Include="FeatureDetector.cpp" />
     <ClCompile Include="FullyConnectedLayer.cpp" />
     <ClCompile Include="FullyConnectedLayerConnector.cpp" />
