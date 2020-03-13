@@ -2,18 +2,14 @@
 #include <iostream>
 #include "Exceptions.h"
 
-InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D(1, inputHeight, inputWidth)
+InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D( /* number of input matrices = */ 1, inputHeight, inputWidth)
 {
 }
 
-void InputLayer::populateNeurons(Layer & previousLayer)
+void InputLayer::createContainers()
 {
-	throw PopulatingException{ "incorrect initialization of input layer - it should have got no previous layers" };
-}
-
-void InputLayer::populateNeurons()
-{
-	matrices.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
+	for(int i = 0; i < numberOfContainers; i++)
+		containers.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
 }
 
 std::string InputLayer::getSummary()
@@ -22,11 +18,6 @@ std::string InputLayer::getSummary()
 	return result;
 }
 
-void InputLayer::connect(Layer& previousLayer)
-{
-	throw ConnectingException{"cannot connect anything to input layer"};
-}
-
-InputLayer::~InputLayer()
+void InputLayer::connectToPreceeding()
 {
 }

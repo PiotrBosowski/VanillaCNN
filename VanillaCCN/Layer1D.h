@@ -1,23 +1,21 @@
 #pragma once
-#include <optional>
 #include "Layer.h"
 #include "matrix.h"
 #include "Vector.h"
+#include <vector>
+#include "Layer1D.h"
+#include <iostream>
+#include <memory>
 
 class Layer1D : public Layer
 {
 public:
-	Layer1D(int numberOfNeurons);
+	Layer1D(int vectorLength);
 
 protected:
-	int numberOfNeurons;
-	Vector neurons;
-public:
-	int getNumberOfNeurons();
-	Vector& getNeurons();
+	int vectorLength;
 
-	void populateNeurons(Layer& previousLayer) override;
-	void populateNeurons() override = 0;
-	void connect(Layer& previousLayer) override = 0;
+public:
+	void createContainers() override;
 	std::string getSummary();
 };

@@ -53,6 +53,24 @@
     <Filter Include="Source Files\Model\Exceptions">
       <UniqueIdentifier>{29de006e-12ca-4d14-bfb3-3b7131e90265}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\Connecting">
+      <UniqueIdentifier>{5d787f2d-a3cb-43f5-8979-90524e380c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Connecting\ContainersConnections">
+      <UniqueIdentifier>{817dc305-a7c8-453a-b11b-cc813de73bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Connecting\NeuronsConnections">
+      <UniqueIdentifier>{c9859e64-9eae-411e-9dec-473765a133cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Creating">
+      <UniqueIdentifier>{88200db7-9b9a-4f8f-b7e3-76e7f62ee5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Creating\ContainersCreating">
+      <UniqueIdentifier>{f22bda1d-d880-4367-b021-06e7295a0c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\Creating\NeuronsCreating">
+      <UniqueIdentifier>{e13f3ba6-8fa2-453e-a739-2a5e5c4d7098}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Layer.h">
@@ -115,9 +133,6 @@
     <ClInclude Include="DownsamplingLayerConnector.h">
       <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
     </ClInclude>
-    <ClInclude Include="Connector.h">
-      <Filter>Source Files\Model\Layers</Filter>
-    </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>Source Files\Model\Containers\Matrices</Filter>
     </ClInclude>
@@ -135,6 +150,36 @@
     </ClInclude>
     <ClInclude Include="Exceptions.h">
       <Filter>Source Files\Model\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Connector.h">
+      <Filter>Source Files\Model\Connecting</Filter>
+    </ClInclude>
+    <ClInclude Include="ContainersConnectingStrategy.h">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuronsConnectingStrategy.h">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="ContainersConnecting1to1.h">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="ContainersConnecting1toAll.h">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="ContainersConnecting1toRandom.h">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuronsConnecting1toAll.h">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuronsConnecting1toArea.h">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClInclude>
+    <ClInclude Include="ContainerPopulatingStrategy.h">
+      <Filter>Source Files\Model\Creating\NeuronsCreating</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerPopulatingStrategy.h">
+      <Filter>Source Files\Model\Creating\ContainersCreating</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -198,9 +243,6 @@
     <ClCompile Include="DownsamplingLayerConnector.cpp">
       <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
     </ClCompile>
-    <ClCompile Include="Connector.cpp">
-      <Filter>Source Files\Model\Layers</Filter>
-    </ClCompile>
     <ClCompile Include="Matrix.cpp">
       <Filter>Source Files\Model\Containers\Matrices</Filter>
     </ClCompile>
@@ -218,6 +260,36 @@
     </ClCompile>
     <ClCompile Include="Exceptions.cpp">
       <Filter>Source Files\Model\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Connector.cpp">
+      <Filter>Source Files\Model\Connecting</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainersConnectingStrategy.cpp">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronsConnectingStrategy.cpp">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainersConnecting1to1.cpp">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainersConnecting1toAll.cpp">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainersConnecting1toRandom.cpp">
+      <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronConnecting1toArea.cpp">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronsConnecting1toAll.cpp">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainerPopulatingStrategy.cpp">
+      <Filter>Source Files\Model\Creating\NeuronsCreating</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerPopulatingStrategy.cpp">
+      <Filter>Source Files\Model\Creating\ContainersCreating</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

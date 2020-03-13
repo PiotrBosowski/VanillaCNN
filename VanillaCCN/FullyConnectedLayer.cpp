@@ -1,24 +1,19 @@
 #include "FullyConnectedLayer.h"
 #include "FullyConnectedLayerConnector.h"
 #include <iostream>
+#include "ContainersConnecting1toAll.h"
+#include "NeuronsConnecting1toAll.h"
 #include "Exceptions.h"
 
-FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons) : Layer1D(numberOfNeurons)
+FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons)
+	: Layer1D{ numberOfNeurons }
 {
-}
-
-void FullyConnectedLayer::populateNeurons()
-{
-	throw PopulatingException{ "bad fully connected layer init: it cannot be initialized without any layers before!" };
+	neuronsConnectingStrategy = std::make_unique<NeuronsConnecting1toAll>();
+	containersConnectingStrategy = std::make_unique<ContainersConnecting1toAll>();
 }
 
 std::string FullyConnectedLayer::getSummary()
 {
 	std::string result = Layer1D::getSummary() + "\t\tFullyConnectedLayer\n";
 	return result;
-}
-
-void FullyConnectedLayer::connect(Layer& previousLayer)
-{
-	FullyConnectedLayerConnector(*this).connect(previousLayer);
 }

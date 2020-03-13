@@ -10,6 +10,4 @@ public:
 
 public:
 	std::string getSummary() override;
-	void populateNeurons() override;
-	void connect(Layer& previousLayer) override;
 };

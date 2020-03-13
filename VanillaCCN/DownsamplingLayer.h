@@ -15,9 +15,6 @@ public:
 	int getDownsamplerHeight();
 	int getDownsamplerWidth();
 
-	void populateNeurons(Layer& previousLayer) override;
-	void populateNeurons() override;
+	void createContainers() override;
 	std::string getSummary() override;
-	void connect(Layer& previousLayer) override;
-	virtual ~DownsamplingLayer();
 };

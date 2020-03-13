@@ -18,8 +18,6 @@ public:
 	int getFeatureDetectorHeight();
 	int getFeatureDetectorWidth();
 
-	void populateNeurons(Layer& previousLayer) override;
-	void populateNeurons() override;
-	void connect(Layer& previousLayer) override;
+	void createContainers() override;
 	std::string getSummary() override;
 };

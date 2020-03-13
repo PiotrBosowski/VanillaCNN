@@ -10,14 +10,15 @@ public:
 	NeuralNetwork(bool printingEnabled = true);
 
 private:
-	std::vector<std::unique_ptr<Layer>> layers;
+	std::vector<std::shared_ptr<Layer>> layers;
 	std::unique_ptr<ConsolePrinter> printer;
 public:
 	void addLayer(Layer* newLayer); //then transformed into unique_ptr
-	const std::vector<std::unique_ptr<Layer>>& getStructure() const;
+	const std::vector<std::shared_ptr<Layer>>& getStructure() const;
 	void compile();
 
 private:
+	void registerPreceedingLayers();
 	void populateLayers();
 	void connectLayers();
 };

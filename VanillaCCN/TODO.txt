@@ -40,9 +40,22 @@ X Możliwe połączenia:
 	InputLayer:
 		-
 
+Możliwe rodzaje połączeń kontenerowych:
+1:1 (np. convolution->downsampling)
+1:all (np. fullconnected->convolution)
+1:random (druga downsampling->convolution) 
+
+
+Możliwe rodzaje połączeń neuronowych:
+1:area (np. convolution->downsampling)
+1:all
+
+
+
+
 X Oddzielić funkcjonalność drukowania outputu od modelu
 
-zrobić custom exceptions
+X zrobić custom exceptions
 
 przerobić warstwy na propotypy
 
@@ -51,7 +64,7 @@ wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
 InputLayer - prototyp
 _InputLayer - faktyczna warstwa
 
-
+zrobić optymalne łączenie sie warstw
 
 
 
