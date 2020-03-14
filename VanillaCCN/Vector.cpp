@@ -20,6 +20,10 @@ void Vector::addNeuron(std::unique_ptr<Neuron> newNeuron)
 	row.push_back(std::move(newNeuron)); //TODO move()
 }
 
+void Vector::populateContainer(const Neuron& source, int width, int height)
+{
+}
+
 void Vector::connect(Container& preceeding)
 {
 }

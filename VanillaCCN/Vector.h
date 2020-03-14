@@ -17,6 +17,7 @@ public:
 	int getVectorHeight();
 	Neuron& getNeuron(unsigned int index);
 	void addNeuron(std::unique_ptr<Neuron> newNeuron) override;
+	void populateContainer(const Neuron& source, int width, int height = 1) override;
 	void connect(Container& preceeding) override;
 };		
 

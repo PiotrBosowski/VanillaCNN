@@ -109,12 +109,6 @@
     <ClInclude Include="FullyConnectedLayer.h">
       <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
     </ClInclude>
-    <ClInclude Include="FullyConnectedLayerConnector.h">
-      <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
-    </ClInclude>
-    <ClInclude Include="OutputLayerConnector.h">
-      <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
-    </ClInclude>
     <ClInclude Include="OutputLayer.h">
       <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
     </ClInclude>
@@ -126,12 +120,6 @@
     </ClInclude>
     <ClInclude Include="ConvolutionLayer.h">
       <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
-    </ClInclude>
-    <ClInclude Include="ConvolutionLayerConnector.h">
-      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
-    </ClInclude>
-    <ClInclude Include="DownsamplingLayerConnector.h">
-      <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
     </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>Source Files\Model\Containers\Matrices</Filter>
@@ -150,9 +138,6 @@
     </ClInclude>
     <ClInclude Include="Exceptions.h">
       <Filter>Source Files\Model\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="Connector.h">
-      <Filter>Source Files\Model\Connecting</Filter>
     </ClInclude>
     <ClInclude Include="ContainersConnectingStrategy.h">
       <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
@@ -219,12 +204,6 @@
     <ClCompile Include="FullyConnectedLayer.cpp">
       <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
     </ClCompile>
-    <ClCompile Include="FullyConnectedLayerConnector.cpp">
-      <Filter>Source Files\Model\Layers\Layers1D\FullyConnectedLayer</Filter>
-    </ClCompile>
-    <ClCompile Include="OutputLayerConnector.cpp">
-      <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
-    </ClCompile>
     <ClCompile Include="OutputLayer.cpp">
       <Filter>Source Files\Model\Layers\Layers1D\OutputLayer</Filter>
     </ClCompile>
@@ -236,12 +215,6 @@
     </ClCompile>
     <ClCompile Include="ConvolutionLayer.cpp">
       <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvolutionLayerConnector.cpp">
-      <Filter>Source Files\Model\Layers\Layers2D\ConvolutionLayer</Filter>
-    </ClCompile>
-    <ClCompile Include="DownsamplingLayerConnector.cpp">
-      <Filter>Source Files\Model\Layers\Layers2D\DownsamplingLayer</Filter>
     </ClCompile>
     <ClCompile Include="Matrix.cpp">
       <Filter>Source Files\Model\Containers\Matrices</Filter>
@@ -260,9 +233,6 @@
     </ClCompile>
     <ClCompile Include="Exceptions.cpp">
       <Filter>Source Files\Model\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="Connector.cpp">
-      <Filter>Source Files\Model\Connecting</Filter>
     </ClCompile>
     <ClCompile Include="ContainersConnectingStrategy.cpp">
       <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>

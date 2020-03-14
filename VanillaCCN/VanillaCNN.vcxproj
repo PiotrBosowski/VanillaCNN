@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Connections.h" />
-    <ClInclude Include="Connector.h" />
     <ClInclude Include="ConsolePrinter.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="ContainersConnecting1to1.h" />
@@ -137,12 +136,9 @@
     <ClInclude Include="ContainersConnectingStrategy.h" />
     <ClInclude Include="LayerPopulatingStrategy.h" />
     <ClInclude Include="ConvolutionLayer.h" />
-    <ClInclude Include="ConvolutionLayerConnector.h" />
     <ClInclude Include="DownsamplingLayer.h" />
-    <ClInclude Include="DownsamplingLayerConnector.h" />
     <ClInclude Include="FeatureDetector.h" />
     <ClInclude Include="FullyConnectedLayer.h" />
-    <ClInclude Include="FullyConnectedLayerConnector.h" />
     <ClInclude Include="InputLayer.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Layer1D.h" />
@@ -156,7 +152,6 @@
     <ClInclude Include="ContainerPopulatingStrategy.h" />
     <ClInclude Include="OutputLayer.h" />
     <ClInclude Include="NeuralNetwork.h" />
-    <ClInclude Include="OutputLayerConnector.h" />
     <ClInclude Include="Exceptions.h" />
     <ClInclude Include="TBDMarkerEnum.h" />
     <ClInclude Include="UnweightedNeuron.h" />
@@ -166,7 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Connections.cpp" />
-    <ClCompile Include="Connector.cpp" />
     <ClCompile Include="ConsolePrinter.cpp" />
     <ClCompile Include="Container.cpp" />
     <ClCompile Include="ContainersConnecting1to1.cpp" />
@@ -175,13 +169,10 @@
     <ClCompile Include="ContainersConnectingStrategy.cpp" />
     <ClCompile Include="LayerPopulatingStrategy.cpp" />
     <ClCompile Include="ConvolutionLayer.cpp" />
-    <ClCompile Include="ConvolutionLayerConnector.cpp" />
     <ClCompile Include="DownsamplingLayer.cpp" />
-    <ClCompile Include="DownsamplingLayerConnector.cpp" />
     <ClCompile Include="Exceptions.cpp" />
     <ClCompile Include="FeatureDetector.cpp" />
     <ClCompile Include="FullyConnectedLayer.cpp" />
-    <ClCompile Include="FullyConnectedLayerConnector.cpp" />
     <ClCompile Include="InputLayer.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="Layer1D.cpp" />
@@ -196,7 +187,6 @@
     <ClCompile Include="ContainerPopulatingStrategy.cpp" />
     <ClCompile Include="OutputLayer.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
-    <ClCompile Include="OutputLayerConnector.cpp" />
     <ClCompile Include="UnweightedNeuron.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WeightedNeuron.cpp" />

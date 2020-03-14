@@ -1,4 +1,5 @@
 #include "ContainersConnecting1toRandom.h"
+#include "Layer.h"
 
 ContainersConnecting1toRandom::ContainersConnecting1toRandom(Layer& previousLayer)
 	: ContainersConnectingStrategy{ previousLayer }

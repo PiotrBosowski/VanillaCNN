@@ -1,5 +1,4 @@
 #include "FullyConnectedLayer.h"
-#include "FullyConnectedLayerConnector.h"
 #include <iostream>
 #include "ContainersConnecting1toAll.h"
 #include "NeuronsConnecting1toAll.h"
@@ -9,7 +8,7 @@ FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons)
 	: Layer1D{ numberOfNeurons }
 {
 	neuronsConnectingStrategy = std::make_unique<NeuronsConnecting1toAll>();
-	containersConnectingStrategy = std::make_unique<ContainersConnecting1toAll>();
+	containersConnectingStrategy = std::make_unique<ContainersConnecting1toAll>(*this);
 }
 
 std::string FullyConnectedLayer::getSummary()

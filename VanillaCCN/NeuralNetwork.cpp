@@ -18,7 +18,7 @@ void NeuralNetwork::addLayer(Layer * layer)
 	{
 		if (layer == nullptr) //checks if null also
 			throw LayerCreatingException("ERROR: Bad Layer initialization, nothing was added.");
-		layers.push_back(std::make_shared<Layer>(layer));
+		layers.push_back(std::shared_ptr<Layer>(layer));
 	}
 	catch (const std::exception & ex)
 	{
@@ -57,7 +57,7 @@ void NeuralNetwork::registerPreceedingLayers()
 	if (layers.size() < 2) throw ConnectingException{ "not enough layers to make preceeding layers registration" };
 	for (unsigned int i = 1; i < layers.size(); i++)
 	{
-		layers[i]->setPreviousLayer(layers[layers.size() - 1]);
+		layers[i]->setPreviousLayer(layers[i - 1]);
 	}
 }
 

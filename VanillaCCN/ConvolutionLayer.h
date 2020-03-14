@@ -2,7 +2,6 @@
 #include "Layer2D.h"
 #include <vector>
 #include "FeatureDetector.h"
-#include "ConvolutionLayerConnector.h"
 #include <memory>
 
 

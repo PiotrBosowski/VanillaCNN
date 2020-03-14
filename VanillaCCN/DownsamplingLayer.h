@@ -1,6 +1,5 @@
 #pragma once
 #include "Layer2D.h"
-#include "DownsamplingLayerConnector.h"
 #include <memory>
 
 class DownsamplingLayer : public Layer2D

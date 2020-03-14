@@ -15,7 +15,7 @@ X przerobić łączenie się warstw:
 
 
 X Możliwe połączenia:
-	FullyConnectedLayer:
+	FullyConnectedLayer: 
 		FullyconnectedLayer
 		InputLayer
 		ConvolutionLayer

@@ -46,7 +46,7 @@ void ConvolutionLayer::createContainers()
 
 std::string ConvolutionLayer::getSummary()
 {
-	std::string result = Layer2D::getSummary() + "\t\tConvolutionLayer, featureDetectorHeight(" + std::to_string(featureDetectorHeight)
+	std::string result = Layer2D::getSummary() + "\t\tConvolutionLayer: featureDetectorHeight(" + std::to_string(featureDetectorHeight)
 		+ "), featureDetectorWidth(" + std::to_string(featureDetectorWidth) + ")\n";
 	return result;
 }

@@ -28,6 +28,10 @@ void Matrix::addNeuron(std::unique_ptr<Neuron> newNeuron)
 	table.push_back(std::move(newNeuron));
 }
 
+void Matrix::populateContainer(const Neuron& source, int width, int height)
+{
+}
+
 void Matrix::connect(Container& preceeding)
 {
 }

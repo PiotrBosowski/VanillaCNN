@@ -1,4 +1,5 @@
 #include "ContainersConnecting1toAll.h"
+#include "Layer.h"
 
 ContainersConnecting1toAll::ContainersConnecting1toAll(Layer& sourceLayer)
 	: ContainersConnectingStrategy{sourceLayer}

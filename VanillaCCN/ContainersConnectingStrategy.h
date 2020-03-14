@@ -1,5 +1,5 @@
 #pragma once
-#include "Layer.h"
+class Layer;
 
 class ContainersConnectingStrategy
 {

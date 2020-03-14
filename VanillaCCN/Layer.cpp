@@ -1,6 +1,5 @@
 #include "Layer.h"
 #include <iostream>
-#include "Connector.h"
 
 Layer::Layer(int numberOfContainers)
 	: numberOfContainers{numberOfContainers}

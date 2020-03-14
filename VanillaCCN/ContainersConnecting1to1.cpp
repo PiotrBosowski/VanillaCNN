@@ -1,5 +1,6 @@
 #include "ContainersConnecting1to1.h"
 #include "Exceptions.h"
+#include "Layer.h"
 
 ContainersConnecting1to1::ContainersConnecting1to1(Layer& sourceLayer)
 	: ContainersConnectingStrategy{ sourceLayer }

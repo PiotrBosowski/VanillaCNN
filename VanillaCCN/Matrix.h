@@ -1,6 +1,5 @@
 #pragma once
 #include <vector>
-#include <memory>
 #include "Neuron.h"
 #include "Container.h"
 
@@ -19,5 +18,6 @@ public:
 	int getMatrixWidth();
 	Neuron& getNeuron(unsigned int row, unsigned int column);
 	void addNeuron(std::unique_ptr<Neuron> newNeuron) override;
+	void populateContainer(const Neuron& source, int width, int height = 1) override;
 	void connect(Container& preceeding) override;
 };
