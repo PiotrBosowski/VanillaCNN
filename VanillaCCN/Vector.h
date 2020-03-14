@@ -1,5 +1,6 @@
 #pragma once
 #include "Container.h"
+#include "NeuronsConnectingStrategy.h"
 #include <vector>
 #include <memory>
 #include "Neuron.h"
@@ -7,7 +8,7 @@
 class Vector : public Container
 {
 public: 
-	Vector(int vectorHeight);
+	Vector(NeuronsConnectingStrategy& neuronsConnectingStrategy, int vectorHeight);
 
 private:
 	int vectorHeight;

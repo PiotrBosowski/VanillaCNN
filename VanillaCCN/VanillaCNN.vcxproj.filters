@@ -249,9 +249,6 @@
     <ClCompile Include="ContainersConnecting1toRandom.cpp">
       <Filter>Source Files\Model\Connecting\ContainersConnections</Filter>
     </ClCompile>
-    <ClCompile Include="NeuronConnecting1toArea.cpp">
-      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
-    </ClCompile>
     <ClCompile Include="NeuronsConnecting1toAll.cpp">
       <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
     </ClCompile>
@@ -260,6 +257,9 @@
     </ClCompile>
     <ClCompile Include="LayerPopulatingStrategy.cpp">
       <Filter>Source Files\Model\Creating\ContainersCreating</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronsConnecting1toArea.cpp">
+      <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

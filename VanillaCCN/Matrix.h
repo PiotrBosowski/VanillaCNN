@@ -6,7 +6,7 @@
 class Matrix : public Container
 {
 public:
-	Matrix(int matrixHeight, int matrixWidth);
+	Matrix(NeuronsConnectingStrategy& neuronsConnectingStratetgy, int matrixHeight, int matrixWidth);
 
 private:
 	int matrixHeight;

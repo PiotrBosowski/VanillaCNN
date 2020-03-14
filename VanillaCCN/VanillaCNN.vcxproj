@@ -182,7 +182,7 @@
     <ClCompile Include="MatrixConv.cpp" />
     <ClCompile Include="Neuron.cpp" />
     <ClCompile Include="NeuronsConnecting1toAll.cpp" />
-    <ClCompile Include="NeuronConnecting1toArea.cpp" />
+    <ClCompile Include="NeuronsConnecting1toArea.cpp" />
     <ClCompile Include="NeuronsConnectingStrategy.cpp" />
     <ClCompile Include="ContainerPopulatingStrategy.cpp" />
     <ClCompile Include="OutputLayer.cpp" />

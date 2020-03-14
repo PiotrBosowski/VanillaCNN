@@ -1,7 +1,8 @@
 #include "Vector.h"
 
-Vector::Vector(int vectorHeight)
-	:vectorHeight{ vectorHeight }
+Vector::Vector(NeuronsConnectingStrategy& neuronsConnectingStrategy, int vectorHeight)
+	: Container{ neuronsConnectingStrategy },
+	vectorHeight{ vectorHeight }
 {
 }
 

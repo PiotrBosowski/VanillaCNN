@@ -40,18 +40,17 @@ X Możliwe połączenia:
 	InputLayer:
 		-
 
-Możliwe rodzaje połączeń kontenerowych:
-1:1 (np. convolution->downsampling)
-1:all (np. fullconnected->convolution)
-1:random (druga downsampling->convolution) 
+X Możliwe rodzaje połączeń kontenerowych:
+	1:1 (np. convolution->downsampling)
+	1:all (np. fullconnected->convolution)
+	1:random (druga downsampling->convolution) 
 
 
 Możliwe rodzaje połączeń neuronowych:
-1:area (np. convolution->downsampling)
-1:all
+	1:area (np. convolution->downsampling)
+	1:all
 
-
-
+Rename connect -> attach
 
 X Oddzielić funkcjonalność drukowania outputu od modelu
 

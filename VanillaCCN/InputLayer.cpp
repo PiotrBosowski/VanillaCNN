@@ -9,7 +9,7 @@ InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D( /* number of 
 void InputLayer::createContainers()
 {
 	for(int i = 0; i < numberOfContainers; i++)
-		containers.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
+		containers.push_back(std::make_unique<Matrix>(*neuronsConnectingStrategy, matrixHeight, matrixWidth));
 }
 
 std::string InputLayer::getSummary()

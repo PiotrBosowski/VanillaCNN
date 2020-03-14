@@ -13,7 +13,7 @@ DownsamplingLayer::DownsamplingLayer(int downsamplerHeight, int downsamplerWidth
 {
 	if (downsamplerHeight < 1 || downsamplerWidth < 1) throw LayerCreatingException("ERROR: bad DownsamplingLayer initialization");
 	containersConnectingStrategy = std::make_unique<ContainersConnecting1to1>(*this);  //ContainersConnecting1toRandom -> 1 to all atm
-	neuronsConnectingStrategy = std::make_unique<NeuronsConnecting1toArea>();
+	neuronsConnectingStrategy = std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth);
 }
 
 int DownsamplingLayer::getDownsamplerHeight()
@@ -35,7 +35,7 @@ void DownsamplingLayer::createContainers()
 		matrixHeight = previousLayer2D.getMatrixHeight() / this->getDownsamplerHeight();
 		matrixWidth = previousLayer2D.getMatrixWidth() / this->getDownsamplerWidth();
 		for (int h = 0; h < numberOfContainers; h++)
-			containers.push_back(std::make_unique<Matrix>(matrixHeight, matrixWidth));
+			containers.push_back(std::make_unique<Matrix>(*neuronsConnectingStrategy, matrixHeight, matrixWidth));
 	}
 	catch (const std::bad_cast & _)
 	{

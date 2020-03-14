@@ -14,7 +14,7 @@ Layer1D::Layer1D(int vectorLength)
 void Layer1D::createContainers()
 {
 	for (int i = 0; i < numberOfContainers; i++)
-		containers.push_back(std::make_unique<Vector>(vectorLength));
+		containers.push_back(std::make_unique<Vector>(*neuronsConnectingStrategy, vectorLength));
 }
 
 std::string Layer1D::getSummary()

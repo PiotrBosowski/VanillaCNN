@@ -1,8 +1,10 @@
 #include "Matrix.h"
 #include "Exceptions.h"
 
-Matrix::Matrix(int matrixHeight, int matrixWidth)
-	: matrixHeight{matrixHeight}, matrixWidth{matrixWidth}
+Matrix::Matrix(NeuronsConnectingStrategy& neuronsConnectingStrategy, int matrixHeight, int matrixWidth)
+	: Container{neuronsConnectingStrategy},
+	matrixHeight{ matrixHeight },
+	matrixWidth{ matrixWidth }
 {
 	if (matrixHeight < 1 || matrixWidth < 1) throw LayerCreatingException("bad matrix initialization");
 	table = std::vector<std::unique_ptr<Neuron>>((long)matrixHeight * (long)matrixWidth);
