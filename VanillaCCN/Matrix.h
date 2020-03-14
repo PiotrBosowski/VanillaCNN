@@ -6,7 +6,7 @@
 class Matrix : public Container
 {
 public:
-	Matrix(NeuronsConnectingStrategy& neuronsConnectingStratetgy, int matrixHeight, int matrixWidth);
+	Matrix(NeuronFactory& neuronFactory, NeuronsConnectingStrategy& neuronsConnectingStratetgy, int matrixHeight, int matrixWidth);
 
 private:
 	int matrixHeight;
@@ -16,8 +16,7 @@ private:
 public:
 	int getMatrixHeight();
 	int getMatrixWidth();
+	Neuron& getNeuron(unsigned int index) override;
 	Neuron& getNeuron(unsigned int row, unsigned int column);
-	void addNeuron(std::unique_ptr<Neuron> newNeuron) override;
-	void populateContainer(const Neuron& source, int width, int height = 1) override;
-	void connect(Container& preceeding) override;
+	unsigned int getNumberOfNeurons() override;
 };

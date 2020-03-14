@@ -71,6 +71,9 @@
     <Filter Include="Source Files\Model\Creating\NeuronsCreating">
       <UniqueIdentifier>{e13f3ba6-8fa2-453e-a739-2a5e5c4d7098}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Model\Neurons\Factories">
+      <UniqueIdentifier>{7fb4a64a-bedd-48cf-9ca9-a27860c56cbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Layer.h">
@@ -166,6 +169,21 @@
     <ClInclude Include="LayerPopulatingStrategy.h">
       <Filter>Source Files\Model\Creating\ContainersCreating</Filter>
     </ClInclude>
+    <ClInclude Include="NeuronFactory.h">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightedNeuronFactory.h">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="UnweightedNeuronFactory.h">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightlessNeuron.h">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClInclude>
+    <ClInclude Include="WeightlessNeuronFactory.h">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -260,6 +278,21 @@
     </ClCompile>
     <ClCompile Include="NeuronsConnecting1toArea.cpp">
       <Filter>Source Files\Model\Connecting\NeuronsConnections</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuronFactory.cpp">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightedNeuronFactory.cpp">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="UnweightedNeuronFactory.cpp">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightlessNeuron.cpp">
+      <Filter>Source Files\Model\Neurons</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightlessNeuronFactory.cpp">
+      <Filter>Source Files\Model\Neurons\Factories</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

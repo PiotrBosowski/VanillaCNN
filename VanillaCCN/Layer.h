@@ -20,6 +20,7 @@ protected:
 	std::unique_ptr<NeuronsConnectingStrategy> neuronsConnectingStrategy;
 	std::unique_ptr<LayerPopulatingStrategy> containersPopulatingStrategy;
 	std::unique_ptr<ContainerPopulatingStrategy> neuronsPopulatingStrategy;
+	std::unique_ptr<NeuronFactory> neuronFactory;
 	std::shared_ptr<Layer> previousLayer;
 
 	std::vector<std::unique_ptr<Container>> containers;

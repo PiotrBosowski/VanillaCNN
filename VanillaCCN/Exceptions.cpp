@@ -19,3 +19,8 @@ LayerCreatingException::LayerCreatingException(const char info[])
 	: exception{ info }
 {
 }
+
+ContainerOutOfRangeException::ContainerOutOfRangeException()
+	: exception{ "Tried to access neurons beyond containers limits." }
+{
+}

@@ -9,4 +9,5 @@ private:
 	std::vector<double> weights;
 public:
 	double get(int index);
+	void add();
 };

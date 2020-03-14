@@ -56,18 +56,16 @@ X Oddzielić funkcjonalność drukowania outputu od modelu
 
 X zrobić custom exceptions
 
-przerobić warstwy na propotypy
+X dokończyć neuronsConnectingStrategies
 
-wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
+  przerobić warstwy na propotypy
 
-InputLayer - prototyp
-_InputLayer - faktyczna warstwa
+  wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
 
-zrobić optymalne łączenie sie warstw
+  InputLayer - prototyp
+  _InputLayer - faktyczna warstwa
 
-
-
-
+	zrobić optymalne łączenie sie warstw
 
 
 
@@ -76,4 +74,8 @@ zrobić optymalne łączenie sie warstw
 
 
 
-mozliwosc zapisu modelu do pliku
+
+
+
+
+	mozliwosc zapisu modelu do pliku

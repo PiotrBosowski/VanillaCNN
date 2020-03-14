@@ -1,9 +1,12 @@
 #include "Vector.h"
+#include "Exceptions.h"
 
-Vector::Vector(NeuronsConnectingStrategy& neuronsConnectingStrategy, int vectorHeight)
-	: Container{ neuronsConnectingStrategy },
+Vector::Vector(NeuronFactory& neuronFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy, int vectorHeight)
+	: Container{neuronFactory, neuronsConnectingStrategy },
 	vectorHeight{ vectorHeight }
 {
+	for(int i = 0; i < vectorHeight; i++)
+		row.push_back(std::move(neuronFactory.createNeuron()));
 }
 
 int Vector::getVectorHeight()
@@ -13,18 +16,12 @@ int Vector::getVectorHeight()
 
 Neuron& Vector::getNeuron(unsigned int index)
 {
-	return *row[index];
+	if (index < row.size())
+		return *row[index];
+	else throw ContainerOutOfRangeException{};
 }
 
-void Vector::addNeuron(std::unique_ptr<Neuron> newNeuron)
+unsigned int Vector::getNumberOfNeurons()
 {
-	row.push_back(std::move(newNeuron)); //TODO move()
-}
-
-void Vector::populateContainer(const Neuron& source, int width, int height)
-{
-}
-
-void Vector::connect(Container& preceeding)
-{
+	return vectorHeight;
 }

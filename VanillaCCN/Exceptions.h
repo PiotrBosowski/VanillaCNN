@@ -24,3 +24,9 @@ class LayerCreatingException : public std::exception
 public:
 	LayerCreatingException(const char info[]);
 };
+
+class ContainerOutOfRangeException : public std::exception
+{
+public:
+	ContainerOutOfRangeException();
+};

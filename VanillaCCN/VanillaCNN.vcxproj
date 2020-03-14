@@ -146,6 +146,7 @@
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MatrixConv.h" />
     <ClInclude Include="Neuron.h" />
+    <ClInclude Include="NeuronFactory.h" />
     <ClInclude Include="NeuronsConnecting1toAll.h" />
     <ClInclude Include="NeuronsConnecting1toArea.h" />
     <ClInclude Include="NeuronsConnectingStrategy.h" />
@@ -155,8 +156,12 @@
     <ClInclude Include="Exceptions.h" />
     <ClInclude Include="TBDMarkerEnum.h" />
     <ClInclude Include="UnweightedNeuron.h" />
+    <ClInclude Include="UnweightedNeuronFactory.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="WeightedNeuron.h" />
+    <ClInclude Include="WeightedNeuronFactory.h" />
+    <ClInclude Include="WeightlessNeuron.h" />
+    <ClInclude Include="WeightlessNeuronFactory.h" />
     <ClInclude Include="Weights.h" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +186,7 @@
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="MatrixConv.cpp" />
     <ClCompile Include="Neuron.cpp" />
+    <ClCompile Include="NeuronFactory.cpp" />
     <ClCompile Include="NeuronsConnecting1toAll.cpp" />
     <ClCompile Include="NeuronsConnecting1toArea.cpp" />
     <ClCompile Include="NeuronsConnectingStrategy.cpp" />
@@ -188,8 +194,12 @@
     <ClCompile Include="OutputLayer.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="UnweightedNeuron.cpp" />
+    <ClCompile Include="UnweightedNeuronFactory.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WeightedNeuron.cpp" />
+    <ClCompile Include="WeightedNeuronFactory.cpp" />
+    <ClCompile Include="WeightlessNeuron.cpp" />
+    <ClCompile Include="WeightlessNeuronFactory.cpp" />
     <ClCompile Include="Weights.cpp" />
   </ItemGroup>
   <ItemGroup>

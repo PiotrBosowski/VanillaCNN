@@ -7,6 +7,7 @@
 #include "MatrixConv.h"
 #include <string>
 #include "Exceptions.h"
+#include "WeightlessNeuronFactory.h"
 
 ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
 	: Layer2D(numberOfFeatureDetectors, TBD, TBD),
@@ -16,6 +17,7 @@ ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDete
 	if (featureDetectorHeight < 1 || featureDetectorWidth < 1) throw LayerCreatingException("ERROR: bad ConvolutionLayer initialization");
 	containersConnectingStrategy = std::make_unique<ContainersConnecting1toAll>(*this);  //ContainersConnecting1toRandom -> 1 to all atm
 	neuronsConnectingStrategy = std::make_unique<NeuronsConnecting1toAll>();
+	neuronFactory = std::make_unique<WeightlessNeuronFactory>();
 }
 
 int ConvolutionLayer::getFeatureDetectorHeight()
@@ -36,7 +38,7 @@ void ConvolutionLayer::createContainers()
 		matrixHeight = previousLayer2D.getMatrixHeight() - (this->getFeatureDetectorHeight() / 2) * 2; //(5 -> 4 etc.) 
 		matrixWidth = previousLayer2D.getMatrixWidth() - (this->getFeatureDetectorWidth() / 2) * 2;
 		for (int i = 0; i < numberOfContainers; i++)
-			containers.push_back(std::make_unique<Matrix>(*neuronsConnectingStrategy, matrixHeight, matrixWidth));
+			containers.push_back(std::make_unique<Matrix>(*neuronFactory, *neuronsConnectingStrategy, matrixHeight, matrixWidth));
 	}
 	catch (const std::bad_cast& _)
 	{

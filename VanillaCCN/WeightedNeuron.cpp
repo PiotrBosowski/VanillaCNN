@@ -1,9 +1,4 @@
 #include "WeightedNeuron.h"
-
-WeightedNeuron::WeightedNeuron()
-{
-}
-
 void WeightedNeuron::calculateValue()
 {
 	value = 0;
@@ -11,4 +6,10 @@ void WeightedNeuron::calculateValue()
 	{
 		value += connections.getValue(i) * weights.get(i);
 	}
+}
+
+void WeightedNeuron::connect(Neuron& preceeding)
+{
+	connections.add(preceeding);
+	weights.add();
 }

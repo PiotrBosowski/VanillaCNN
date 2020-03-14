@@ -1,13 +1,16 @@
 #include "Matrix.h"
 #include "Exceptions.h"
 
-Matrix::Matrix(NeuronsConnectingStrategy& neuronsConnectingStrategy, int matrixHeight, int matrixWidth)
-	: Container{neuronsConnectingStrategy},
+Matrix::Matrix(NeuronFactory& neuronFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy, int matrixHeight, int matrixWidth)
+	: Container{neuronFactory, neuronsConnectingStrategy},
 	matrixHeight{ matrixHeight },
 	matrixWidth{ matrixWidth }
 {
 	if (matrixHeight < 1 || matrixWidth < 1) throw LayerCreatingException("bad matrix initialization");
-	table = std::vector<std::unique_ptr<Neuron>>((long)matrixHeight * (long)matrixWidth);
+	for (int i = 0; i < matrixWidth * matrixHeight; i++)
+	{
+		table.push_back(neuronFactory.createNeuron());
+	}
 }
 
 int Matrix::getMatrixHeight()
@@ -20,20 +23,21 @@ int Matrix::getMatrixWidth()
 	return matrixWidth;
 }
 
+Neuron& Matrix::getNeuron(unsigned int index)
+{
+	if (index < table.size())
+		return *table[index];
+	else throw ContainerOutOfRangeException();
+}
+
 Neuron& Matrix::getNeuron(unsigned int row, unsigned int column)
 {
-	return *table[(unsigned long)row * (unsigned long)matrixWidth + column];
+	if(row * column < table.size())
+		return *table[(unsigned long)row * (unsigned long)matrixWidth + column];
+	else throw ContainerOutOfRangeException();
 }
 
-void Matrix::addNeuron(std::unique_ptr<Neuron> newNeuron)
+unsigned int Matrix::getNumberOfNeurons()
 {
-	table.push_back(std::move(newNeuron));
-}
-
-void Matrix::populateContainer(const Neuron& source, int width, int height)
-{
-}
-
-void Matrix::connect(Container& preceeding)
-{
+	return matrixWidth * matrixHeight;
 }

@@ -4,6 +4,7 @@
 #include "FullyConnectedLayer.h"
 #include "ContainersConnecting1toAll.h"
 #include "NeuronsConnecting1toAll.h"
+#include "WeightedNeuronFactory.h"
 
 
 OutputLayer::OutputLayer(int numberOfNeurons)
@@ -11,6 +12,7 @@ OutputLayer::OutputLayer(int numberOfNeurons)
 {
 	neuronsConnectingStrategy = std::make_unique<NeuronsConnecting1toAll>();
 	containersConnectingStrategy = std::make_unique<ContainersConnecting1toAll>(*this);
+	neuronFactory = std::make_unique<WeightedNeuronFactory>();
 }
 
 std::string OutputLayer::getSummary()
