@@ -1,7 +1,12 @@
 #include "UnweightedNeuronFactory.h"
 #include "UnweightedNeuron.h"
 
+UnweightedNeuronFactory::UnweightedNeuronFactory(Weights& weights)
+	: weights{ weights }
+{
+}
+
 std::unique_ptr<Neuron> UnweightedNeuronFactory::createNeuron()
 {
-	return std::unique_ptr<UnweightedNeuron>();
+	return std::make_unique<UnweightedNeuron>(weights);
 }

@@ -3,17 +3,26 @@
 FeatureDetector::FeatureDetector(int height, int width)
 	: detectorHeight{ height }, detectorWidth{width}
 {
-	featureMatrix = std::vector<double>(height * width);
+	weights = std::vector<double>(height * width);
 	randomizeWeights();
 }
 
 void FeatureDetector::randomizeWeights()
 {
-	for (double& featureCell : featureMatrix)
+	for (double& featureCell : weights)
 		featureCell = rand() / RAND_MAX;
 }
 
-double FeatureDetector::getFeatureWeight(int index)
+double FeatureDetector::getWeight(int height, int width)
 {
-	return featureMatrix[index];
+	if (height < detectorHeight && width < detectorHeight)
+		return weights[height * detectorHeight + width];
+	else throw std::exception{ "przypau" };
 }
+
+void FeatureDetector::add()
+{
+	throw std::exception{ "cant manually add a weight to a feature detector" };
+}
+
+

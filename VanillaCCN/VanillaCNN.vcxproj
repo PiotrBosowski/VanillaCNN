@@ -134,7 +134,6 @@
     <ClInclude Include="ContainersConnecting1toAll.h" />
     <ClInclude Include="ContainersConnecting1toRandom.h" />
     <ClInclude Include="ContainersConnectingStrategy.h" />
-    <ClInclude Include="LayerPopulatingStrategy.h" />
     <ClInclude Include="ConvolutionLayer.h" />
     <ClInclude Include="DownsamplingLayer.h" />
     <ClInclude Include="FeatureDetector.h" />
@@ -150,7 +149,8 @@
     <ClInclude Include="NeuronsConnecting1toAll.h" />
     <ClInclude Include="NeuronsConnecting1toArea.h" />
     <ClInclude Include="NeuronsConnectingStrategy.h" />
-    <ClInclude Include="ContainerPopulatingStrategy.h" />
+    <ClInclude Include="OutputSource.h" />
+    <ClInclude Include="OutputPrinter.h" />
     <ClInclude Include="OutputLayer.h" />
     <ClInclude Include="NeuralNetwork.h" />
     <ClInclude Include="Exceptions.h" />
@@ -172,7 +172,6 @@
     <ClCompile Include="ContainersConnecting1toAll.cpp" />
     <ClCompile Include="ContainersConnecting1toRandom.cpp" />
     <ClCompile Include="ContainersConnectingStrategy.cpp" />
-    <ClCompile Include="LayerPopulatingStrategy.cpp" />
     <ClCompile Include="ConvolutionLayer.cpp" />
     <ClCompile Include="DownsamplingLayer.cpp" />
     <ClCompile Include="Exceptions.cpp" />
@@ -186,11 +185,11 @@
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="MatrixConv.cpp" />
     <ClCompile Include="Neuron.cpp" />
-    <ClCompile Include="NeuronFactory.cpp" />
     <ClCompile Include="NeuronsConnecting1toAll.cpp" />
     <ClCompile Include="NeuronsConnecting1toArea.cpp" />
     <ClCompile Include="NeuronsConnectingStrategy.cpp" />
-    <ClCompile Include="ContainerPopulatingStrategy.cpp" />
+    <ClCompile Include="OutputSource.cpp" />
+    <ClCompile Include="OutputPrinter.cpp" />
     <ClCompile Include="OutputLayer.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="UnweightedNeuron.cpp" />

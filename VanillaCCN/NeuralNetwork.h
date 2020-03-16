@@ -2,20 +2,21 @@
 #include "Layer.h"
 #include <vector>
 #include <memory>
-#include "ConsolePrinter.h"
+#include "OutputSource.h"
+#include "OutputPrinter.h"
 
-class NeuralNetwork
+class NeuralNetwork : public OutputSource
 {
 public:
 	NeuralNetwork(bool printingEnabled = true);
 
 private:
 	std::vector<std::shared_ptr<Layer>> layers;
-	std::unique_ptr<ConsolePrinter> printer;
+	std::unique_ptr<OutputPrinter> printer;
 public:
 	void addLayer(Layer* newLayer); //then transformed into unique_ptr
-	const std::vector<std::shared_ptr<Layer>>& getStructure() const;
 	void compile();
+	const std::vector<std::shared_ptr<Layer>>& getStructure() const override;
 
 private:
 	void registerPreceedingLayers();

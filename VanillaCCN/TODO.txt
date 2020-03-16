@@ -46,11 +46,11 @@ X Możliwe rodzaje połączeń kontenerowych:
 	1:random (druga downsampling->convolution) 
 
 
-Możliwe rodzaje połączeń neuronowych:
+X Możliwe rodzaje połączeń neuronowych:
 	1:area (np. convolution->downsampling)
 	1:all
 
-Rename connect -> attach
+//Rename connect -> attach
 
 X Oddzielić funkcjonalność drukowania outputu od modelu
 
@@ -59,23 +59,32 @@ X zrobić custom exceptions
 X dokończyć neuronsConnectingStrategies
 
   przerobić warstwy na propotypy
-
-  wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
-
   InputLayer - prototyp
   _InputLayer - faktyczna warstwa
 
-	zrobić optymalne łączenie sie warstw
+  wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
+
+
+
+X zrobić optymalne łączenie sie warstw
 
 
 
 
+dorobić containers-> 1toRandom
 
-
-
+posprzątać w konstruktorach warstw
 
 
 
 
 
 	mozliwosc zapisu modelu do pliku
+
+
+
+commit:
+remove unused classes
+add OutputPrinter and OutputSource abstraction
+make FeatureDetector inherit from Weights
+fix unweightedNeuron populating

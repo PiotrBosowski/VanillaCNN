@@ -1,7 +1,6 @@
 #pragma once
-#include "Neuron.h"
 #include "NeuronFactory.h"
-#include <memory>
+#include "WeightedNeuron.h"
 
 class WeightedNeuronFactory : public NeuronFactory
 {

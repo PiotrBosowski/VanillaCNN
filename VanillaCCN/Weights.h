@@ -5,9 +5,9 @@ class Weights
 {
 public:
 	Weights();
-private:
+protected:
 	std::vector<double> weights;
 public:
-	double get(int index);
-	void add();
+	double getWeight(int index);
+	virtual void add(); //FeatureDetector overrides it so u cant use the function unintentionally
 };

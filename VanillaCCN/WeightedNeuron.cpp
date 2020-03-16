@@ -1,10 +1,11 @@
 #include "WeightedNeuron.h"
+
 void WeightedNeuron::calculateValue()
 {
-	value = 0;
-	for (int i = 0; i < connections.size(); i++)
+	value = 0.0;
+	for (int i = 0; i < connections.getNumberOfConnections(); i++)
 	{
-		value += connections.getValue(i) * weights.get(i);
+		value += connections.getNeuronsValue(i) * weights.getWeight(i);
 	}
 }
 

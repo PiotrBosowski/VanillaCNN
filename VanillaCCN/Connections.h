@@ -10,7 +10,7 @@ private:
 	std::vector<std::reference_wrapper<Neuron>> connections;
 public:
 	void add(Neuron& newConnection);
-	int size();
+	int getNumberOfConnections();
 	const Neuron& get(int index);
-	double getValue(int index);
+	double getNeuronsValue(int index);
 };

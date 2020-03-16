@@ -1,19 +1,16 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "OutputSource.h"
+#include "OutputPrinter.h"
 
-class NeuralNetwork;
-
-class ConsolePrinter
+class ConsolePrinter : public OutputPrinter
 {
 public:
-	ConsolePrinter(const NeuralNetwork& source, bool printingEnabled = true);
+	ConsolePrinter(const OutputSource& source, bool printingEnabled = true);
 
-private:
-	const NeuralNetwork& motherNetwork;
-	bool printingEnabled;
 public:
-	void print(std::string description = "");
-	void printError(std::string error);
+	void print(std::string description = "") override;
+	void printError(std::string error) override;
 };
 

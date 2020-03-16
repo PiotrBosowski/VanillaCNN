@@ -4,8 +4,6 @@
 #include "Container.h"
 #include "ContainersConnectingStrategy.h"
 #include "NeuronsConnectingStrategy.h"
-#include "ContainerPopulatingStrategy.h"
-#include "LayerPopulatingStrategy.h"
 #include <memory>
 
 class Connector;
@@ -18,11 +16,8 @@ public:
 protected:
 	std::unique_ptr<ContainersConnectingStrategy> containersConnectingStrategy;
 	std::unique_ptr<NeuronsConnectingStrategy> neuronsConnectingStrategy;
-	std::unique_ptr<LayerPopulatingStrategy> containersPopulatingStrategy;
-	std::unique_ptr<ContainerPopulatingStrategy> neuronsPopulatingStrategy;
 	std::unique_ptr<NeuronFactory> neuronFactory;
 	std::shared_ptr<Layer> previousLayer;
-
 	std::vector<std::unique_ptr<Container>> containers;
 	int numberOfContainers;
 

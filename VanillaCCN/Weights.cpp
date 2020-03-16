@@ -4,7 +4,7 @@ Weights::Weights()
 {
 }
 
-double Weights::get(int index)
+double Weights::getWeight(int index)
 {
 	return weights[index];
 }

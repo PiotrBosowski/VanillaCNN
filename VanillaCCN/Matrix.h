@@ -11,7 +11,7 @@ public:
 private:
 	int matrixHeight;
 	int matrixWidth;
-	std::vector<std::unique_ptr<Neuron>> table; //TODO: simplify implementation of neurons matrix
+	std::vector<std::unique_ptr<Neuron>> table;
 
 public:
 	int getMatrixHeight();

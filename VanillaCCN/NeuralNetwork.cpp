@@ -4,6 +4,7 @@
 #include <memory>
 #include <iostream>
 #include "Exceptions.h"
+#include "ConsolePrinter.h"
 
 
 NeuralNetwork::NeuralNetwork(bool printingEnabled)
