@@ -19,7 +19,6 @@ int main()
 		firstOfTheYear.addLayer(new FullyConnectedLayer(120));
 		firstOfTheYear.addLayer(new FullyConnectedLayer(100));
 		firstOfTheYear.addLayer(new OutputLayer(10));
-
 	}
 	catch (const std::exception& ex)
 	{

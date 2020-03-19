@@ -3,7 +3,8 @@
 #include "Exceptions.h"
 #include "WeightlessNeuronFactory.h"
 
-InputLayer::InputLayer(int inputHeight, int inputWidth) : Layer2D( /* number of input matrices = */ 1, inputHeight, inputWidth)
+InputLayer::InputLayer(int inputHeight, int inputWidth)
+	: Layer2D( /* number of input matrices = */ 1, inputHeight, inputWidth)
 {
 	neuronFactory = std::make_unique<WeightlessNeuronFactory>();
 }

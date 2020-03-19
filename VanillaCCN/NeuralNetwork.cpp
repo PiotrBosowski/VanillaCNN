@@ -1,14 +1,12 @@
 #include "NeuralNetwork.h"
-#include <time.h>
-#include <stdlib.h>
-#include <memory>
 #include <iostream>
-#include "Exceptions.h"
-#include "ConsolePrinter.h"
+#include <memory>
+#include <stdlib.h>
+#include <time.h>
 
 
 NeuralNetwork::NeuralNetwork(bool printingEnabled)
-	: printer{ std::make_unique<ConsolePrinter>(*this, printingEnabled) }
+	: OutputSource{ printingEnabled }
 {
 	srand((unsigned int)time(NULL));
 }
@@ -27,7 +25,7 @@ void NeuralNetwork::addLayer(Layer * layer)
 	}
 }
 
-const std::vector<std::shared_ptr<Layer>>& NeuralNetwork::getStructure() const
+const std::vector<std::shared_ptr<Layer>>& NeuralNetwork::getOutput() const
 {
 	return layers;
 }

@@ -18,7 +18,7 @@ void ConsolePrinter::print(std::string description)
 {
 	if (description != "")
 		std::cout << GREEN << description << RESET << std::endl;
-	auto& layers = source.getStructure();
+	auto& layers = source.getOutput();
 	for (auto& layer : layers) {
 		std::cout << layer->getSummary() << std::endl;
 	}

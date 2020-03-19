@@ -39,7 +39,8 @@ void ConvolutionLayer::createContainers()
 		matrixWidth = previousLayer2D.getMatrixWidth() - (this->getFeatureDetectorWidth() / 2) * 2;
 		for (int i = 0; i < numberOfContainers; i++)
 		{
-			containers.push_back(std::make_unique<MatrixConv>(*neuronFactory, *neuronsConnectingStrategy, matrixHeight, matrixWidth));
+			
+			containers.push_back(std::make_unique<MatrixConv>(*neuronFactory, *neuronsConnectingStrategy, matrixHeight, matrixWidth, featureDetectorHeight, featureDetectorWidth));
 		}
 	}
 	catch (const std::bad_cast& _)

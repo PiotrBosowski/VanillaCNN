@@ -81,10 +81,4 @@ posprzątać w konstruktorach warstw
 
 	mozliwosc zapisu modelu do pliku
 
-
-
-commit:
-remove unused classes
-add OutputPrinter and OutputSource abstraction
-make FeatureDetector inherit from Weights
-fix unweightedNeuron populating
+	add network constructor

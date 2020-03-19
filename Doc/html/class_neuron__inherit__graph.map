@@ -1,0 +1,6 @@
+<map id="Neuron" name="Neuron">
+<area shape="rect" id="node1" title="Base class for all neuron types." alt="" coords="189,5,251,32"/>
+<area shape="rect" id="node2" href="$class_unweighted_neuron.html" title=" " alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$class_weighted_neuron.html" title=" " alt="" coords="161,80,279,107"/>
+<area shape="rect" id="node4" href="$class_weightless_neuron.html" title=" " alt="" coords="304,80,432,107"/>
+</map>

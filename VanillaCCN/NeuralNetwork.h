@@ -1,9 +1,9 @@
 #pragma once
-#include "Layer.h"
-#include <vector>
 #include <memory>
+#include <vector>
+#include "Exceptions.h"
+#include "Layer.h"
 #include "OutputSource.h"
-#include "OutputPrinter.h"
 
 class NeuralNetwork : public OutputSource
 {
@@ -12,11 +12,10 @@ public:
 
 private:
 	std::vector<std::shared_ptr<Layer>> layers;
-	std::unique_ptr<OutputPrinter> printer;
 public:
-	void addLayer(Layer* newLayer); //then transformed into unique_ptr
+	void addLayer(Layer* newLayer);
 	void compile();
-	const std::vector<std::shared_ptr<Layer>>& getStructure() const override;
+	const std::vector<std::shared_ptr<Layer>>& getOutput() const override;
 
 private:
 	void registerPreceedingLayers();
