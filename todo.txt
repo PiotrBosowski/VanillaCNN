@@ -1,0 +1,105 @@
+X WSZYSTKIE neurony tworzone podczas kompilacji sieci, nie podczas deklarowania warstw
+
+X connectowanie się warstw
+
+X uproszczenie modelu - wykluczenie warstwy "Connect"
+
+X uproscic strukture klas neuronow
+
+X przerobić łączenie się warstw:
+	albo warstwy łączą się same -> dodanie nowego typu warstwy wiąże się ze zmianą kodu innych warstw
+	albo łączenie się nadzoruje ConnectingEngine -> dodanie nowego typu warstwy wiąże się ze zmianą kodu connectingEngine
+
+	nowy pomysł: każda klasa ma skojarzoną klasę ...Connector, która odpowiada za łączenie z poprzednią warstwą
+	vector i matrix dziedziczą ze wspólnej klasy "container" np.
+
+
+X Możliwe połączenia:
+	FullyConnectedLayer:
+		FullyconnectedLayer
+		InputLayer
+		ConvolutionLayer
+		DownsamplingLayer
+
+	OutputLayer:
+		FullyConnectedLayer
+		InputLayer
+		ConvolutionLayer
+		DownsamplingLayer
+
+	ConvolutionLayer:
+		InputLayer
+		ConvolutionLayer
+		DownsamplingLayer
+
+	DownsamplingLayer:
+		ConvolutionLayer
+		DownsamplingLayer
+		InputLayer
+
+	InputLayer:
+		-
+
+X Możliwe rodzaje połączeń kontenerowych:
+	1:1 (np. convolution->downsampling)
+	1:all (np. fullconnected->convolution)
+	1:random (druga downsampling->convolution)
+
+
+X Możliwe rodzaje połączeń neuronowych:
+	1:area (np. convolution->downsampling)
+	1:all
+
+//Rename connect -> attach
+
+X Oddzielić funkcjonalność drukowania outputu od modelu
+
+X zrobić custom exceptions
+
+X dokończyć neuronsConnectingStrategies
+
+X przerobić warstwy na propotypy
+  InputLayer - prototyp
+  _InputLayer - faktyczna warstwa
+
+  wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
+
+
+
+X zrobić optymalne łączenie sie warstw
+
+
+
+
+dorobić containers-> 1toRandom
+
+posprzątać w konstruktorach warstw
+
+
+
+
+
+	mozliwosc zapisu modelu do pliku
+
+	add network constructor
+
+	na teraz:
+X	wywalic klasy neuronowe, zostawic tylko neuron (wlasciwie to zostawic)
+X	dodac wagi lub referencje wag do klasy connection/weighted connection
+
+X	containers:
+X	weighted/unweightedvector
+X	weighted/unweightedmatrix
+
+
+X ogarnąć gita troche lepiej zeby sie nie wyjabec z rowerka XD
+
+
+add RawLayer so the users can create their own layers
+scalić neuron factory i neuron connecting factory
+scalić container factory i container connecting factory
+
+doxygen
+
+
+containers i container - kompozyt

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="VanillaCnn_Clion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/VanillaCNN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/VanillaCNN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VanillaCnn_Clion">
+				<Option output="D:/VanillaCNN/cmake-build-debug/VanillaCnn_Clion.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/VanillaCNN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 VanillaCnn_Clion"/>
+					<CompileFile command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VanillaCnn_Clion/fast">
+				<Option output="D:/VanillaCNN/cmake-build-debug/VanillaCnn_Clion.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/VanillaCNN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 VanillaCnn_Clion/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/VanillaCNN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\VanillaCNN\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/VanillaCNN/source-files/main.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/Connection.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/Connection.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/ExternallyWeightedConnection.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/ExternallyWeightedConnection.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/InternallyWeightedConnection.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/InternallyWeightedConnection.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/Weight.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Connection/Weight.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ConnectionsSet/ConnectionsSet.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ConnectionsSet/ConnectionsSet.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Container.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Container.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Docker.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Docker.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Matrices/InternallyWeightedMatrix.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Matrices/Matrix.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Matrices/Matrix.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Matrices/WeightlessMatrix.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Matrices/WeightlessMatrix.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Vectors/Vector.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Vectors/Vector.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Vectors/WeightlessVector.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Containers/Vectors/WeightlessVector.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/InputLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/InputLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/OutputLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/LayerPrototypes/PrototypeLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers1D/Layer1D.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers1D/Layer1D.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers1D/_FullyConnectedLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers1D/_OutputLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers1D/_OutputLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/_ConvolutionLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/_DownsamplingLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/_InputLayer.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Layers/Layers2D/_InputLayer.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuralNetwork.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuralNetwork.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/ExternallyWeightedNeuron.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/ExternallyWeightedNeuron.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/Neuron.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/Neuron.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/WeightlessNeuron.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/WeightlessNeuron.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/Weights.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/Neurons/Weights.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingError.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingError.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsFactories/NeuronsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/enums/TBDMarkerEnum.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/exceptions/Exceptions.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/model/exceptions/Exceptions.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/output/ConsolePrinter.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/output/ConsolePrinter.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/output/OutputPrinter.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/output/OutputPrinter.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/output/OutputSource.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/source-files/output/OutputSource.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="D:/VanillaCNN/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

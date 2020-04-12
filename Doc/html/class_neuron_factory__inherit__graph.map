@@ -1,6 +1,0 @@
-<map id="NeuronFactory" name="NeuronFactory">
-<area shape="rect" id="node1" title=" " alt="" coords="233,5,339,32"/>
-<area shape="rect" id="node2" href="$class_unweighted_neuron_factory.html" title=" " alt="" coords="5,80,180,107"/>
-<area shape="rect" id="node3" href="$class_weighted_neuron_factory.html" title=" " alt="" coords="205,80,367,107"/>
-<area shape="rect" id="node4" href="$class_weightless_neuron_factory.html" title=" " alt="" coords="392,80,564,107"/>
-</map>

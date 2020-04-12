@@ -1,5 +1,0 @@
-<map id="NeuronsConnectingStrategy" name="NeuronsConnectingStrategy">
-<area shape="rect" id="node1" title=" " alt="" coords="96,5,280,32"/>
-<area shape="rect" id="node2" href="$class_neurons_connecting1to_all.html" title=" " alt="" coords="5,80,173,107"/>
-<area shape="rect" id="node3" href="$class_neurons_connecting1to_area.html" title=" " alt="" coords="198,80,378,107"/>
-</map>

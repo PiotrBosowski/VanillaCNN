@@ -1,6 +1,0 @@
-<map id="Layer1D" name="Layer1D">
-<area shape="rect" id="node1" title=" " alt="" coords="113,80,183,107"/>
-<area shape="rect" id="node3" href="$class_fully_connected_layer.html" title=" " alt="" coords="5,155,149,181"/>
-<area shape="rect" id="node4" href="$class_output_layer.html" title=" " alt="" coords="173,155,267,181"/>
-<area shape="rect" id="node2" href="$class_layer.html" title=" " alt="" coords="121,5,175,32"/>
-</map>

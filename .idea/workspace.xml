@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="VanillaCnn_Clion" targetName="VanillaCnn_Clion" />
+    </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd9d13d1-5e36-4dea-a1d2-4269402fcc08" name="Default Changelist" comment="" />
+    <list default="true" id="fae552ec-a32c-4288-b003-302219437166" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +20,11 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ProjectId" id="1YSXk6IF8UlLQJ9hmD2rgo6LRFq" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aP6aV7WIhXJPpO1W4ExlU1wzDT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,10 +35,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VanillaCnn_Clion\source-files\model\Containers\Matrices" />
+      <recent name="D:\VanillaCnn_Clion\source-files\model\Containers\Vectors" />
+      <recent name="D:\VanillaCnn_Clion\source-files\model\ContainersFactories\MatricesFactories" />
+      <recent name="D:\VanillaCnn_Clion\source-files\model\ContainersFactories\VectorsFactories" />
+      <recent name="D:\VanillaCnn_Clion\source-files\model\Layers\Layers2D" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="VanillaCnn_Clion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VanillaCnn_Clion" TARGET_NAME="VanillaCnn_Clion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="VanillaCnn_Clion" RUN_TARGET_NAME="VanillaCnn_Clion">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -43,12 +58,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd9d13d1-5e36-4dea-a1d2-4269402fcc08" name="Default Changelist" comment="" />
-      <created>1582937109309</created>
+      <changelist id="fae552ec-a32c-4288-b003-302219437166" name="Default Changelist" comment="" />
+      <created>1586624945190</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582937109309</updated>
-      <workItem from="1582937111143" duration="1538000" />
+      <updated>1586624945190</updated>
+      <workItem from="1586624947234" duration="5060000" />
+      <workItem from="1586630172098" duration="22702000" />
     </task>
     <servers />
   </component>
@@ -56,21 +72,55 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582937993643">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="742" y="300" key="#com.intellij.ide.util.MemberChooser" timestamp="1586648288443">
+      <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160/1920.0.1920.1160/-1280.91.1280.984@0.0.1920.1160" timestamp="1582937993643" />
-    <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1582938520433">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="742" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586648288443" />
+    <state x="2662" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586625112010" />
+    <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586647053206">
+      <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160/-1280.91.1280.984@0.0.1920.1160" timestamp="1582938520433" />
-    <state x="371" y="236" width="1349" height="716" key="SettingsEditor" timestamp="1582938596878">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586647053206" />
+    <state x="2660" y="339" key="FileChooserDialogImpl" timestamp="1586625248686">
+      <screen x="1920" y="0" width="1920" height="1170" />
     </state>
-    <state x="371" y="236" width="1349" height="716" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1160/-1280.91.1280.984@0.0.1920.1160" timestamp="1582938596878" />
-    <state x="661" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1582937113237">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="2660" y="339" key="FileChooserDialogImpl/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586625248686" />
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1586630161289">
+      <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="661" y="403" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/1920.0.1920.1160/-1280.91.1280.984@0.0.1920.1160" timestamp="1582937113237" />
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586630161289" />
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586628485144" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1586630161288">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586630161288" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586628485144" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1586630161288">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586630161288" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586628485144" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1586630161288">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586630161288" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586628485144" />
+    <state x="2180" y="164" key="SettingsEditor" timestamp="1586629537568">
+      <screen x="1920" y="0" width="1920" height="1170" />
+    </state>
+    <state x="2180" y="164" key="SettingsEditor/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586629537568" />
+    <state x="2262" y="396" key="SettingsEditor/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586625901595" />
+    <state x="1944" y="-13" width="1579" height="805" maximized="true" key="dock-window-1" timestamp="1586653193526">
+      <screen x="1920" y="0" width="1920" height="1170" />
+    </state>
+    <state x="1944" y="-13" width="1579" height="805" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586653193526" />
+    <state x="701" y="228" key="refactoring.ChangeSignatureDialog" timestamp="1586630841869">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="701" y="228" key="refactoring.ChangeSignatureDialog/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586630841869" />
+    <state x="616" y="273" width="672" height="677" key="run.anything.popup" timestamp="1586646378458">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="616" y="273" width="672" height="677" key="run.anything.popup/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586646378458" />
   </component>
 </project>

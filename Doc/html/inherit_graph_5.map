@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_neuron.html" title="Base class for all neuron types." alt="" coords="5,56,68,83"/>
-<area shape="rect" id="node2" href="$class_unweighted_neuron.html" title=" " alt="" coords="116,5,247,32"/>
-<area shape="rect" id="node3" href="$class_weighted_neuron.html" title=" " alt="" coords="122,56,241,83"/>
-<area shape="rect" id="node4" href="$class_weightless_neuron.html" title=" " alt="" coords="117,107,245,133"/>
-</map>
