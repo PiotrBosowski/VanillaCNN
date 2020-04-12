@@ -73,7 +73,7 @@ X zrobić optymalne łączenie sie warstw
 
 dorobić containers-> 1toRandom
 
-posprzątać w konstruktorach warstw
+X posprzątać w konstruktorach warstw
 
 
 

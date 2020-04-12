@@ -1,0 +1,5 @@
+<map id="Connection" name="Connection">
+<area shape="rect" id="node1" title=" " alt="" coords="19,184,106,211"/>
+<area shape="rect" id="node2" href="$class_neuron.html" title="Base class for all neuron types." alt="" coords="31,95,94,121"/>
+<area shape="rect" id="node3" href="$class_connections_set.html" title=" " alt="" coords="5,5,120,32"/>
+</map>
