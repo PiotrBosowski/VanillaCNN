@@ -4,27 +4,35 @@
 
 #include "Exceptions.h"
 
-PopulatingException::PopulatingException(const char info[])
-        : exception{info}
+PopulatingException::PopulatingException(const char* details)
+        : BaseException{"Error populating the network", details}
 {
 }
 
-ConnectingException::ConnectingException(const char info[])
-        : exception{ info }
+ConnectingException::ConnectingException(const char* details)
+        : BaseException{ "Error connecting neurons/layers", details }
 {
 }
 
-CompilingException::CompilingException(const char info[])
-        : exception{ info }
+CompilingException::CompilingException(const char* details)
+        : BaseException{ "Error compiling the network", details }
 {
 }
 
-LayerCreatingException::LayerCreatingException(const char info[])
-        : exception{ info }
+LayerCreatingException::LayerCreatingException(const char* details)
+        : BaseException{ "Error creating layer", details }
 {
 }
 
-ContainerOutOfRangeException::ContainerOutOfRangeException()
-        : exception{ "Tried to access neurons beyond containers limits." }
+ContainerOutOfRangeException::ContainerOutOfRangeException(const char* details)
+        : BaseException{ "Error accessing neurons beyond containers limits.", details }
 {
+}
+
+BaseException::BaseException(const char *info, const char *details) : runtime_error(info), details_(details){
+
+}
+
+const char *BaseException::details() const {
+    return details_;
 }

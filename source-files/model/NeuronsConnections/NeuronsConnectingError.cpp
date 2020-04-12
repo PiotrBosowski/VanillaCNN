@@ -8,5 +8,5 @@
 
 void NeuronsConnectingError::connect(Container& sourceContainer, Container& previousContainer)
 {
-    throw std::exception{ "cannot connect neurons here" };
+    throw std::exception{};
 }

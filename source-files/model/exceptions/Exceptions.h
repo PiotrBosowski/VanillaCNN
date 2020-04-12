@@ -5,36 +5,47 @@
 #ifndef VANILLACNN_CLION_EXCEPTIONS_H
 #define VANILLACNN_CLION_EXCEPTIONS_H
 
-#include <exception>
+#include <stdexcept>
 
-class PopulatingException : public std::exception
+class BaseException : public std::runtime_error
 {
 public:
-    PopulatingException(const char info[]);
+    explicit BaseException(const char info[], const char details[] = "");
+    const char *details() const;
+
+private:
+    const char* details_;
+
 };
 
-class ConnectingException : public std::exception
+class PopulatingException : public BaseException
 {
 public:
-    ConnectingException(const char info[]);
+    explicit PopulatingException(const char* details = "");
 };
 
-class CompilingException : public std::exception
+class ConnectingException : public BaseException
 {
 public:
-    CompilingException(const char info[]);
+    explicit ConnectingException(const char* details = "");
 };
 
-class LayerCreatingException : public std::exception
+class CompilingException : public BaseException
 {
 public:
-    LayerCreatingException(const char info[]);
+    explicit CompilingException(const char* details = "");
 };
 
-class ContainerOutOfRangeException : public std::exception
+class LayerCreatingException : public BaseException
 {
 public:
-    ContainerOutOfRangeException();
+    explicit LayerCreatingException(const char* details = "");
+};
+
+class ContainerOutOfRangeException : public BaseException
+{
+public:
+    explicit ContainerOutOfRangeException(const char* details = "");
 };
 
 

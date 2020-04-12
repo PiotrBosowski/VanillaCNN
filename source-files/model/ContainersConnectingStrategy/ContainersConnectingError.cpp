@@ -3,6 +3,7 @@
 //
 
 #include "ContainersConnectingError.h"
+#include "../exceptions/Exceptions.h"
 #include <exception>
 
 ContainersConnectingError::ContainersConnectingError()
@@ -11,5 +12,5 @@ ContainersConnectingError::ContainersConnectingError()
 
 void ContainersConnectingError::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Layer& sourceLayer, Layer& previousLayer)
 {
-    throw std::exception{ "cannot connect containers here" };
+    throw ConnectingException{ "cannot connect containers here" };
 }

@@ -34,5 +34,6 @@ void ConsolePrinter::print(std::string description)
 
 void ConsolePrinter::printError(std::string error)
 {
-    std::cerr << RED << "ERROR: {" << error << "}" << RESET << std::endl;
+    //std::cerr << RED << "ERROR: {" << error << "}" << RESET << std::endl;
+    std::cerr  << "ERROR: " << error << std::endl;
 }
