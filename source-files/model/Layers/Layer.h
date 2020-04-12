@@ -12,25 +12,27 @@
 #include "../NeuronsFactories/NeuronsFactory.h"
 #include "../ContainersFactories/ContainersFactory.h"
 #include "../NeuronsConnections/NeuronsConnectingStrategy.h"
-#include "../Containers/Docker.h"
+#include "../Docker/Docker.h"
 #include <string>
 
 class Layer
 {
 public:
-    Layer(Layer* previousLayer, int numberOfContainers);
+    Layer(Layer* previousLayer,
+          int numberOfContainers);
 
 protected:
     int numberOfContainers;
     Layer *previousLayer;
     std::unique_ptr<Docker> docker;
+public:
+    const std::unique_ptr<Docker> &getDocker() const;
 
 public:
-    void setPreviousLayer(std::shared_ptr<Layer> previousLayer);
+    Layer *getPreviousLayer();
     virtual int getNumberOfContainers();
-    void connectToPreceding();
-    virtual std::string getSummary();
-    std::vector<std::unique_ptr<Container>>& getContainers();
+    virtual std::string getSummary() = 0;
+    const std::vector<std::unique_ptr<Container>>& getContainers();
 };
 
 

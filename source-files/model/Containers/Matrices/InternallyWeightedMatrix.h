@@ -11,7 +11,7 @@
 class InternallyWeightedMatrix : public Matrix
 {
 public:
-    InternallyWeightedMatrix(NeuronsConnectingStrategy& neuronsConnectingStrategy, int matrixHeight, int matrixWidth, int weightsHeight, int weightsWidth);
+    InternallyWeightedMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth, int weightsHeight, int weightsWidth);
 
 private:
     int weightsHeight;
@@ -20,24 +20,5 @@ private:
 };
 
 
-
-/*
-#pragma once
-#include "Matrix.h"
-#include "FeatureDetector.h"
-#include "NeuronsConnectingStrategy.h"
-
-class MatrixConv : public Matrix
-{
-public:
-	MatrixConv(NeuronFactory& neuronFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy, int matrixHeight, int matrixWidth, int featureDetectorHeight, int featureDetectorWidth);
-
-private:
-	FeatureDetector featureDetector;
-};
-
-
-
-*/
 
 #endif //VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H

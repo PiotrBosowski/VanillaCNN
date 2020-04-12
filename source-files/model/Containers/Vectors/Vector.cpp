@@ -6,11 +6,11 @@
 #include "Vector.h"
 #include "../../exceptions/Exceptions.h"
 
-Vector::Vector(int vectorHeight, NeuronsFactory& neuronFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy)
+Vector::Vector(NeuronsFactory& neuronFactory, int vectorHeight)
           : vectorHeight{ vectorHeight }
 {
     for(int i = 0; i < vectorHeight; i++)
-        row.push_back(std::move(neuronFactory.createNeuron()));
+        row.push_back(neuronFactory.createNeuron());
 }
 
 int Vector::getVectorHeight()

@@ -36,3 +36,7 @@ BaseException::BaseException(const char *info, const char *details) : runtime_er
 const char *BaseException::details() const {
     return details_;
 }
+
+NetworkCreatingException::NetworkCreatingException(const char *details)
+: BaseException("Error creating network", details) {
+}

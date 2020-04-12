@@ -15,7 +15,7 @@
 class Vector : public Container
 {
 public:
-    Vector(int vectorHeight, NeuronsFactory& neuronFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy);
+    Vector(NeuronsFactory& neuronFactory, int vectorHeight);
 
 private:
     int vectorHeight;

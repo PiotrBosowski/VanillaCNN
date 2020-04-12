@@ -13,9 +13,7 @@ class WeightlessMatricesFactory : public MatricesFactory
 {
 public:
     WeightlessMatricesFactory(int matrixHeight, int matrixWidth);
-    std::unique_ptr<Container> createContainer(ContainersConnectingStrategy& containersConnectingStrategy,
-                                               NeuronsFactory& neuronsFactory,
-                                               NeuronsConnectingStrategy& neuronsConnectingStrategy) override;
+    std::unique_ptr<Container> createContainer(NeuronsFactory& neuronsFactory) override;
 
 private:
     int matrixHeight;

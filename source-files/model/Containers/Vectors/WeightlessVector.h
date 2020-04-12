@@ -6,8 +6,10 @@
 #define VANILLACNN_CLION_WEIGHTLESSVECTOR_H
 
 #include "Vector.h"
-class UnweightedVector : public Vector
+class WeightlessVector : public Vector
 {
+public:
+    WeightlessVector(NeuronsFactory &neuronFactory, int vectorHeight);
 };
 
 

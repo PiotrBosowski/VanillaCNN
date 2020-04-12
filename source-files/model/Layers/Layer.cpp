@@ -8,14 +8,9 @@
 #include "Layer.h"
 
 Layer::Layer(Layer* previousLayer,
-        int numberOfContainers)
+             int numberOfContainers)
         : previousLayer(previousLayer), numberOfContainers(numberOfContainers)
 {
-}
-
-void Layer::setPreviousLayer(std::shared_ptr<Layer> previousLayer)
-{
-    this->previousLayer = previousLayer.get();
 }
 
 int Layer::getNumberOfContainers()
@@ -23,17 +18,15 @@ int Layer::getNumberOfContainers()
     return docker->size();
 }
 
-void Layer::connectToPreceding()
-{
-    docker->connectToPreceding(previousLayer);
-}
-
-std::string Layer::getSummary()
-{
-    return "Layer:\n";
-}
-
-std::vector<std::unique_ptr<Container>>& Layer::getContainers()
+const std::vector<std::unique_ptr<Container>>& Layer::getContainers()
 {
     return docker->getContainers();
+}
+
+Layer *Layer::getPreviousLayer() {
+    return previousLayer;
+}
+
+const std::unique_ptr<Docker> &Layer::getDocker() const {
+    return docker;
 }

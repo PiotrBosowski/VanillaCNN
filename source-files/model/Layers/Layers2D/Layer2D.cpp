@@ -18,13 +18,6 @@ Layer2D::Layer2D(Layer* previousLayer,
 {
 }
 
-std::string Layer2D::getSummary()
-{
-    std::string result = Layer::getSummary() + "\tLayer2D: numberOfMatrices(" + std::to_string(numberOfContainers)
-                         + "), matrixHeight(" + std::to_string(matrixHeight) + "), matrixWidth(" + std::to_string(matrixWidth) + ")\n";
-    return result;
-}
-
 int Layer2D::getMatrixHeight()
 {
     return matrixHeight;

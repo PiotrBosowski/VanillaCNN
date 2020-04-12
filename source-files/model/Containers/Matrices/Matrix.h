@@ -12,9 +12,9 @@
 class Matrix : public Container
 {
 public:
-    Matrix(int matrixHeight, int matrixWidth, NeuronsFactory& neuronsFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy);
+    Matrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth);
 
-private:
+protected:
     int matrixHeight;
     int matrixWidth;
     std::vector<std::unique_ptr<Neuron>> table;

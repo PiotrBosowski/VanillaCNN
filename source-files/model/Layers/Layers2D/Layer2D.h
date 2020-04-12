@@ -24,7 +24,6 @@ protected:
     int matrixWidth;
 
 public:
-    std::string getSummary() override;
     int getMatrixHeight();
     int getMatrixWidth();
 };

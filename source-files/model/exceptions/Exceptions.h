@@ -48,5 +48,12 @@ public:
     explicit ContainerOutOfRangeException(const char* details = "");
 };
 
+class NetworkCreatingException : public BaseException
+{
+public:
+    explicit NetworkCreatingException(const char* details = "");
+
+};
+
 
 #endif //VANILLACNN_CLION_EXCEPTIONS_H

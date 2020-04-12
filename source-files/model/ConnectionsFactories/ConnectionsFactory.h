@@ -1,0 +1,14 @@
+//
+// Created by piotr on 20/04/12.
+//
+
+#ifndef VANILLACNN_CLION_CONNECTIONSFACTORY_H
+#define VANILLACNN_CLION_CONNECTIONSFACTORY_H
+
+
+class ConnectionsFactory {
+
+};
+
+
+#endif //VANILLACNN_CLION_CONNECTIONSFACTORY_H

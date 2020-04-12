@@ -13,7 +13,7 @@ class ContainersConnecting1toAll : public ContainersConnectingStrategy
 {
 public:
     ContainersConnecting1toAll();
-    void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Layer& sourceLayer, Layer& previousLayer) override;
+    void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding) override;
 };
 
 

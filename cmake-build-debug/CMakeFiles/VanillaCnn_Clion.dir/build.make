@@ -486,18 +486,18 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesF
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp.s
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp
@@ -538,18 +538,18 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.s
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/Containers/Docker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/Containers/Docker.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Docker/Docker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.cpp
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/Containers/Docker.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.i
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.i
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/Containers/Docker.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.s
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.s
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o: ../source-files/model/Containers/Container.cpp
@@ -694,6 +694,32 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s
 
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp
+
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i
+
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s
+
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp
+
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i
+
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s
+
 # Object files for target VanillaCnn_Clion
 VanillaCnn_Clion_OBJECTS = \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o" \
@@ -729,11 +755,11 @@ VanillaCnn_Clion_OBJECTS = \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp.o" \
-"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o" \
+"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o" \
-"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o" \
+"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o" \
@@ -744,7 +770,9 @@ VanillaCnn_Clion_OBJECTS = \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Connection.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/ExternallyWeightedConnection.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.o" \
-"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o"
+"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o" \
+"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o" \
+"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o"
 
 # External object files for target VanillaCnn_Clion
 VanillaCnn_Clion_EXTERNAL_OBJECTS =
@@ -782,11 +810,11 @@ VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Contain
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp.o
-VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o
+VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o
-VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o
+VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o
@@ -798,9 +826,11 @@ VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connect
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/ExternallyWeightedConnection.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o
+VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o
+VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/build.make
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Linking CXX executable VanillaCnn_Clion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable VanillaCnn_Clion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VanillaCnn_Clion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

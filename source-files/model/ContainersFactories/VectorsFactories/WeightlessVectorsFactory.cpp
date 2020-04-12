@@ -4,6 +4,7 @@
 
 #include "WeightlessVectorsFactory.h"
 #include "../../Containers/Vectors/Vector.h"
+#include "../../Containers/Vectors/WeightlessVector.h"
 
 WeightlessVectorsFactory::WeightlessVectorsFactory(int numberOfNeurons)
         : numberOfNeurons{ numberOfNeurons }
@@ -11,8 +12,7 @@ WeightlessVectorsFactory::WeightlessVectorsFactory(int numberOfNeurons)
 }
 
 std::unique_ptr<Container>
-WeightlessVectorsFactory::createContainer(ContainersConnectingStrategy &containersConnectingStrategy,
-                                          NeuronsFactory &neuronsFactory,
-                                          NeuronsConnectingStrategy &neuronsConnectingStrategy) {
-    return std::unique_ptr<Container>();
+WeightlessVectorsFactory::createContainer(NeuronsFactory& neuronsFactory) {
+
+    return std::make_unique<WeightlessVector>(neuronsFactory, numberOfNeurons);
 }

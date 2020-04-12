@@ -10,7 +10,7 @@
 class WeightlessMatrix : public Matrix
 {
 public:
-    WeightlessMatrix(int matrixHeight, int matrixWidth);
+    WeightlessMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth);
 };
 
 

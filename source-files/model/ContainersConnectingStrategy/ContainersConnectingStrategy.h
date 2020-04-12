@@ -7,14 +7,13 @@
 
 #include "../NeuronsConnections/NeuronsConnectingStrategy.h"
 
-
-
+class Docker;
 class Layer;
 
 class ContainersConnectingStrategy
 {
 public:
-    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Layer& sourceLayer, Layer& previousLayer) = 0;
+    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding) = 0;
 };
 
 

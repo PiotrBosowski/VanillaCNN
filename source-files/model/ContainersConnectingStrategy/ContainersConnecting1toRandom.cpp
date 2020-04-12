@@ -9,9 +9,9 @@ ContainersConnecting1toRandom::ContainersConnecting1toRandom()
 {
 }
 
-void ContainersConnecting1toRandom::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Layer& sourceLayer, Layer& previousLayer)
+void ContainersConnecting1toRandom::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
 {
-    auto& sourceContainers = sourceLayer.getContainers();
-    auto& previousContainers = previousLayer.getContainers();
+    auto& sourceContainers = source.getContainers();
+    auto& previousContainers = preceding->getContainers();
     //TODO 1 to random
 }

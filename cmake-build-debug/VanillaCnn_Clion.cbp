@@ -107,6 +107,18 @@
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ConnectionsSet/ConnectionsSet.cpp">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
@@ -117,12 +129,6 @@
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Containers/Container.h">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Containers/Docker.cpp">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Containers/Docker.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp">
@@ -173,10 +179,10 @@
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp">
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.h">
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h">
@@ -213,6 +219,12 @@
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.cpp">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.cpp">
@@ -360,9 +372,6 @@
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/enums/TBDMarkerEnum.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/exceptions/Exceptions.cpp">

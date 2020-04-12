@@ -15,10 +15,10 @@ class OutputSource;
 class ConsolePrinter : public OutputPrinter
 {
 public:
-    ConsolePrinter(OutputSource& source, bool printingEnabled = true);
+    explicit ConsolePrinter(OutputSource& source, bool printingEnabled = true);
 
 public:
-    void print(std::string description = "") override;
+    void print(std::string description) override;
     void printError(std::string error) override;
 };
 

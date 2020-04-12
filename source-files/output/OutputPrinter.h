@@ -13,14 +13,14 @@ class OutputSource;
 class OutputPrinter
 {
 public:
-    OutputPrinter(OutputSource& source, bool printingEnabled = true);
+    explicit OutputPrinter(OutputSource& source, bool printingEnabled = true);
 
 protected:
     OutputSource& source;
     bool printingEnabled;
 
 public:
-    virtual void print(std::string description = "") = 0;
+    virtual void print(std::string description) = 0;
     virtual void printError(std::string error) = 0;
 };
 

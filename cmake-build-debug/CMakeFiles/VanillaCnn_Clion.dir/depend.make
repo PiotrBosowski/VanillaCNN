@@ -3,11 +3,12 @@
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/main.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h
@@ -34,6 +35,13 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeighted
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o: ../source-files/model/Connection/Weight.cpp
 
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
+
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.h
+
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsSet/ConnectionsSet.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsSet/ConnectionsSet.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsSet/ConnectionsSet.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
@@ -47,18 +55,16 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o: .
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/Connection/Connection.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/Containers/Docker.cpp
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/Containers/Docker.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/Neurons/Neuron.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
-
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Containers/Container.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Containers/Matrices/InternallyWeightedMatrix.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Neurons/Neuron.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/Neurons/Weights.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
@@ -70,7 +76,15 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/Containers/Container.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/Containers/Matrices/WeightlessMatrix.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/Containers/Matrices/WeightlessMatrix.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/Neurons/Neuron.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
@@ -82,16 +96,25 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/Containers/Container.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/Containers/Vectors/WeightlessVector.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/Containers/Vectors/WeightlessVector.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/Neurons/Neuron.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -99,36 +122,38 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingError.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o: ../source-files/model/exceptions/Exceptions.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
@@ -167,6 +192,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFa
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/Containers/Container.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/Containers/Vectors/WeightlessVector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
@@ -176,12 +202,26 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFa
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Containers/Container.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Docker/Docker.cpp
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Layers/Layer.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Neurons/Neuron.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
+
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/Layer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Neurons/Neuron.h
@@ -189,13 +229,14 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h
@@ -207,13 +248,14 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Convol
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h
@@ -225,14 +267,15 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Downsa
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.h
@@ -244,13 +287,14 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyC
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/InputLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/InputLayer.h
@@ -262,14 +306,15 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputL
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/OutputLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/OutputLayer.h
@@ -281,14 +326,15 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Output
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.h
@@ -297,9 +343,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h
@@ -307,6 +353,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnect
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp
@@ -318,9 +365,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnect
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Containers/Vectors/Vector.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h
@@ -328,6 +375,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/Layers1D/_OutputLayer.cpp
@@ -340,13 +388,14 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
@@ -355,15 +404,17 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp
@@ -373,19 +424,19 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionL
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/enums/TBDMarkerEnum.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp
@@ -397,17 +448,18 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_Downsampling
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Containers/Matrices/Matrix.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingError.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/Layers2D/_InputLayer.cpp
@@ -419,11 +471,12 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.c
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/LayerPrototypes/PrototypeLayer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/NeuralNetwork.cpp
@@ -495,11 +548,12 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/exceptions/Exceptions.cpp.o: 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/exceptions/Exceptions.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -513,11 +567,12 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputPrinter.cpp.o: ../sour
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputPrinter.cpp.o: ../source-files/output/OutputPrinter.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Connection/Connection.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/ConnectionsSet/ConnectionsSet.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Containers/Container.h
-CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Containers/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Docker/Docker.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h

@@ -13,9 +13,7 @@ class ContainersFactory
 {
 public:
     virtual std::unique_ptr<Container> createContainer(
-            ContainersConnectingStrategy& containersConnectingStrategy,
-            NeuronsFactory& neuronsFactory,
-            NeuronsConnectingStrategy& neuronsConnectingStrategy) = 0;
+            NeuronsFactory& neuronsFactory) = 0;
 };
 
 

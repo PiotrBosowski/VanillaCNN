@@ -13,9 +13,7 @@ class InternallyWeightedMatricesFactory : public MatricesFactory
 {
 public:
     InternallyWeightedMatricesFactory(int matrixHeight, int matrixWidth, int weightsHeight, int weightsWidth);
-    std::unique_ptr<Container> createContainer(ContainersConnectingStrategy& containersConnectingStrategy,
-                                               NeuronsFactory& neuronsFactory,
-                                               NeuronsConnectingStrategy& neuronsConnectingStrategy) override;
+    std::unique_ptr<Container> createContainer(NeuronsFactory& neuronsFactory) override;
 
 private:
     int matrixHeight;

@@ -15,6 +15,7 @@ class _InputLayer : public Layer2D
 public:
     _InputLayer(int inputHeight, int inputWidth);
     std::string getSummary() override;
+
 };
 
 

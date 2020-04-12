@@ -16,7 +16,7 @@
 class NeuralNetwork : public OutputSource
 {
 public:
-    NeuralNetwork(bool printingEnabled = true);
+    explicit NeuralNetwork(bool printingEnabled = true);
 
 private:
     std::vector<std::unique_ptr<Layer>> layers;
@@ -25,7 +25,8 @@ private:
 public:
     void addLayer(PrototypeLayer* newLayer);
     void compile();
-    const std::vector<std::shared_ptr<Layer>>& getOutput() const override;
+
+    [[nodiscard]] std::string getOutput() const override;
 
 private:
     void createLayersFromPrototypes();

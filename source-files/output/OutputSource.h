@@ -14,7 +14,7 @@
 class OutputSource
 {
 public:
-    OutputSource(bool printingEnabled = true);
+    explicit OutputSource(bool printingEnabled = true);
 
 protected:
     std::unique_ptr<OutputPrinter> printer;
@@ -23,7 +23,7 @@ private:
     bool printingEnabled;
 
 public:
-    virtual const std::vector<std::shared_ptr<Layer>>& getOutput() const = 0;
+    [[nodiscard]] virtual std::string getOutput() const = 0;
 };
 
 

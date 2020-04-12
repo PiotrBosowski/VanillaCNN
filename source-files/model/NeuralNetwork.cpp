@@ -17,8 +17,9 @@ NeuralNetwork::NeuralNetwork(bool printingEnabled)
 
 void NeuralNetwork::addLayer(PrototypeLayer* layer)
 {
-    if (layer == nullptr)
+    if (layer != nullptr)
         prototypeLayers.push_back(std::unique_ptr<PrototypeLayer>(layer));
+    else throw LayerCreatingException("cant create layer from nullptr");
 }
 
 void NeuralNetwork::compile()
@@ -34,18 +35,27 @@ void NeuralNetwork::compile()
     }
 }
 
-const std::vector<std::shared_ptr<Layer>>& NeuralNetwork::getOutput() const
-{
-    return std::vector<std::shared_ptr<Layer>>();
-    // TODO: insert return statement here
-}
-
 void NeuralNetwork::createLayersFromPrototypes()
 {
-    if (prototypeLayers.size() < 1) throw LayerCreatingException("cannot create empty network");
+    if (prototypeLayers.empty()) throw NetworkCreatingException("cannot create empty network");
+    layers.reserve(15);
     layers.push_back(std::move(prototypeLayers[0]->embodyLayer(nullptr)));
-    for (int i = 1; i < prototypeLayers.size(); i++)
-    {
-        layers.push_back(std::move(prototypeLayers[i]->embodyLayer(layers[i - 1].get())));
+    try{
+        for (int i = 1; i < prototypeLayers.size(); i++)
+        {
+            printer->print("Right before layer creation:");
+            layers.push_back(std::move(prototypeLayers[i]->embodyLayer(layers[i - 1].get())));
+        }
     }
+    catch(...)
+    {
+        std::cout << "error occurred" << std::endl;
+    }
+}
+
+std::string NeuralNetwork::getOutput() const {
+    std::string result;
+    for (auto& layer : layers)
+        result+=layer->getSummary();
+    return result;
 }

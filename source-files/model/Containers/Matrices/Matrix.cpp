@@ -6,7 +6,7 @@
 #include "Matrix.h"
 #include "../../exceptions/Exceptions.h"
 
-Matrix::Matrix(int matrixHeight, int matrixWidth, NeuronsFactory& neuronsFactory, NeuronsConnectingStrategy& neuronsConnectingStrategy)
+Matrix::Matrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth)
             :
             matrixHeight{ matrixHeight },
              matrixWidth{ matrixWidth }

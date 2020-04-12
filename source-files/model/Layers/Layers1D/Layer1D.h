@@ -24,9 +24,6 @@ public:
 
 protected:
     int numberOfNeurons;
-
-public:
-    std::string getSummary();
 };
 
 

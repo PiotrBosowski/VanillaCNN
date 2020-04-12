@@ -22,18 +22,12 @@ ConsolePrinter::ConsolePrinter(OutputSource& source, bool printingEnabled)
 
 void ConsolePrinter::print(std::string description)
 {
-    if (!description.empty())
-        std::cout << GREEN << description << RESET << std::endl;
-    auto& layers = source.getOutput();
-    for (auto& layer : layers) {
-        std::cout << layer->getSummary() << std::endl;
-    }
-    if (!description.empty())
-        std::cout << std::endl;
+    std::cout << description << std::endl;
+    const auto& text = source.getOutput();
+    std::cout << text << std::endl;
 }
 
 void ConsolePrinter::printError(std::string error)
 {
-    //std::cerr << RED << "ERROR: {" << error << "}" << RESET << std::endl;
     std::cerr  << "ERROR: " << error << std::endl;
 }

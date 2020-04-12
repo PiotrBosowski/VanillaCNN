@@ -9,10 +9,10 @@ ContainersConnecting1toAll::ContainersConnecting1toAll()
 {
 }
 
-void ContainersConnecting1toAll::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Layer& sourceLayer, Layer& previousLayer)
+void ContainersConnecting1toAll::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
 {
-    auto& sourceContainers = sourceLayer.getContainers();
-    auto& previousContainers = previousLayer.getContainers();
+    auto& sourceContainers = source.getContainers();
+    auto& previousContainers = preceding->getContainers();
     for (auto& sourceContainer : sourceContainers)
     {
         for (auto& previousContainer : previousContainers)

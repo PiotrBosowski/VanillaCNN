@@ -12,8 +12,6 @@ InternallyWeightedMatricesFactory::InternallyWeightedMatricesFactory(int matrixH
 }
 
 std::unique_ptr<Container>
-InternallyWeightedMatricesFactory::createContainer(ContainersConnectingStrategy &containersConnectingStrategy,
-                                                   NeuronsFactory &neuronsFactory,
-                                                   NeuronsConnectingStrategy &neuronsConnectingStrategy) {
-    return std::unique_ptr<Container>();
+InternallyWeightedMatricesFactory::createContainer(NeuronsFactory& neuronsFactory) {
+    return std::make_unique<InternallyWeightedMatrix>(neuronsFactory, matrixHeight, matrixWidth, weightsHeight, weightsWidth);
 }

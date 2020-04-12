@@ -258,6 +258,60 @@ source-files/model/Connection/Weight.cpp.s:
 	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s
 .PHONY : source-files/model/Connection/Weight.cpp.s
 
+source-files/model/ConnectionsFactories/ConnectionsFactory.o: source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o
+
+.PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.o
+
+# target to build an object file
+source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o
+.PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o
+
+source-files/model/ConnectionsFactories/ConnectionsFactory.i: source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i
+
+.PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.i
+
+# target to preprocess a source file
+source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i
+.PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i
+
+source-files/model/ConnectionsFactories/ConnectionsFactory.s: source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s
+
+.PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.s
+
+# target to generate assembly for a file
+source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s
+.PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.s
+
+source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.o: source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o
+
+.PHONY : source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.o
+
+# target to build an object file
+source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o
+.PHONY : source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o
+
+source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.i: source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i
+
+.PHONY : source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.i
+
+# target to preprocess a source file
+source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i
+.PHONY : source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i
+
+source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.s: source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s
+
+.PHONY : source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.s
+
+# target to generate assembly for a file
+source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s
+.PHONY : source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.s
+
 source-files/model/ConnectionsSet/ConnectionsSet.o: source-files/model/ConnectionsSet/ConnectionsSet.cpp.o
 
 .PHONY : source-files/model/ConnectionsSet/ConnectionsSet.o
@@ -311,33 +365,6 @@ source-files/model/Containers/Container.s: source-files/model/Containers/Contain
 source-files/model/Containers/Container.cpp.s:
 	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.s
 .PHONY : source-files/model/Containers/Container.cpp.s
-
-source-files/model/Containers/Docker.o: source-files/model/Containers/Docker.cpp.o
-
-.PHONY : source-files/model/Containers/Docker.o
-
-# target to build an object file
-source-files/model/Containers/Docker.cpp.o:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.o
-.PHONY : source-files/model/Containers/Docker.cpp.o
-
-source-files/model/Containers/Docker.i: source-files/model/Containers/Docker.cpp.i
-
-.PHONY : source-files/model/Containers/Docker.i
-
-# target to preprocess a source file
-source-files/model/Containers/Docker.cpp.i:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.i
-.PHONY : source-files/model/Containers/Docker.cpp.i
-
-source-files/model/Containers/Docker.s: source-files/model/Containers/Docker.cpp.s
-
-.PHONY : source-files/model/Containers/Docker.s
-
-# target to generate assembly for a file
-source-files/model/Containers/Docker.cpp.s:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Docker.cpp.s
-.PHONY : source-files/model/Containers/Docker.cpp.s
 
 source-files/model/Containers/Matrices/InternallyWeightedMatrix.o: source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o
 
@@ -555,32 +582,32 @@ source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cp
 	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.s
 .PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.s
 
-source-files/model/ContainersConnectingStrategy/ContainersConnectingError.o: source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o
+source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.o: source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o
 
-.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingError.o
+.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.o
 
 # target to build an object file
-source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o
-.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.o
+source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o
+.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o
 
-source-files/model/ContainersConnectingStrategy/ContainersConnectingError.i: source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i
+source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.i: source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i
 
-.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingError.i
+.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.i
 
 # target to preprocess a source file
-source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i
-.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.i
+source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i
+.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.i
 
-source-files/model/ContainersConnectingStrategy/ContainersConnectingError.s: source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s
+source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.s: source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s
 
-.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingError.s
+.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.s
 
 # target to generate assembly for a file
-source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s
-.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingError.cpp.s
+source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s
+.PHONY : source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.s
 
 source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.o: source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp.o
 
@@ -716,6 +743,33 @@ source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory
 source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.s
 .PHONY : source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.s
+
+source-files/model/Docker/Docker.o: source-files/model/Docker/Docker.cpp.o
+
+.PHONY : source-files/model/Docker/Docker.o
+
+# target to build an object file
+source-files/model/Docker/Docker.cpp.o:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o
+.PHONY : source-files/model/Docker/Docker.cpp.o
+
+source-files/model/Docker/Docker.i: source-files/model/Docker/Docker.cpp.i
+
+.PHONY : source-files/model/Docker/Docker.i
+
+# target to preprocess a source file
+source-files/model/Docker/Docker.cpp.i:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.i
+.PHONY : source-files/model/Docker/Docker.cpp.i
+
+source-files/model/Docker/Docker.s: source-files/model/Docker/Docker.cpp.s
+
+.PHONY : source-files/model/Docker/Docker.s
+
+# target to generate assembly for a file
+source-files/model/Docker/Docker.cpp.s:
+	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.s
+.PHONY : source-files/model/Docker/Docker.cpp.s
 
 source-files/model/Layers/Layer.o: source-files/model/Layers/Layer.cpp.o
 
@@ -1470,15 +1524,18 @@ help:
 	@echo "... source-files/model/Connection/Weight.o"
 	@echo "... source-files/model/Connection/Weight.i"
 	@echo "... source-files/model/Connection/Weight.s"
+	@echo "... source-files/model/ConnectionsFactories/ConnectionsFactory.o"
+	@echo "... source-files/model/ConnectionsFactories/ConnectionsFactory.i"
+	@echo "... source-files/model/ConnectionsFactories/ConnectionsFactory.s"
+	@echo "... source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.o"
+	@echo "... source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.i"
+	@echo "... source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.s"
 	@echo "... source-files/model/ConnectionsSet/ConnectionsSet.o"
 	@echo "... source-files/model/ConnectionsSet/ConnectionsSet.i"
 	@echo "... source-files/model/ConnectionsSet/ConnectionsSet.s"
 	@echo "... source-files/model/Containers/Container.o"
 	@echo "... source-files/model/Containers/Container.i"
 	@echo "... source-files/model/Containers/Container.s"
-	@echo "... source-files/model/Containers/Docker.o"
-	@echo "... source-files/model/Containers/Docker.i"
-	@echo "... source-files/model/Containers/Docker.s"
 	@echo "... source-files/model/Containers/Matrices/InternallyWeightedMatrix.o"
 	@echo "... source-files/model/Containers/Matrices/InternallyWeightedMatrix.i"
 	@echo "... source-files/model/Containers/Matrices/InternallyWeightedMatrix.s"
@@ -1503,9 +1560,9 @@ help:
 	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.o"
 	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.i"
 	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.s"
-	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnectingError.o"
-	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnectingError.i"
-	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnectingError.s"
+	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.o"
+	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.i"
+	@echo "... source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.s"
 	@echo "... source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.o"
 	@echo "... source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.i"
 	@echo "... source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.s"
@@ -1521,6 +1578,9 @@ help:
 	@echo "... source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.o"
 	@echo "... source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.i"
 	@echo "... source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.s"
+	@echo "... source-files/model/Docker/Docker.o"
+	@echo "... source-files/model/Docker/Docker.i"
+	@echo "... source-files/model/Docker/Docker.s"
 	@echo "... source-files/model/Layers/Layer.o"
 	@echo "... source-files/model/Layers/Layer.i"
 	@echo "... source-files/model/Layers/Layer.s"

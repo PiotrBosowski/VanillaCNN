@@ -15,9 +15,7 @@ public:
     explicit WeightlessVectorsFactory(int numberOfNeurons);
 
     std::unique_ptr<Container> createContainer(
-            ContainersConnectingStrategy& containersConnectingStrategy,
-            NeuronsFactory& neuronsFactory,
-            NeuronsConnectingStrategy& neuronsConnectingStrategy) override;
+            NeuronsFactory& neuronsFactory) override;
 private:
     int numberOfNeurons;
 };

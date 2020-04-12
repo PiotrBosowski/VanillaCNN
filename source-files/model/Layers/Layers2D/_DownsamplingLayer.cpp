@@ -2,7 +2,7 @@
 // Created by piotr on 20/04/11.
 //
 
-
+#include <sstream>
 #include "_DownsamplingLayer.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1to1.h"
@@ -18,15 +18,16 @@ _DownsamplingLayer::_DownsamplingLayer(Layer* previousLayer, int downsamplerHeig
          downsamplerHeight(downsamplerHeight),
          downsamplerWidth(downsamplerWidth)
 {
-    docker = std::make_unique<Docker>(
-            *this,
-        numberOfContainers,
-        std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
-        std::make_unique<ContainersConnecting1to1>(),
-        std::make_unique<WeightlessNeuronsFactory>(),
-        std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth)
-    );
-    connectToPreceding();
+    docker = std::make_unique<Docker>(numberOfContainers);
+    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
+            *std::make_unique<WeightlessNeuronsFactory>());
+
+    if(previousLayer)
+        docker->createConnections(previousLayer->getDocker().get(),
+                                  *std::make_unique<ContainersConnecting1to1>(),
+                                  *std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth),
+                                  *std::make_unique<ConnectionsFactory>()
+        );
 }
 
 int _DownsamplingLayer::getDownsamplerHeight()
@@ -41,7 +42,8 @@ int _DownsamplingLayer::getDownsamplerWidth()
 
 std::string _DownsamplingLayer::getSummary()
 {
-    std::string result = Layer2D::getSummary() + "\t\tDownsamplingLayer: downsamplerHeight(" + std::to_string(downsamplerHeight)
-                         + "), downsamplerWidth(" + std::to_string(downsamplerWidth) + ")\n";
-    return result;
+    std::stringstream ss;
+    ss << "Downsampling Layer. Containers: "<< numberOfContainers << ", matrixH: "
+    << this->matrixHeight << ", matrixW: " << this->matrixWidth << ", downsamplerH: " << this->downsamplerHeight << ", downsamplerW: " << downsamplerWidth << std::endl;
+    return ss.str();
 }
