@@ -2,55 +2,26 @@
 // Created by piotr on 20/04/11.
 //
 
-
+#include <cstdlib>
 #include "Weights.h"
+#include "../exceptions/Exceptions.h"
 
-Weights::Weights()
+Weights::Weights(int height, int width)
 {
+    for (int i = 0; i < height * width; ++i) {
+        weights.push_back((double)rand()/(double)RAND_MAX);
+    }
 }
 
-double Weights::getWeight(int index)
+Weights::Weights(int length)
 {
-    return weights[index];
+    for (int i = 0; i < length; ++i) {
+        weights.push_back((double)rand()/(double)RAND_MAX);
+    }
 }
 
-void Weights::add()
-{
-    weights.push_back(0.1);
+double &Weights::getWeight(int index) {
+    if(index < weights.size())
+        return weights[index];
+    throw WeightsOutOfRangeError("Error trying to access weight beyond the vector");
 }
-
-
-
-/*
-
-#include "FeatureDetector.h"
-
-FeatureDetector::FeatureDetector(int height, int width)
-	: detectorHeight{ height }, detectorWidth{width}
-{
-	weights = std::vector<double>(height * width);
-	randomizeWeights();
-}
-
-void FeatureDetector::randomizeWeights()
-{
-	for (double& featureCell : weights)
-		featureCell = rand() / RAND_MAX;
-}
-
-double FeatureDetector::getWeight(int height, int width)
-{
-	if (height < detectorHeight && width < detectorHeight)
-		return weights[height * detectorHeight + width];
-	else throw std::exception{ "przypau" };
-}
-
-void FeatureDetector::add()
-{
-	throw std::exception{ "cant manually add a weight to a feature detector" };
-}
-
-
-
-
-*/

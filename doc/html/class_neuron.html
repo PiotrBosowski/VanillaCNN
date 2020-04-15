@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a524fc85b29f49c670783de9f82e43c8f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neuron.html#a524fc85b29f49c670783de9f82e43c8f">getValue</a> ()</td></tr>
 <tr class="memdesc:a524fc85b29f49c670783de9f82e43c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_neuron.html" title="Base class for all neuron types.">Neuron</a>'s value getter.  <a href="class_neuron.html#a524fc85b29f49c670783de9f82e43c8f">More...</a><br /></td></tr>
 <tr class="separator:a524fc85b29f49c670783de9f82e43c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0c0915454db31797dd228b032e2617"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neuron.html#adb0c0915454db31797dd228b032e2617">connect</a> (<a class="el" href="class_neuron.html">Neuron</a> &amp;preceding)</td></tr>
+<tr class="memitem:adb0c0915454db31797dd228b032e2617"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_neuron.html#adb0c0915454db31797dd228b032e2617">proposeConnections</a> (<a class="el" href="class_neuron.html">Neuron</a> &amp;preceding)</td></tr>
 <tr class="memdesc:adb0c0915454db31797dd228b032e2617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a connection to preceeding <a class="el" href="class_neuron.html" title="Base class for all neuron types.">Neuron</a> to <code>this-&gt;<a class="el" href="class_neuron.html#a722d1615c1257d5ab88811f5626e1823" title="Stores Neuron&#39;s connections. Weights are stored separately, since the way of storing them depends on ...">Neuron::connections</a></code>.  <a href="class_neuron.html#adb0c0915454db31797dd228b032e2617">More...</a><br /></td></tr>
 <tr class="separator:adb0c0915454db31797dd228b032e2617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8445c2c3987beca4c8621ffe66aa6b3a"><td class="memItemLeft" align="right" valign="top"><a id="a8445c2c3987beca4c8621ffe66aa6b3a"></a>
@@ -125,7 +125,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <p><a class="el" href="class_neuron.html" title="Base class for all neuron types.">Neuron</a> class tries to mimic real nerve cell. It is connected to other neurons, these connections has randomly-initialized weights. Learning process is all about adjusting weights' values in a process called back propagation. </p><dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adb0c0915454db31797dd228b032e2617"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0c0915454db31797dd228b032e2617">&#9670;&nbsp;</a></span>connect()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0c0915454db31797dd228b032e2617">&#9670;&nbsp;</a></span>proposeConnections()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +134,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Neuron::connect </td>
+          <td class="memname">void Neuron::proposeConnections </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_neuron.html">Neuron</a> &amp;&#160;</td>
           <td class="paramname"><em>preceding</em></td><td>)</td>

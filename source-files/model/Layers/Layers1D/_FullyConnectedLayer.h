@@ -14,6 +14,11 @@ class _FullyConnectedLayer : public Layer1D
 {
 public:
     _FullyConnectedLayer(Layer * previousLayer, int numberOfNeurons);
+
+    void connect() override;
+
+    void populate() override;
+
     std::string getSummary() override;
 };
 

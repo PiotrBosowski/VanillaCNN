@@ -30,6 +30,5 @@ void Docker::createContainers(ContainersFactory& containersFactory, NeuronsFacto
 
 void Docker::createConnections(Docker* previousDocker, ContainersConnectingStrategy& containersConnectingStrategy, NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory)
 {
-    containersConnectingStrategy.connect(neuronsConnectingStrategy, *this, previousDocker);
+    containersConnectingStrategy.proposeConnections(neuronsConnectingStrategy, *this, previousDocker);
 }
-

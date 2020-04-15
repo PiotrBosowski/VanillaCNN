@@ -101,12 +101,6 @@
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Connection/InternallyWeightedConnection.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.cpp">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.h">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
@@ -225,6 +219,15 @@
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h">
+			<Option target="VanillaCnn_Clion"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.cpp">

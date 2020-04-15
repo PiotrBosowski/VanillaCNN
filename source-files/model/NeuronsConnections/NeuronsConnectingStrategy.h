@@ -5,13 +5,15 @@
 #ifndef VANILLACNN_CLION_NEURONSCONNECTINGSTRATEGY_H
 #define VANILLACNN_CLION_NEURONSCONNECTINGSTRATEGY_H
 
+#include <vector>
 
+class Neuron;
 class Container;
 
 class NeuronsConnectingStrategy
 {
 public:
-    virtual void connect(Container& sourceContainer, Container& previousContainer) = 0;
+    virtual std::vector<Neuron*> proposeConnections(Neuron& source, Container* preceding) = 0;
 };
 
 

@@ -18,6 +18,11 @@ private:
 
 };
 
+class LayerConnectingError : public BaseException {
+public:
+    explicit LayerConnectingError(const char* details = "");
+};
+
 class PopulatingException : public BaseException
 {
 public:
@@ -52,7 +57,18 @@ class NetworkCreatingException : public BaseException
 {
 public:
     explicit NetworkCreatingException(const char* details = "");
+};
 
+class NeuronsConnectingException : public BaseException
+{
+public:
+    explicit NeuronsConnectingException(const char* details = "");
+};
+
+class WeightsOutOfRangeError : public BaseException
+{
+public:
+    explicit WeightsOutOfRangeError(const char* details = "");
 };
 
 

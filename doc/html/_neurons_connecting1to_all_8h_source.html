@@ -84,14 +84,14 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_neurons_connecting1to_all.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_neurons_connecting1to_all.html">NeuronsConnecting1toAll</a> : <span class="keyword">public</span> <a class="code" href="class_neurons_connecting_strategy.html">NeuronsConnectingStrategy</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> connect(<a class="code" href="class_container.html">Container</a>&amp; sourceContainer, <a class="code" href="class_container.html">Container</a>&amp; previousContainer) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> proposeConnections(<a class="code" href="class_container.html">Container</a>&amp; sourceContainer, <a class="code" href="class_container.html">Container</a>&amp; previousContainer) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif //VANILLACNN_CLION_NEURONSCONNECTING1TOALL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_neuron_html_adb0c0915454db31797dd228b032e2617"><div class="ttname"><a href="class_neuron.html#adb0c0915454db31797dd228b032e2617">Neuron::connect</a></div><div class="ttdeci">virtual void connect(Neuron &amp;preceding)</div><div class="ttdoc">Adds a connection to preceeding Neuron to this-&gt;Neuron::connections.</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:12</div></div>
+<div class="ttc" id="aclass_neuron_html_adb0c0915454db31797dd228b032e2617"><div class="ttname"><a href="class_neuron.html#adb0c0915454db31797dd228b032e2617">Neuron::proposeConnections</a></div><div class="ttdeci">virtual void proposeConnections(Neuron &amp;preceding)</div><div class="ttdoc">Adds a connection to preceeding Neuron to this-&gt;Neuron::connections.</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:12</div></div>
 <div class="ttc" id="aclass_container_html"><div class="ttname"><a href="class_container.html">Container</a></div><div class="ttdef"><b>Definition:</b> Container.h:14</div></div>
 <div class="ttc" id="aclass_neurons_connecting1to_all_html"><div class="ttname"><a href="class_neurons_connecting1to_all.html">NeuronsConnecting1toAll</a></div><div class="ttdef"><b>Definition:</b> NeuronsConnecting1toAll.h:11</div></div>
 <div class="ttc" id="aclass_neuron_html"><div class="ttname"><a href="class_neuron.html">Neuron</a></div><div class="ttdoc">Base class for all neuron types.</div><div class="ttdef"><b>Definition:</b> Neuron.h:19</div></div>

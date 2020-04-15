@@ -13,13 +13,13 @@ class Neuron;
 
 class Container
 {
-public:
-    Container();
+protected:
+    std::vector<std::unique_ptr<Neuron>> neurons;
 
 public:
-    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Container& preceedingContainer);
-    virtual Neuron& getNeuron(unsigned int index) = 0;
-    virtual unsigned int getNumberOfNeurons() = 0;
+    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Container& preceedingContainer) = 0;
+    virtual Neuron& getNeuron(unsigned int index);
+    unsigned int getNumberOfNeurons();
 };
 
 

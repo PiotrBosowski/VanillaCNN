@@ -10,6 +10,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h
@@ -116,6 +119,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -131,6 +137,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -145,6 +154,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -211,6 +223,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -223,6 +238,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
@@ -238,6 +256,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Convol
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h
@@ -257,6 +278,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Downsa
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h
@@ -277,6 +301,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyC
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.h
@@ -296,6 +323,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputL
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/InputLayer.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/InputLayer.h
@@ -316,6 +346,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Output
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/OutputLayer.h
@@ -336,6 +369,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers1D/Layer1D.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers1D/Layer1D.h
@@ -355,6 +391,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnect
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers1D/Layer1D.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp
@@ -364,6 +403,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnect
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/NeuronsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+ /cygdrive/d/VanillaCNN/source-files/model/exceptions/Exceptions.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/Connection/Connection.h
  /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -377,6 +417,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers1D/Layer1D.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers1D/_OutputLayer.cpp
@@ -387,6 +430,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/NeuronsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+ /cygdrive/d/VanillaCNN/source-files/model/exceptions/Exceptions.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/Connection/Connection.h
  /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -397,6 +441,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.cpp
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.h
@@ -416,6 +463,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionL
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp
@@ -438,6 +488,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_Downsampling
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp
@@ -447,6 +500,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_Downsampling
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/NeuronsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+ /cygdrive/d/VanillaCNN/source-files/model/exceptions/Exceptions.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/Connection/Connection.h
  /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -461,6 +515,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.c
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/Layer2D.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layers2D/_InputLayer.cpp
@@ -470,6 +527,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.c
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/NeuronsFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+ /cygdrive/d/VanillaCNN/source-files/model/exceptions/Exceptions.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/Connection/Connection.h
  /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -478,6 +536,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/LayerPrototypes/PrototypeLayer.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuralNetwork.cpp
@@ -555,6 +616,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -574,6 +638,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o
  /cygdrive/d/VanillaCNN/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
  /cygdrive/d/VanillaCNN/source-files/model/ContainersFactories/ContainersFactory.h
  /cygdrive/d/VanillaCNN/source-files/model/Docker/Docker.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IConnectible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPopulatible.h
+ /cygdrive/d/VanillaCNN/source-files/model/Layers/IPrintable.h
  /cygdrive/d/VanillaCNN/source-files/model/Layers/Layer.h
  /cygdrive/d/VanillaCNN/source-files/model/Neurons/Neuron.h
  /cygdrive/d/VanillaCNN/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h

@@ -4,10 +4,10 @@
 
 #ifndef VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
 #define VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
-
-
 #include "Matrix.h"
 #include "../../Neurons/Weights.h"
+
+
 class InternallyWeightedMatrix : public Matrix
 {
 public:
@@ -16,7 +16,9 @@ public:
 private:
     int weightsHeight;
     int weightsWidth;
-    std::unique_ptr<Weights> weights; //in case of future weights inheritance
+    std::unique_ptr<Weights> weights;
+public:
+    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, Container &preceedingContainer) override;
 };
 
 

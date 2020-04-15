@@ -11,12 +11,12 @@
 class Weights
 {
 public:
-    Weights();
+    explicit Weights(int height, int width);
+    explicit Weights(int length);
 protected:
     std::vector<double> weights;
 public:
-    double getWeight(int index);
-    virtual void add(); //FeatureDetector overrides it so u cant use the function unintentionally
+    double& getWeight(int index);
 };
 
 

@@ -20,20 +20,23 @@ _ConvolutionLayer::_ConvolutionLayer(Layer* previousLayer, int numberOfFeatureDe
         featureDetectorHeight{ featureDetectorHeight },
         featureDetectorWidth{ featureDetectorWidth }
 {
+    // suppress
+    if(previousLayer == nullptr) throw LayerCreatingException("Cannot create Convolution Layer before any preceding layers");
+}
+
+void _ConvolutionLayer::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
     docker->createContainers(*std::make_unique<InternallyWeightedMatricesFactory>(
-            dynamic_cast<Layer2D&>(*previousLayer).getMatrixHeight() - (featureDetectorHeight / 2) * 2,
-            dynamic_cast<Layer2D&>(*previousLayer).getMatrixWidth() - (featureDetectorWidth / 2) * 2,
-            featureDetectorHeight, featureDetectorWidth),
-        *std::make_unique<ExternallyWeightedNeuronsFactory>());
+            matrixHeight, matrixWidth, featureDetectorHeight, featureDetectorWidth),
+                             *std::make_unique<ExternallyWeightedNeuronsFactory>());
+}
 
-    if(previousLayer)
-        docker->createConnections(previousLayer->getDocker().get(),
-            *std::make_unique<ContainersConnecting1toRandom>(),
-        *std::make_unique<NeuronsConnecting1toArea>(featureDetectorHeight, featureDetectorWidth),
-                *std::make_unique<ConnectionsFactory>()
-        );
-
+void _ConvolutionLayer::connect() {
+    docker->createConnections(previousLayer->getDocker().get(),
+                              *std::make_unique<ContainersConnecting1toRandom>(),
+                              *std::make_unique<NeuronsConnecting1toArea>(featureDetectorHeight, featureDetectorWidth),
+                              *std::make_unique<ConnectionsFactory>()
+    );
 }
 
 int _ConvolutionLayer::getFeatureDetectorHeight()
@@ -51,6 +54,7 @@ std::string _ConvolutionLayer::getSummary()
     std::stringstream ss;
     ss << "Convolution Layer. Containers: "<< numberOfContainers << ", matrixH: " << this->matrixHeight << ", matrixW: "
     << this->matrixWidth << ", detectorH: " << this->featureDetectorHeight << ", detectorW: " << this->featureDetectorWidth << std::endl;
+    //return ss.str() + Layer::getSummary(); TODO
     return ss.str();
 }
 

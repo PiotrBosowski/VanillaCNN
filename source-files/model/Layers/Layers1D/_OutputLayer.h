@@ -16,6 +16,10 @@ public:
 
 public:
     std::string getSummary() override;
+
+    void connect() override;
+
+    void populate() override;
 };
 
 

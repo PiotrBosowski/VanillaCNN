@@ -15,17 +15,10 @@ Layer::Layer(Layer* previousLayer,
 
 int Layer::getNumberOfContainers()
 {
-    return docker->size();
+    return numberOfContainers;
 }
 
-const std::vector<std::unique_ptr<Container>>& Layer::getContainers()
-{
-    return docker->getContainers();
-}
 
-Layer *Layer::getPreviousLayer() {
-    return previousLayer;
-}
 
 const std::unique_ptr<Docker> &Layer::getDocker() const {
     return docker;

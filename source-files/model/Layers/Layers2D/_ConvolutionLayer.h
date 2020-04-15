@@ -24,6 +24,10 @@ public:
     int getFeatureDetectorHeight();
     int getFeatureDetectorWidth();
 
+    void connect() override;
+
+    void populate() override;
+
     std::string getSummary() override;
 };
 

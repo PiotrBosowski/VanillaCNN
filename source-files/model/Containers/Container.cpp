@@ -3,12 +3,15 @@
 //
 
 #include "Container.h"
+#include "../exceptions/Exceptions.h"
 
-Container::Container()
+Neuron& Container::getNeuron(unsigned int index)
 {
+    if (index < neurons.size())
+        return *neurons[index];
+    else throw ContainerOutOfRangeException{};
 }
 
-void Container::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Container& preceedingContainer)
-{
-    neuronsConnectingStrategy.connect(*this, preceedingContainer);
+unsigned int Container::getNumberOfNeurons() {
+    return neurons.size();
 }

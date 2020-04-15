@@ -13,7 +13,7 @@ class Layer;
 class ContainersConnectingStrategy
 {
 public:
-    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding) = 0;
+    virtual void proposeConnections(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding) = 0;
 };
 
 

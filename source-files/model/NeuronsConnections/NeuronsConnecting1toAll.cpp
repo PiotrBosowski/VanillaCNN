@@ -6,7 +6,7 @@
 #include "../Containers/Container.h"
 #include "NeuronsConnecting1toAll.h"
 
-void NeuronsConnecting1toAll::connect(Container& sourceContainer, Container& previousContainer)
+std::vector<Neuron *> NeuronsConnecting1toAll::proposeConnections(Neuron &source, Container *preceding)
 {
     for (int i = 0; i < sourceContainer.getNumberOfNeurons(); i++) //TODO: iterator / for all neurons in container
     {

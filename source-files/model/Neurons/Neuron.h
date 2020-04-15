@@ -25,7 +25,7 @@ protected:
 
     /**
     @brief Stores Neuron's current value.*/
-    double value = 0;
+    double value;
 
 public:
     /**

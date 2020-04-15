@@ -47,7 +47,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Connection.cpp.o"
   "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/ExternallyWeightedConnection.cpp.o"
   "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.o"
-  "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o"
   "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o"
   "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o"
   "VanillaCnn_Clion.pdb"

@@ -13,7 +13,6 @@ X przerobić łączenie się warstw:
 	nowy pomysł: każda klasa ma skojarzoną klasę ...Connector, która odpowiada za łączenie z poprzednią warstwą
 	vector i matrix dziedziczą ze wspólnej klasy "container" np.
 
-
 X Możliwe połączenia:
 	FullyConnectedLayer:
 		FullyconnectedLayer
@@ -45,12 +44,11 @@ X Możliwe rodzaje połączeń kontenerowych:
 	1:all (np. fullconnected->convolution)
 	1:random (druga downsampling->convolution)
 
-
 X Możliwe rodzaje połączeń neuronowych:
 	1:area (np. convolution->downsampling)
 	1:all
 
-//Rename connect -> attach
+//Rename proposeConnections -> attach
 
 X Oddzielić funkcjonalność drukowania outputu od modelu
 
@@ -64,20 +62,11 @@ X przerobić warstwy na propotypy
 
   wywalic exception handling z maina, funkcje wywolywane w mainie maja byc nothrow
 
-
-
 X zrobić optymalne łączenie sie warstw
-
-
-
 
 dorobić containers-> 1toRandom
 
 X posprzątać w konstruktorach warstw
-
-
-
-
 
 	mozliwosc zapisu modelu do pliku
 
@@ -91,9 +80,7 @@ X	containers:
 X	weighted/unweightedvector
 X	weighted/unweightedmatrix
 
-
 X ogarnąć gita troche lepiej zeby sie nie wyjabec z rowerka XD
-
 
 add RawLayer so the users can create their own layers
 scalić neuron factory i neuron connecting factory
@@ -101,5 +88,9 @@ scalić container factory i container connecting factory
 
 doxygen
 
-
 containers i container - kompozyt
+
+pomysly na ogarniecie wag:
+    interfejs IWeightResponsible
+
+kazda warstwa musi byc IConnectcible - myslenie interfejsami

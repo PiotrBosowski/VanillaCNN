@@ -11,7 +11,7 @@ class ContainersConnectingNone : public ContainersConnectingStrategy
 {
 public:
     ContainersConnectingNone();
-    void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding) override;
+    void proposeConnections(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding) override;
 
 };
 

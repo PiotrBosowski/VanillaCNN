@@ -9,16 +9,15 @@
 NeuronsConnecting1toArea::NeuronsConnecting1toArea(int areaHeight, int areaWidth)
         : areaHeight{ areaHeight },
           areaWidth{ areaWidth }
-{
-}
+{}
 
-void NeuronsConnecting1toArea::connect(Container& sourceContainer, Container& previousContainer)
+std::vector<Neuron *> NeuronsConnecting1toArea::proposeConnections(Neuron &source, Container *preceding) {
 {
     auto sourceMatrix = dynamic_cast<Matrix*>(&sourceContainer);
     auto previousMatrix = dynamic_cast<Matrix*>(&previousContainer);
     if (!sourceMatrix && !previousMatrix)
         throw ConnectingException("Cannot use 1 to Area type of connection with 1D containers.");
-    for (int sourceY = 0; sourceY < sourceMatrix->getMatrixHeight(); sourceY+= areaWidth) //TODO: iterator / for all neurons in container
+    for (int sourceY = 0; sourceY < sourceMatrix->getMatrixHeight(); sourceY += areaWidth) //TODO: iterator / for all neurons in container
     {
         for (int sourceX = 0; sourceX < sourceMatrix->getMatrixWidth(); sourceX += areaWidth)
         {

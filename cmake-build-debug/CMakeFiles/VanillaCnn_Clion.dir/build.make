@@ -681,22 +681,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeighted
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/Connection/InternallyWeightedConnection.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.s
 
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o: ../source-files/model/Connection/Weight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.cpp
-
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.cpp > CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.i
-
-CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/VanillaCNN/source-files/model/Connection/Weight.cpp -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s
-
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.i: cmake_force
@@ -709,7 +696,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/Connecti
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: CMakeFiles/VanillaCnn_Clion.dir/flags.make
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o: ../source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o -c /cygdrive/d/VanillaCNN/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.i: cmake_force
@@ -770,7 +757,6 @@ VanillaCnn_Clion_OBJECTS = \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Connection.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/ExternallyWeightedConnection.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.o" \
-"CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o" \
 "CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o"
 
@@ -825,12 +811,11 @@ VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connect
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Connection.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/ExternallyWeightedConnection.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.o
-VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/build.make
 VanillaCnn_Clion.exe: CMakeFiles/VanillaCnn_Clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable VanillaCnn_Clion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Linking CXX executable VanillaCnn_Clion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VanillaCnn_Clion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

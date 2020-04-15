@@ -13,9 +13,12 @@
 #include "../ContainersFactories/ContainersFactory.h"
 #include "../NeuronsConnections/NeuronsConnectingStrategy.h"
 #include "../Docker/Docker.h"
+#include "IConnectible.h"
+#include "IPrintable.h"
+#include "IPopulatible.h"
 #include <string>
 
-class Layer
+class Layer : public IPopulatible, public IConnectible, public IPrintable
 {
 public:
     Layer(Layer* previousLayer,
@@ -26,13 +29,10 @@ protected:
     Layer *previousLayer;
     std::unique_ptr<Docker> docker;
 public:
-    const std::unique_ptr<Docker> &getDocker() const;
+    [[nodiscard]] const std::unique_ptr<Docker> &getDocker() const;
 
 public:
-    Layer *getPreviousLayer();
-    virtual int getNumberOfContainers();
-    virtual std::string getSummary() = 0;
-    const std::vector<std::unique_ptr<Container>>& getContainers();
+    int getNumberOfContainers();
 };
 
 

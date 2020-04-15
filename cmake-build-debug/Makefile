@@ -231,33 +231,6 @@ source-files/model/Connection/InternallyWeightedConnection.cpp.s:
 	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.s
 .PHONY : source-files/model/Connection/InternallyWeightedConnection.cpp.s
 
-source-files/model/Connection/Weight.o: source-files/model/Connection/Weight.cpp.o
-
-.PHONY : source-files/model/Connection/Weight.o
-
-# target to build an object file
-source-files/model/Connection/Weight.cpp.o:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o
-.PHONY : source-files/model/Connection/Weight.cpp.o
-
-source-files/model/Connection/Weight.i: source-files/model/Connection/Weight.cpp.i
-
-.PHONY : source-files/model/Connection/Weight.i
-
-# target to preprocess a source file
-source-files/model/Connection/Weight.cpp.i:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.i
-.PHONY : source-files/model/Connection/Weight.cpp.i
-
-source-files/model/Connection/Weight.s: source-files/model/Connection/Weight.cpp.s
-
-.PHONY : source-files/model/Connection/Weight.s
-
-# target to generate assembly for a file
-source-files/model/Connection/Weight.cpp.s:
-	$(MAKE) -f CMakeFiles/VanillaCnn_Clion.dir/build.make CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.s
-.PHONY : source-files/model/Connection/Weight.cpp.s
-
 source-files/model/ConnectionsFactories/ConnectionsFactory.o: source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o
 
 .PHONY : source-files/model/ConnectionsFactories/ConnectionsFactory.o
@@ -1521,9 +1494,6 @@ help:
 	@echo "... source-files/model/Connection/InternallyWeightedConnection.o"
 	@echo "... source-files/model/Connection/InternallyWeightedConnection.i"
 	@echo "... source-files/model/Connection/InternallyWeightedConnection.s"
-	@echo "... source-files/model/Connection/Weight.o"
-	@echo "... source-files/model/Connection/Weight.i"
-	@echo "... source-files/model/Connection/Weight.s"
 	@echo "... source-files/model/ConnectionsFactories/ConnectionsFactory.o"
 	@echo "... source-files/model/ConnectionsFactories/ConnectionsFactory.i"
 	@echo "... source-files/model/ConnectionsFactories/ConnectionsFactory.s"

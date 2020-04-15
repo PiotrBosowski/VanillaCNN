@@ -10,6 +10,12 @@
 class ExternallyWeightedNeuron :
         public Neuron
 {
+public:
+    void connect(Neuron &preceding) override;
+    void connect(Neuron& preceding, double& weightReference);
+
+    void calculateValue() override;
+
 };
 
 

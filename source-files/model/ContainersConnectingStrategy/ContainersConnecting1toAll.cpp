@@ -9,7 +9,7 @@ ContainersConnecting1toAll::ContainersConnecting1toAll()
 {
 }
 
-void ContainersConnecting1toAll::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
+void ContainersConnecting1toAll::proposeConnections(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
 {
     auto& sourceContainers = source.getContainers();
     auto& previousContainers = preceding->getContainers();

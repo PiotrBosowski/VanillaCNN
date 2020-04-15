@@ -12,7 +12,7 @@ class ContainersConnecting1toRandom : public ContainersConnectingStrategy
 {
 public:
     ContainersConnecting1toRandom();
-    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding);
+    virtual void proposeConnections(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding);
 };
 
 

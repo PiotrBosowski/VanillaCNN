@@ -19,11 +19,9 @@ public:
 
 private:
     int vectorHeight;
-    std::vector<std::unique_ptr<Neuron>> row;
 
 public:
     int getVectorHeight();
-    Neuron& getNeuron(unsigned int index) override;
     unsigned int getNumberOfNeurons() override;
 };
 

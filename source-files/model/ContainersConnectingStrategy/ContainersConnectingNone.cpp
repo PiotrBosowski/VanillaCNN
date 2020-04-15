@@ -10,9 +10,9 @@ ContainersConnectingNone::ContainersConnectingNone()
 {
 }
 
-void ContainersConnectingNone::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
+void ContainersConnectingNone::proposeConnections(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
 {
-    //throw ConnectingException{ "cannot connect containers here" };
+    //throw ConnectingException{ "cannot proposeConnections containers here" };
     goto wypierdalaj;
 
     wypierdalaj: return;

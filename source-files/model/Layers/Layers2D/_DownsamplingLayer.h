@@ -25,6 +25,10 @@ protected:
 public:
     int getDownsamplerHeight();
     int getDownsamplerWidth();
+
+    void connect() override;
+
+    void populate() override;
 };
 
 

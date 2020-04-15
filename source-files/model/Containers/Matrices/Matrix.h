@@ -17,14 +17,11 @@ public:
 protected:
     int matrixHeight;
     int matrixWidth;
-    std::vector<std::unique_ptr<Neuron>> table;
 
 public:
-    int getMatrixHeight();
-    int getMatrixWidth();
-    Neuron& getNeuron(unsigned int index) override;
+    [[nodiscard]] int getMatrixHeight() const;
+    [[nodiscard]] int getMatrixWidth() const;
     Neuron& getNeuron(unsigned int row, unsigned int column);
-    unsigned int getNumberOfNeurons() override;
 };
 
 

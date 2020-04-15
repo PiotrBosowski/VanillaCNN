@@ -9,7 +9,7 @@ ContainersConnecting1toRandom::ContainersConnecting1toRandom()
 {
 }
 
-void ContainersConnecting1toRandom::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
+void ContainersConnecting1toRandom::proposeConnections(NeuronsConnectingStrategy& neuronsConnectingStrategy, Docker& source, Docker* preceding)
 {
     auto& sourceContainers = source.getContainers();
     auto& previousContainers = preceding->getContainers();

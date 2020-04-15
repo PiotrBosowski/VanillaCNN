@@ -1,4 +1,4 @@
-<map id="WeightlessNeuron::connect" name="WeightlessNeuron::connect">
+<map id="WeightlessNeuron::connect" name="WeightlessNeuron::proposeConnections">
 <area shape="rect" id="node1" title="Adds a connection to preceeding Neuron to this&#45;&gt;Neuron::connections." alt="" coords="5,5,188,32"/>
 <area shape="rect" id="node2" href="$class_neuron.html#adb0c0915454db31797dd228b032e2617" title="Adds a connection to preceeding Neuron to this&#45;&gt;Neuron::connections." alt="" coords="236,5,353,32"/>
 </map>

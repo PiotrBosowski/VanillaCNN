@@ -9,6 +9,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/C
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o: ../source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h
@@ -115,6 +118,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -130,6 +136,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -144,6 +153,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -210,6 +222,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../sourc
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Docker/Docker.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -222,6 +237,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/Layer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o: ../source-files/model/Neurons/Neuron.h
@@ -237,6 +255,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Convol
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h
@@ -256,6 +277,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Downsa
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h
@@ -276,6 +300,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyC
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.h
@@ -295,6 +322,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputL
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/InputLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/InputLayer.h
@@ -315,6 +345,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/Output
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/OutputLayer.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o: ../source-files/model/Layers/LayerPrototypes/OutputLayer.h
@@ -335,6 +368,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.h
@@ -354,6 +390,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnect
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp
@@ -363,6 +402,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnect
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -376,6 +416,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/Layers1D/Layer1D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/Layers/Layers1D/_OutputLayer.cpp
@@ -386,6 +429,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -396,6 +440,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.cpp
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
@@ -415,6 +462,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionL
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o: ../source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp
@@ -437,6 +487,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_Downsampling
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp
@@ -446,6 +499,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_Downsampling
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -460,6 +514,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.c
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/Layers2D/Layer2D.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/Layers/Layers2D/_InputLayer.cpp
@@ -469,6 +526,7 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.c
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/NeuronsFactories/NeuronsFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o: ../source-files/model/exceptions/Exceptions.h
 
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Connection/Connection.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ConnectionsFactories/ConnectionsFactory.h
@@ -477,6 +535,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../sourc
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/Layers/LayerPrototypes/PrototypeLayer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o: ../source-files/model/NeuralNetwork.cpp
@@ -554,6 +615,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../sou
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h
@@ -573,6 +637,9 @@ CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../sourc
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/ContainersFactories/ContainersFactory.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Docker/Docker.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Layers/IConnectible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Layers/IPopulatible.h
+CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Layers/IPrintable.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Layers/Layer.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/Neurons/Neuron.h
 CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o: ../source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h

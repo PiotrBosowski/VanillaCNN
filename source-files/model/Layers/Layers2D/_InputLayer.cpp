@@ -10,6 +10,7 @@
 #include "../../NeuronsConnections/NeuronsConnectingError.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1to1.h"
+#include "../../exceptions/Exceptions.h"
 
 _InputLayer::_InputLayer(int inputHeight, int inputWidth)
         : Layer2D{ nullptr,
@@ -17,15 +18,16 @@ _InputLayer::_InputLayer(int inputHeight, int inputWidth)
                    inputHeight,
                    inputWidth }
 {
+}
+
+void _InputLayer::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
-    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(inputHeight, inputWidth),
+    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
                              *std::make_unique<WeightlessNeuronsFactory>());
-    if(previousLayer)
-        docker->createConnections(previousLayer->getDocker().get(),
-                                  *std::make_unique<ContainersConnectingNone>(),
-                                  *std::make_unique<NeuronsConnectingError>(),
-                                          *std::make_unique<ConnectionsFactory>()
-        );
+}
+
+void _InputLayer::connect() {
+    throw LayerConnectingError("Cannot append Input Layer to any preceding layer");
 }
 
 std::string _InputLayer::getSummary() {
@@ -33,4 +35,6 @@ std::string _InputLayer::getSummary() {
     ss << "Input layer. Containers: "<< numberOfContainers << ", matrixH: " << matrixHeight << ", matrixW: " << matrixWidth << std::endl;
     return ss.str();
 }
+
+
 

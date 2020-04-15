@@ -30,6 +30,10 @@ public:
 
 private:
     void createLayersFromPrototypes();
+
+    void populateLayers();
+
+    void connectLayers();
 };
 
 

@@ -27,7 +27,11 @@ void NeuralNetwork::compile()
     try
     {
         createLayersFromPrototypes();
-        printer->print("Finished Network:");
+        printer->print("After prototyping:");
+        populateLayers();
+        printer->print("After populating:");
+        connectLayers();
+        printer->print("After connecting:");
     }
     catch (const std::exception & ex)
     {
@@ -38,7 +42,6 @@ void NeuralNetwork::compile()
 void NeuralNetwork::createLayersFromPrototypes()
 {
     if (prototypeLayers.empty()) throw NetworkCreatingException("cannot create empty network");
-    layers.reserve(15);
     layers.push_back(std::move(prototypeLayers[0]->embodyLayer(nullptr)));
     try{
         for (int i = 1; i < prototypeLayers.size(); i++)
@@ -53,9 +56,20 @@ void NeuralNetwork::createLayersFromPrototypes()
     }
 }
 
+void NeuralNetwork::populateLayers() {
+    for(auto& layer : layers)
+        layer->populate();
+}
+
+void NeuralNetwork::connectLayers() {
+    for (int i = 1; i < layers.size(); ++i){
+        layers[i]->connect();
+    }
+}
+
 std::string NeuralNetwork::getOutput() const {
     std::string result;
     for (auto& layer : layers)
-        result+=layer->getSummary();
+        result += layer->getSummary();
     return result;
 }

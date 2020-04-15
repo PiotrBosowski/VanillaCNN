@@ -11,7 +11,7 @@
 class NeuronsConnecting1toAll : public NeuronsConnectingStrategy
 {
 public:
-    void connect(Container& sourceContainer, Container& previousContainer) override;
+    std::vector<Neuron *> proposeConnections(Neuron &source, Container *preceding) override;
 };
 
 

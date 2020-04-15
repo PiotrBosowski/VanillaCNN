@@ -40,3 +40,17 @@ const char *BaseException::details() const {
 NetworkCreatingException::NetworkCreatingException(const char *details)
 : BaseException("Error creating network", details) {
 }
+
+LayerConnectingError::LayerConnectingError(const char *details)
+    : BaseException{ "Error connecting Layers.", details }
+{
+}
+
+NeuronsConnectingException::NeuronsConnectingException(const char *details)
+: BaseException("Error during connecting Neurons") {
+
+}
+
+WeightsOutOfRangeError::WeightsOutOfRangeError(const char *details)
+: BaseException("Error trying to access Weight beyond vector bounds") {
+}

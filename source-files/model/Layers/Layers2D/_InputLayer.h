@@ -16,6 +16,9 @@ public:
     _InputLayer(int inputHeight, int inputWidth);
     std::string getSummary() override;
 
+    void connect() override;
+
+    void populate() override;
 };
 
 
