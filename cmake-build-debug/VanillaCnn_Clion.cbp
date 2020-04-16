@@ -353,12 +353,6 @@
 		<Unit filename="/cygdrive/d/VanillaCNN/src/model/NeuronsConnections/NeuronsConnecting1toArea.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/src/model/NeuronsConnections/NeuronsConnectingError.cpp">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/VanillaCNN/src/model/NeuronsConnections/NeuronsConnectingError.h">
-			<Option target="VanillaCnn_Clion"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/VanillaCNN/src/model/NeuronsConnections/NeuronsConnectingStrategy.h">
 			<Option target="VanillaCnn_Clion"/>
 		</Unit>

@@ -18,7 +18,7 @@ void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy& neuronsConnect
                                        Container &precedingContainer) {
     try{
         for (int i = 0; i < this->neurons.size(); ++i) {
-            auto connections = neuronsConnectingStrategy.proposeConnections(*neurons[i], &precedingContainer);
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
             for (int j = 0; j < connections.size(); j++)
             {
                 dynamic_cast<ExternallyWeightedNeuron*>(neurons[i].get())->connect(*connections[j], weights->getWeight(j));

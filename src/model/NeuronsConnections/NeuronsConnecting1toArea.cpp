@@ -11,12 +11,22 @@ NeuronsConnecting1toArea::NeuronsConnecting1toArea(int areaHeight, int areaWidth
           areaWidth{ areaWidth }
 {}
 
-std::vector<Neuron *> NeuronsConnecting1toArea::proposeConnections(Neuron &source, Container *preceding) {
-{
-    auto sourceMatrix = dynamic_cast<Matrix*>(&sourceContainer);
-    auto previousMatrix = dynamic_cast<Matrix*>(&previousContainer);
+std::vector<Neuron *>
+NeuronsConnecting1toArea::proposeSingleNeuronConnections(Container &source, Container *preceding) {
+    auto sourceMatrix = dynamic_cast<Matrix*>(&source);
+    auto previousMatrix = dynamic_cast<Matrix*>(preceding);
     if (!sourceMatrix && !previousMatrix)
         throw ConnectingException("Cannot use 1 to Area type of connection with 1D containers.");
+    std::vector<Neuron*> result;
+    for (int i = 0; i < this->areaHeight; ++i) {
+        for (int j = 0; j < this->areaWidth; ++j) {
+            result.emplace_back(&previousMatrix->getNeuron(this->currentNeuronHeight + i, this->currentNeuronWidth + j));
+        }
+    }
+    moveToTheNextNeuron(sourceMatrix->getMatrixHeight(), sourceMatrix->getMatrixWidth());
+    return result;
+
+    /*
     for (int sourceY = 0; sourceY < sourceMatrix->getMatrixHeight(); sourceY += areaWidth) //TODO: iterator / for all neurons in container
     {
         for (int sourceX = 0; sourceX < sourceMatrix->getMatrixWidth(); sourceX += areaWidth)
@@ -31,5 +41,15 @@ std::vector<Neuron *> NeuronsConnecting1toArea::proposeConnections(Neuron &sourc
                 }
             }
         }
+    }
+    */
+}
+
+void NeuronsConnecting1toArea::moveToTheNextNeuron(int sourceHeight, int sourceWidth) {
+    this->currentNeuronWidth++;
+    if (this->currentNeuronWidth == sourceWidth) // if you reach the end of the row
+    {
+        this->currentNeuronHeight++; //move to the row below
+        this->currentNeuronWidth = 0;
     }
 }

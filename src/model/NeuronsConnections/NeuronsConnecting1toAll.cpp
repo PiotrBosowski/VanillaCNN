@@ -7,8 +7,7 @@
 #include "NeuronsConnecting1toAll.h"
 
 //TODO REFERENCES instead of POINTERS
-std::vector<Neuron *> NeuronsConnecting1toAll::proposeConnections(Neuron &source, Container *preceding)
-{
+std::vector<Neuron *> NeuronsConnecting1toAll::proposeSingleNeuronConnections(Container &source, Container *preceding) {
     std::vector<Neuron*>result;
     for (int j = 0; j < preceding->getNumberOfNeurons(); j++)
     {

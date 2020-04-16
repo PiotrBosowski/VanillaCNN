@@ -10,12 +10,18 @@
 class Neuron;
 class Container;
 
+
+
+
 class NeuronsConnectingStrategy
 {
 public:
-    virtual std::vector<Neuron*> proposeConnections(Neuron& source, Container* preceding) = 0;
+    //returns a vector of connections for a single source neuron, to get a full set of connections you need to invoke the function N times (N - number of neurons)
+    virtual std::vector<Neuron*> proposeSingleNeuronConnections(Container& source, Container* preceding) = 0;
+
+protected:
+    int currentNeuronHeight = 0;
+    int currentNeuronWidth = 0;
 };
-
-
 
 #endif //VANILLACNN_CLION_NEURONSCONNECTINGSTRATEGY_H

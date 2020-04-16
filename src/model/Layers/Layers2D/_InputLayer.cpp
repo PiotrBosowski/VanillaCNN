@@ -6,9 +6,6 @@
 #include "_InputLayer.h"
 #include "../../ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 #include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
-#include "../../NeuronsConnections/NeuronsConnectingError.h"
-#include "../../ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
-#include "../../ContainersConnectingStrategy/ContainersConnecting1to1.h"
 #include "../../exceptions/Exceptions.h"
 
 _InputLayer::_InputLayer(int inputHeight, int inputWidth)
