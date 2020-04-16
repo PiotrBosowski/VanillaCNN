@@ -1,3 +1,0 @@
-/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir
-/cygdrive/d/VanillaCNN/cmake-build-debug/CMakeFiles/edit_cache.dir

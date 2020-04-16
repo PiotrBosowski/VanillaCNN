@@ -1,4 +1,0 @@
-C:\cygwin64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/VanillaCNN
--- Configuring done
--- Generating done
--- Build files have been written to: /cygdrive/d/VanillaCNN/cmake-build-debug
