@@ -1,4 +1,0 @@
-<map id="Neuron::connect" name="Neuron::proposeConnections">
-<area shape="rect" id="node1" title="Adds a connection to preceeding Neuron to this&#45;&gt;Neuron::connections." alt="" coords="236,5,353,32"/>
-<area shape="rect" id="node2" href="$class_weightless_neuron.html#ae517ca7137e861e8d34f9420e0b007f9" title="Adds a connection to preceeding Neuron to this&#45;&gt;Neuron::connections." alt="" coords="5,5,188,32"/>
-</map>

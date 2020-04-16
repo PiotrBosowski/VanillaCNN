@@ -1,7 +1,0 @@
-<map id="InternallyWeightedConnection" name="InternallyWeightedConnection">
-<area shape="rect" id="node1" title=" " alt="" coords="39,273,233,300"/>
-<area shape="rect" id="node2" href="$class_connection.html" title=" " alt="" coords="19,184,106,211"/>
-<area shape="rect" id="node3" href="$class_neuron.html" title="Base class for all neuron types." alt="" coords="31,95,94,121"/>
-<area shape="rect" id="node4" href="$class_connections_set.html" title=" " alt="" coords="5,5,120,32"/>
-<area shape="rect" id="node5" href="$class_weight.html" title=" " alt="" coords="130,184,193,211"/>
-</map>

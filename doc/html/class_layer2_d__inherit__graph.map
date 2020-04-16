@@ -1,7 +1,0 @@
-<map id="Layer2D" name="Layer2D">
-<area shape="rect" id="node1" title=" " alt="" coords="193,80,264,107"/>
-<area shape="rect" id="node3" href="$class___convolution_layer.html" title=" " alt="" coords="5,155,132,181"/>
-<area shape="rect" id="node4" href="$class___downsampling_layer.html" title=" " alt="" coords="156,155,301,181"/>
-<area shape="rect" id="node5" href="$class___input_layer.html" title=" " alt="" coords="325,155,415,181"/>
-<area shape="rect" id="node2" href="$class_layer.html" title=" " alt="" coords="201,5,256,32"/>
-</map>
