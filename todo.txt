@@ -90,7 +90,5 @@ doxygen
 
 containers i container - kompozyt
 
-pomysly na ogarniecie wag:
-    interfejs IWeightResponsible
+kazda warstwa musi byc IConnectcible
 
-kazda warstwa musi byc IConnectcible - myslenie interfejsami

@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="VanillaCnn_Clion" targetName="VanillaCnn_Clion" />
@@ -12,138 +30,202 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fae552ec-a32c-4288-b003-302219437166" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/CXX.includecache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/exceptions/Exceptions.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/exceptions/Exceptions.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Connection.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/ExternallyWeightedConnection.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/InternallyWeightedConnection.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Connection/Weight.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ConnectionsSet/ConnectionsSet.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Container.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/Matrix.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Matrices/WeightlessMatrix.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/Vector.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Containers/Vectors/WeightlessVector.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Docker/Docker.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/InputLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/Layer1D.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers1D/_OutputLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/Layer2D.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Layers/Layers2D/_InputLayer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuralNetwork.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Neurons/ExternallyWeightedNeuron.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Neurons/Neuron.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Neurons/WeightlessNeuron.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/Neurons/Weights.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsConnections/NeuronsConnectingError.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/model/exceptions/Exceptions.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/output/ConsolePrinter.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputPrinter.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/VanillaCnn_Clion.dir/source-files/output/OutputSource.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/VanillaCnn_Clion.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/VanillaCnn_Clion.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/VanillaCnn_Clion.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/VanillaCnn_Clion.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/VanillaCnn_Clion.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/VanillaCnn_Clion.exe.stackdump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_container_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_container_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_containers_connecting1to1_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_containers_connecting1to1_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_containers_connecting1to_all_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_containers_connecting1to_all_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_containers_connecting1to_random_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_containers_connecting1to_random_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_containers_connecting_error_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_containers_connecting_error_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_containers_connecting_strategy_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_containers_connecting_strategy_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_neuron_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_neuron_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_neurons_connecting1to_all_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_neurons_connecting1to_all_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_neurons_connecting1to_area_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_neurons_connecting1to_area_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_neurons_connecting_error_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_neurons_connecting_error_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_neurons_connecting_strategy_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_neurons_connecting_strategy_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/_weightless_neuron_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/_weightless_neuron_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_container-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_container-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_container.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_container.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting1to1-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting1to1-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting1to1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting1to1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_all-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_all-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_random-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_random-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_random.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting1to_random.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting_error-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting_error-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting_strategy-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting_strategy-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_containers_connecting_strategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_containers_connecting_strategy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_externally_weighted_neuron-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_externally_weighted_neuron-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_externally_weighted_neuron.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_externally_weighted_neuron.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_internally_weighted_matrix-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_internally_weighted_matrix-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_internally_weighted_matrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_internally_weighted_matrix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_matrix-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_matrix-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_matrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_matrix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neuron-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neuron-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neuron.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neuron.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neuron_adb0c0915454db31797dd228b032e2617_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neuron_adb0c0915454db31797dd228b032e2617_icgraph.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_all-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_all-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_area-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_area-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_area.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neurons_connecting1to_area.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neurons_connecting_strategy-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neurons_connecting_strategy-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_neurons_connecting_strategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_neurons_connecting_strategy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_unweighted_vector-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_unweighted_vector-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_unweighted_vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_unweighted_vector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_vector-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_vector-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_vector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_weightless_matrix-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_weightless_matrix-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_weightless_matrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_weightless_matrix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_weightless_neuron-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_weightless_neuron-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_weightless_neuron.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_weightless_neuron.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/class_weightless_neuron_ae517ca7137e861e8d34f9420e0b007f9_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/class_weightless_neuron_ae517ca7137e861e8d34f9420e0b007f9_cgraph.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/Weight.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/Weight.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Container.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Container.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Container.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Container.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/InternallyWeightedMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Matrices/InternallyWeightedMatrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/Matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Matrices/Matrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Matrices/Matrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Vectors/Vector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Vectors/Vector.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Vectors/Vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Containers/Vectors/Vector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Docker/Docker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Docker/Docker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layer.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_FullyConnectedLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_FullyConnectedLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_OutputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_OutputLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_OutputLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_OutputLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_ConvolutionLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_ConvolutionLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_DownsamplingLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_DownsamplingLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_InputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_InputLayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_InputLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_InputLayer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuralNetwork.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuralNetwork.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuralNetwork.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuralNetwork.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/ExternallyWeightedNeuron.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Neurons/ExternallyWeightedNeuron.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/ExternallyWeightedNeuron.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Neurons/ExternallyWeightedNeuron.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Neuron.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Neurons/Neuron.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Weights.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Neurons/Weights.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Weights.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/Neurons/Weights.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/exceptions/Exceptions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/exceptions/Exceptions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source-files/model/exceptions/Exceptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/source-files/model/exceptions/Exceptions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/Connection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Connection/Connection.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/Connection.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Connection/Connection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/ExternallyWeightedConnection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Connection/ExternallyWeightedConnection.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/ExternallyWeightedConnection.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Connection/ExternallyWeightedConnection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/InternallyWeightedConnection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Connection/InternallyWeightedConnection.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Connection/InternallyWeightedConnection.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Connection/InternallyWeightedConnection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ConnectionsFactories/ConnectionsFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConnectionsFactories/ConnectionsFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ConnectionsFactories/ConnectionsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConnectionsFactories/ConnectionsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConnectionsFactories/WeightlessConnectionsFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ConnectionsFactories/WeightlessConnectionsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConnectionsFactories/WeightlessConnectionsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ConnectionsSet/ConnectionsSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConnectionsSet/ConnectionsSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ConnectionsSet/ConnectionsSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConnectionsSet/ConnectionsSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Container.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Container.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Container.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Container.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/InternallyWeightedMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Matrices/InternallyWeightedMatrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/InternallyWeightedMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Matrices/InternallyWeightedMatrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/Matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Matrices/Matrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Matrices/Matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/WeightlessMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Matrices/WeightlessMatrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Matrices/WeightlessMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Matrices/WeightlessMatrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Vectors/Vector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Vectors/Vector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Vectors/Vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Vectors/Vector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Vectors/WeightlessVector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Vectors/WeightlessVector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Containers/Vectors/WeightlessVector.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Containers/Vectors/WeightlessVector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnecting1to1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1to1.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnecting1to1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnecting1toAll.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnecting1toAll.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnecting1toRandom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingNone.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersConnectingStrategy/ContainersConnectingStrategy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/ContainersFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/ContainersFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/MatricesFactories/MatricesFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/MatricesFactories/MatricesFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/MatricesFactories/MatricesFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/VectorsFactories/VectorsFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/VectorsFactories/VectorsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/VectorsFactories/VectorsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Docker/Docker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Docker/Docker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Docker/Docker.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Docker/Docker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/IConnectible.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/IConnectible.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/IPopulatible.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/IPopulatible.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/IPrintable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/IPrintable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/ConvolutionLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/ConvolutionLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/ConvolutionLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/DownsamplingLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/DownsamplingLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/DownsamplingLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/FullyConnectedLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/FullyConnectedLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/FullyConnectedLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/InputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/InputLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/InputLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/InputLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/OutputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/OutputLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/OutputLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/OutputLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/LayerPrototypes/PrototypeLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/LayerPrototypes/PrototypeLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/Layer1D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers1D/Layer1D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/Layer1D.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers1D/Layer1D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_FullyConnectedLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers1D/_FullyConnectedLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_FullyConnectedLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers1D/_FullyConnectedLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_OutputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers1D/_OutputLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers1D/_OutputLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers1D/_OutputLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/Layer2D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/Layer2D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/Layer2D.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/Layer2D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_ConvolutionLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/_ConvolutionLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_ConvolutionLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/_ConvolutionLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_DownsamplingLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/_DownsamplingLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_DownsamplingLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/_DownsamplingLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_InputLayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/_InputLayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Layers/Layers2D/_InputLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Layers/Layers2D/_InputLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuralNetwork.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuralNetwork.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuralNetwork.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuralNetwork.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/ExternallyWeightedNeuron.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/ExternallyWeightedNeuron.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/ExternallyWeightedNeuron.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/ExternallyWeightedNeuron.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Neuron.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/Neuron.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Neuron.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/Neuron.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/WeightlessNeuron.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/WeightlessNeuron.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/WeightlessNeuron.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/WeightlessNeuron.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Weights.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/Weights.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/Neurons/Weights.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Neurons/Weights.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnecting1toAll.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toAll.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnecting1toAll.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnecting1toArea.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnecting1toArea.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnecting1toArea.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnectingError.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnectingError.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnectingError.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnectingError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsConnections/NeuronsConnectingStrategy.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsConnections/NeuronsConnectingStrategy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsFactories/ExternallyWeightedNeuronsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsFactories/NeuronsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsFactories/NeuronsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsFactories/WeightlessNeuronsFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/NeuronsFactories/WeightlessNeuronsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/NeuronsFactories/WeightlessNeuronsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/exceptions/Exceptions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exceptions/Exceptions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/model/exceptions/Exceptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/exceptions/Exceptions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/output/ConsolePrinter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/ConsolePrinter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/output/ConsolePrinter.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/ConsolePrinter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/output/OutputPrinter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/OutputPrinter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/output/OutputPrinter.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/OutputPrinter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/output/OutputSource.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/OutputSource.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source-files/output/OutputSource.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/OutputSource.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +254,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -226,11 +308,23 @@
       <workItem from="1586785333081" duration="29975000" />
       <workItem from="1586905929181" duration="67000" />
       <workItem from="1586906141109" duration="4440000" />
+      <workItem from="1587000346874" duration="4625000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="243" key="#New_File_Extensions" timestamp="1586712949541">
@@ -242,15 +336,17 @@
     </state>
     <state x="414" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586690792134" />
     <state x="2334" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@1920.0.1920.1170" timestamp="1586655757389" />
-    <state x="742" y="300" key="#com.intellij.ide.util.MemberChooser" timestamp="1586908118702">
-      <screen x="0" y="0" width="1920" height="1170" />
+    <state x="742" y="267" key="#com.intellij.ide.util.MemberChooser" timestamp="1587003003265">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="742" y="267" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587003003265" />
     <state x="742" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586648288443" />
     <state x="2662" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@1920.0.1920.1170" timestamp="1586625112010" />
     <state x="742" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586908118702" />
-    <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586827183187">
-      <screen x="0" y="0" width="1920" height="1170" />
+    <state x="690" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587001513082">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587001513082" />
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586647053206" />
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586827183187" />
     <state x="715" y="287" key="#xdebugger.evaluate" timestamp="1586730978535">
@@ -324,19 +420,22 @@
     </state>
     <state x="1944" y="-13" width="1579" height="805" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586653193526" />
     <state x="2401" y="-17" width="864" height="798" maximized="true" key="dock-window-1/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586910337012" />
-    <state x="838" y="219" key="refactoring.ChangeSignatureDialog" timestamp="1586908653265">
-      <screen x="0" y="0" width="1920" height="1170" />
+    <state x="838" y="195" key="refactoring.ChangeSignatureDialog" timestamp="1587003273230">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="838" y="195" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587003273230" />
     <state x="701" y="228" key="refactoring.ChangeSignatureDialog/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586630841869" />
     <state x="838" y="219" key="refactoring.ChangeSignatureDialog/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586908653265" />
-    <state x="616" y="273" width="672" height="677" key="run.anything.popup" timestamp="1586907583118">
-      <screen x="0" y="0" width="1920" height="1170" />
+    <state x="616" y="243" width="672" height="602" key="run.anything.popup" timestamp="1587002106234">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="616" y="243" width="672" height="602" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587002106234" />
     <state x="616" y="273" width="672" height="677" key="run.anything.popup/0.0.1920.1170/-1280.75.1280.994/1920.0.1920.1170@0.0.1920.1170" timestamp="1586646378458" />
     <state x="616" y="273" width="672" height="677" key="run.anything.popup/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586907583118" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586705539944">
-      <screen x="0" y="0" width="1920" height="1170" />
+    <state x="623" y="228" width="672" height="603" key="search.everywhere.popup" timestamp="1587001221759">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="623" y="228" width="672" height="603" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587001221759" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/1920.0.1920.1170/-1280.75.1280.994@0.0.1920.1170" timestamp="1586705539944" />
   </component>
   <component name="XDebuggerManager">
