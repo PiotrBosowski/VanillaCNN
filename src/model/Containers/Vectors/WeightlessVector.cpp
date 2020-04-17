@@ -2,13 +2,12 @@
 // Created by piotr on 20/04/11.
 //
 
-#include "../../NeuronsFactories/NeuronsFactory.h"
 #include "Vector.h"
 #include "WeightlessVector.h"
 #include "../../exceptions/Exceptions.h"
 
-WeightlessVector::WeightlessVector(NeuronsFactory &neuronFactory, int vectorHeight)
-: Vector(neuronFactory, vectorHeight) {}
+WeightlessVector::WeightlessVector(int vectorHeight)
+: Vector(vectorHeight) {}
 
 void
 WeightlessVector::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,

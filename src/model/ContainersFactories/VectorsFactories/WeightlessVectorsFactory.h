@@ -14,8 +14,7 @@ class WeightlessVectorsFactory : public VectorsFactory
 public:
     explicit WeightlessVectorsFactory(int numberOfNeurons);
 
-    std::unique_ptr<Container> createContainer(
-            NeuronsFactory& neuronsFactory) override;
+    std::unique_ptr<Container> createContainer() override;
 private:
     int numberOfNeurons;
 };

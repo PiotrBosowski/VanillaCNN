@@ -6,9 +6,9 @@
 #include "Vector.h"
 #include "../../exceptions/Exceptions.h"
 
-Vector::Vector(NeuronsFactory& neuronFactory, int vectorHeight)
+Vector::Vector(int vectorHeight)
           : vectorHeight{ vectorHeight }
 {
     for(int i = 0; i < vectorHeight; i++)
-        neurons.push_back(neuronFactory.createNeuron());
+        neurons.push_back(std::make_unique<Neuron>());
 }

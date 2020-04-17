@@ -8,3 +8,11 @@ double Neuron::getValue()
 {
     return value;
 }
+
+void Neuron::acceptConnection(std::unique_ptr<Connection> connection) {
+    connections.add(std::move(connection));
+}
+
+void Neuron::calculateValue() {
+
+}

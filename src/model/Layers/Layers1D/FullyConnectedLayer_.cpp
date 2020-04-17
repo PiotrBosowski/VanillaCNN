@@ -6,7 +6,6 @@
 #include "../../ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1toAll.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toAll.h"
-#include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../exceptions/Exceptions.h"
 #include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 #include <sstream>
@@ -21,8 +20,7 @@ FullyConnectedLayer_::FullyConnectedLayer_(Layer* previousLayer, int numberOfNeu
 
 void FullyConnectedLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
-    docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons),
-                             *std::make_unique<WeightlessNeuronsFactory>());
+    docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons));
 }
 
 void FullyConnectedLayer_::connect() {

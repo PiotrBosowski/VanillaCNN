@@ -6,7 +6,6 @@
 #include "DownsamplingLayer_.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1to1.h"
-#include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 #include "../../exceptions/Exceptions.h"
 #include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
@@ -25,8 +24,7 @@ DownsamplingLayer_::DownsamplingLayer_(Layer* previousLayer, int downsamplerHeig
 
 void DownsamplingLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
-    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
-                             *std::make_unique<WeightlessNeuronsFactory>());
+    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth));
 }
 void DownsamplingLayer_::connect() {
     docker->createConnections(

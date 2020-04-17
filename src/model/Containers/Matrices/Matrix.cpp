@@ -6,7 +6,7 @@
 #include "Matrix.h"
 #include "../../exceptions/Exceptions.h"
 
-Matrix::Matrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth)
+Matrix::Matrix(int matrixHeight, int matrixWidth)
             :
             matrixHeight{ matrixHeight },
              matrixWidth{ matrixWidth }
@@ -14,7 +14,7 @@ Matrix::Matrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth
     if (matrixHeight < 1 || matrixWidth < 1) throw LayerCreatingException("bad matrix initialization");
     for (int i = 0; i < matrixWidth * matrixHeight; i++)
     {
-        neurons.push_back(neuronsFactory.createNeuron());
+        neurons.push_back(std::make_unique<Neuron>());
     }
 }
 

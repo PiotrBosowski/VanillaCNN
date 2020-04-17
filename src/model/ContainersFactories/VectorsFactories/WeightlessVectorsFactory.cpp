@@ -12,7 +12,7 @@ WeightlessVectorsFactory::WeightlessVectorsFactory(int numberOfNeurons)
 }
 
 std::unique_ptr<Container>
-WeightlessVectorsFactory::createContainer(NeuronsFactory& neuronsFactory) {
+WeightlessVectorsFactory::createContainer() {
 
-    return std::make_unique<WeightlessVector>(neuronsFactory, numberOfNeurons);
+    return std::make_unique<WeightlessVector>(numberOfNeurons);
 }

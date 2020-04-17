@@ -14,7 +14,6 @@
 
 class ContainersConnectingStrategy;
 class ContainersFactory;
-class NeuronsFactory;
 class NeuronsConnectingStrategy;
 
 class Docker
@@ -24,7 +23,7 @@ public:
     Docker(int numberOfContainers);
 
     std::vector<std::unique_ptr<Container>>& getContainers();
-    void createContainers(ContainersFactory&, NeuronsFactory&);
+    void createContainers(ContainersFactory&);
     void createConnections(Docker* previousDocker, ContainersConnectingStrategy&, NeuronsConnectingStrategy&, ConnectionsFactory&);
     int size();
 

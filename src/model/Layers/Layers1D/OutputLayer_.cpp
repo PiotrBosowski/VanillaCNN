@@ -6,9 +6,7 @@
 #include "OutputLayer_.h"
 #include "../../ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1toAll.h"
-#include "../../NeuronsFactories/ExternallyWeightedNeuronsFactory.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toAll.h"
-#include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../exceptions/Exceptions.h"
 #include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 
@@ -22,8 +20,7 @@ OutputLayer_::OutputLayer_(Layer* previousLayer, int numberOfNeurons)
 
 void OutputLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
-    docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons),
-                             *std::make_unique<WeightlessNeuronsFactory>());
+    docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons));
 }
 
 void OutputLayer_::connect() {

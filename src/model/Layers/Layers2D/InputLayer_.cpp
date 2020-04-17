@@ -5,7 +5,6 @@
 #include <sstream>
 #include "InputLayer_.h"
 #include "../../ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
-#include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../exceptions/Exceptions.h"
 
 InputLayer_::InputLayer_(int inputHeight, int inputWidth)
@@ -18,8 +17,7 @@ InputLayer_::InputLayer_(int inputHeight, int inputWidth)
 
 void InputLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
-    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
-                             *std::make_unique<WeightlessNeuronsFactory>());
+    docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth));
 }
 
 void InputLayer_::connect() {

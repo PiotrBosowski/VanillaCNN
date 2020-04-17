@@ -34,11 +34,11 @@ public:
     /**
     @brief Adds a connection to preceeding Neuron to @c this->Neuron::connections.
     @arg @c preceding - Reference to the preceding Neuron.*/
-    virtual void acceptConnection(std::unique_ptr<Connection> connection) = 0;
+    virtual void acceptConnection(std::unique_ptr<Connection> connection);
 
     /**
     @brief Calculates new Neuron's value and stores it in Neuron::value.*/
-    virtual void calculateValue() = 0;
+    void calculateValue();
 };
 
 #endif //VANILLACNN_CLION_NEURON_H

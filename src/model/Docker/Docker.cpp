@@ -20,11 +20,11 @@ std::vector<std::unique_ptr<Container>>& Docker::getContainers()
     return containers;
 }
 
-void Docker::createContainers(ContainersFactory& containersFactory, NeuronsFactory& neuronsFactory)
+void Docker::createContainers(ContainersFactory& containersFactory)
 {
     for (int i = 0; i < numberOfContainers; i++)
     {
-        containers.push_back(containersFactory.createContainer(neuronsFactory));
+        containers.push_back(containersFactory.createContainer());
     }
 }
 

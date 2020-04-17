@@ -13,7 +13,7 @@
 class Matrix : public Container, public IContainer2D
 {
 public:
-    Matrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth);
+    Matrix(int matrixHeight, int matrixWidth);
 
 public:
     unsigned int getHeightFromIndex(unsigned int neuronIndex) override;

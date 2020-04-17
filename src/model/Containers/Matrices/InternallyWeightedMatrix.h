@@ -12,7 +12,7 @@
 class InternallyWeightedMatrix : public Matrix, public IInternallyWeightedContainer
 {
 public:
-    InternallyWeightedMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth, int weightsHeight, int weightsWidth);
+    InternallyWeightedMatrix(int matrixHeight, int matrixWidth, int weightsHeight, int weightsWidth);
 
 private:
     int weightsHeight;

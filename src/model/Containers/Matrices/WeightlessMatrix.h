@@ -12,7 +12,7 @@
 class WeightlessMatrix : public Matrix, public IWeightlessContainer
 {
 public:
-    WeightlessMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth);
+    WeightlessMatrix(int matrixHeight, int matrixWidth);
 
     void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory, Container &precedingContainer) override;
 };

@@ -9,7 +9,6 @@
 #include <memory>
 #include "../Containers/Container.h"
 #include "../ContainersConnectingStrategy/ContainersConnectingStrategy.h"
-#include "../NeuronsFactories/NeuronsFactory.h"
 #include "../ContainersFactories/ContainersFactory.h"
 #include "../NeuronsConnections/NeuronsConnectingStrategy.h"
 #include "../Docker/Docker.h"

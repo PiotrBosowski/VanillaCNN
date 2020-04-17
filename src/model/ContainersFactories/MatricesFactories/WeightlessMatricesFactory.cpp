@@ -12,6 +12,6 @@ WeightlessMatricesFactory::WeightlessMatricesFactory(int matrixHeight, int matri
 }
 
 std::unique_ptr<Container>
-WeightlessMatricesFactory::createContainer(NeuronsFactory& neuronsFactory) {
-    return std::make_unique<WeightlessMatrix>(neuronsFactory, matrixHeight, matrixWidth);
+WeightlessMatricesFactory::createContainer() {
+    return std::make_unique<WeightlessMatrix>(matrixHeight, matrixWidth);
 }

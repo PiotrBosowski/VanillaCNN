@@ -3,12 +3,11 @@
 //
 
 #include "InternallyWeightedMatrix.h"
-#include "../../Neurons/ExternallyWeightedNeuron.h"
 #include "../../exceptions/Exceptions.h"
 
-InternallyWeightedMatrix::InternallyWeightedMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth,
+InternallyWeightedMatrix::InternallyWeightedMatrix(int matrixHeight, int matrixWidth,
                                                    int weightsHeight, int weightsWidth)
-                       : Matrix(neuronsFactory, matrixHeight, matrixWidth),
+                       : Matrix(matrixHeight, matrixWidth),
                        weightsHeight(weightsHeight), weightsWidth(weightsWidth)
 {
     weights = std::make_unique<Weights>(weightsHeight, weightsWidth);

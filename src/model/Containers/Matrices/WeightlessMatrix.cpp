@@ -5,8 +5,8 @@
 #include "WeightlessMatrix.h"
 #include "../../exceptions/Exceptions.h"
 
-WeightlessMatrix::WeightlessMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth)
-    : Matrix(neuronsFactory, matrixHeight, matrixWidth) {}
+WeightlessMatrix::WeightlessMatrix(int matrixHeight, int matrixWidth)
+    : Matrix(matrixHeight, matrixWidth) {}
 
 void
 WeightlessMatrix::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,

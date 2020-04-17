@@ -8,7 +8,6 @@
 #include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
 #include "../../exceptions/Exceptions.h"
 #include "../../ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
-#include "../../NeuronsFactories/ExternallyWeightedNeuronsFactory.h"
 #include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
 #include "../../ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
 
@@ -33,8 +32,7 @@ void ConvolutionLayer_::populate() {
                     matrixWidth,
                     featureDetectorHeight,
                     featureDetectorWidth
-                ),
-             *std::make_unique<ExternallyWeightedNeuronsFactory>());
+                ));
 }
 
 void ConvolutionLayer_::connect() {
