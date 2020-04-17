@@ -10,6 +10,8 @@
 
 class InternallyWeightedConnection : public Connection
 {
+public:
+    explicit InternallyWeightedConnection(Neuron& connNeuron);
 protected:
     double connectionWeight;
 };

@@ -18,7 +18,7 @@ void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy &neuronsConnect
                                        ConnectionsFactory &connectionsFactory, Container &precedingContainer) {
     try{
         for (int i = 0; i < this->neurons.size(); ++i) {
-            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(i, *this, &precedingContainer);
             connectionsFactory.makeConnections(i, *this, connections);
         }
     }
@@ -28,6 +28,6 @@ void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy &neuronsConnect
 }
 
 double &InternallyWeightedMatrix::getWeight(int neuronIndex) {
-    weights->getWeight(neuronIndex);
+    return weights->getWeight(neuronIndex);
 }
 

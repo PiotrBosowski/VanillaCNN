@@ -7,12 +7,14 @@
 
 
 #include "Matrix.h"
-class WeightlessMatrix : public Matrix
+#include "../IWeightlessContainer.h"
+
+class WeightlessMatrix : public Matrix, public IWeightlessContainer
 {
 public:
     WeightlessMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth);
 
-    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory, Container &preceedingContainer) override;
+    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory, Container &precedingContainer) override;
 };
 
 

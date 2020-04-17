@@ -5,7 +5,7 @@
 
 
 #include "ConvolutionLayer.h"
-#include "../Layers2D/_ConvolutionLayer.h"
+#include "../Layers2D/ConvolutionLayer_.h"
 
 ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
         : numberOfFeatureDetectors{ numberOfFeatureDetectors }, featureDetectorHeight{ featureDetectorHeight }, featureDetectorWidth{ featureDetectorWidth }
@@ -14,5 +14,5 @@ ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDete
 
 std::unique_ptr<Layer> ConvolutionLayer::embodyLayer(Layer* previousLayer)
 {
-    return std::make_unique<_ConvolutionLayer>(previousLayer, numberOfFeatureDetectors, featureDetectorHeight, featureDetectorWidth);
+    return std::make_unique<ConvolutionLayer_>(previousLayer, numberOfFeatureDetectors, featureDetectorHeight, featureDetectorWidth);
 }

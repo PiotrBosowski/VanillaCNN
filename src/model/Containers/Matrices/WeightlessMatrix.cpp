@@ -3,7 +3,6 @@
 //
 
 #include "WeightlessMatrix.h"
-#include "../../Neurons/WeightlessNeuron.h"
 #include "../../exceptions/Exceptions.h"
 
 WeightlessMatrix::WeightlessMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth)
@@ -14,8 +13,8 @@ WeightlessMatrix::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, 
                           Container &precedingContainer) {
     try{
         for (int i = 0; i < this->neurons.size(); ++i) {
-            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
-            connectionsFactory.makeConnections(*this, connections);
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(i, *this, &precedingContainer);
+            connectionsFactory.makeConnections(i, *this, connections);
         }
     }
     catch (const std::bad_cast&) {

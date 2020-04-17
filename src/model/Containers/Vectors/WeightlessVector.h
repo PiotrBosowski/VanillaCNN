@@ -6,7 +6,9 @@
 #define VANILLACNN_CLION_WEIGHTLESSVECTOR_H
 
 #include "Vector.h"
-class WeightlessVector : public Vector
+#include "../IWeightlessContainer.h"
+
+class WeightlessVector : public Vector, public IWeightlessContainer
 {
 public:
     WeightlessVector(NeuronsFactory &neuronFactory, int vectorHeight);

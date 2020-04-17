@@ -5,7 +5,6 @@
 #include "../../NeuronsFactories/NeuronsFactory.h"
 #include "Vector.h"
 #include "WeightlessVector.h"
-#include "../../Neurons/WeightlessNeuron.h"
 #include "../../exceptions/Exceptions.h"
 
 WeightlessVector::WeightlessVector(NeuronsFactory &neuronFactory, int vectorHeight)
@@ -15,12 +14,9 @@ void
 WeightlessVector::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
                           Container &precedingContainer) {
     try {
-        for (auto & neuron : neurons) {
-            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
-            for(auto& conn : connections)
-            {
-                dynamic_cast<WeightlessNeuron*>(neuron.get())->connect(*conn);
-            }
+        for (int i = 0; i < this->neurons.size(); ++i) {
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(i, *this, &precedingContainer);
+            connectionsFactory.makeConnections(i, *this, connections);
         }
     }
     catch (const std::bad_cast&) {

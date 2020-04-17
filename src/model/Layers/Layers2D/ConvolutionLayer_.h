@@ -2,8 +2,8 @@
 // Created by piotr on 20/04/11.
 //
 
-#ifndef VANILLACNN_CLION__CONVOLUTIONLAYER_H
-#define VANILLACNN_CLION__CONVOLUTIONLAYER_H
+#ifndef VANILLACNN_CLION_CONVOLUTIONLAYER__H
+#define VANILLACNN_CLION_CONVOLUTIONLAYER__H
 
 
 #include "Layer2D.h"
@@ -12,10 +12,10 @@
 #include <string>
 
 
-class _ConvolutionLayer : public Layer2D
+class ConvolutionLayer_ : public Layer2D
 {
 public:
-    _ConvolutionLayer(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth);
+    ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth);
 
 private:
     int featureDetectorHeight;
@@ -33,4 +33,4 @@ public:
 
 
 
-#endif //VANILLACNN_CLION__CONVOLUTIONLAYER_H
+#endif //VANILLACNN_CLION_CONVOLUTIONLAYER__H

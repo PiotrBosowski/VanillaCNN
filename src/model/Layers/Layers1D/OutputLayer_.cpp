@@ -3,7 +3,7 @@
 //
 
 #include <sstream>
-#include "_OutputLayer.h"
+#include "OutputLayer_.h"
 #include "../../ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1toAll.h"
 #include "../../NeuronsFactories/ExternallyWeightedNeuronsFactory.h"
@@ -12,7 +12,7 @@
 #include "../../exceptions/Exceptions.h"
 #include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 
-_OutputLayer::_OutputLayer(Layer* previousLayer, int numberOfNeurons)
+OutputLayer_::OutputLayer_(Layer* previousLayer, int numberOfNeurons)
         : Layer1D{ previousLayer,
            1,
            numberOfNeurons }
@@ -20,13 +20,13 @@ _OutputLayer::_OutputLayer(Layer* previousLayer, int numberOfNeurons)
     if(previousLayer == nullptr) throw LayerCreatingException("Cannot create Output Layer without any preceding layers");
 }
 
-void _OutputLayer::populate() {
+void OutputLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
     docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons),
                              *std::make_unique<WeightlessNeuronsFactory>());
 }
 
-void _OutputLayer::connect() {
+void OutputLayer_::connect() {
     docker->createConnections(
             previousLayer->getDocker().get(),
             *std::make_unique<ContainersConnecting1toAll>(),
@@ -35,7 +35,7 @@ void _OutputLayer::connect() {
     );
 }
 
-std::string _OutputLayer::getSummary()
+std::string OutputLayer_::getSummary()
 {
     std::stringstream ss;
     ss << "Output Layer. Containers: "<< numberOfContainers << ", neurons: " << this->numberOfNeurons << std::endl;

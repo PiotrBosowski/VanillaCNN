@@ -6,8 +6,6 @@
 #ifndef VANILLACNN_CLION_NEURON_H
 #define VANILLACNN_CLION_NEURON_H
 #include <ostream>
-
-
 #include "../ConnectionsSet/ConnectionsSet.h"
 
 /**
@@ -36,7 +34,7 @@ public:
     /**
     @brief Adds a connection to preceeding Neuron to @c this->Neuron::connections.
     @arg @c preceding - Reference to the preceding Neuron.*/
-    virtual void connect(Neuron& preceding) = 0;
+    virtual void acceptConnection(std::unique_ptr<Connection> connection) = 0;
 
     /**
     @brief Calculates new Neuron's value and stores it in Neuron::value.*/

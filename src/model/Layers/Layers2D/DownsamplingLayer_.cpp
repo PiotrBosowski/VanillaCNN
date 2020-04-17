@@ -3,7 +3,7 @@
 //
 
 #include <sstream>
-#include "_DownsamplingLayer.h"
+#include "DownsamplingLayer_.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1to1.h"
 #include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
@@ -11,7 +11,7 @@
 #include "../../exceptions/Exceptions.h"
 #include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
 
-_DownsamplingLayer::_DownsamplingLayer(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth)
+DownsamplingLayer_::DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth)
         : Layer2D{ previousLayer,
                    previousLayer->getNumberOfContainers(),
                    dynamic_cast<Layer2D&>(*previousLayer).getMatrixHeight() / downsamplerHeight,
@@ -23,12 +23,12 @@ _DownsamplingLayer::_DownsamplingLayer(Layer* previousLayer, int downsamplerHeig
     if(previousLayer == nullptr) throw LayerCreatingException("Cannot create DownsamplingLayer before any preceeding layers");
 }
 
-void _DownsamplingLayer::populate() {
+void DownsamplingLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
     docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
                              *std::make_unique<WeightlessNeuronsFactory>());
 }
-void _DownsamplingLayer::connect() {
+void DownsamplingLayer_::connect() {
     docker->createConnections(
             previousLayer->getDocker().get(),
             *std::make_unique<ContainersConnecting1to1>(),
@@ -37,17 +37,17 @@ void _DownsamplingLayer::connect() {
     );
 }
 
-int _DownsamplingLayer::getDownsamplerHeight()
+int DownsamplingLayer_::getDownsamplerHeight()
 {
     return downsamplerHeight;
 }
 
-int _DownsamplingLayer::getDownsamplerWidth()
+int DownsamplingLayer_::getDownsamplerWidth()
 {
     return downsamplerWidth;
 }
 
-std::string _DownsamplingLayer::getSummary()
+std::string DownsamplingLayer_::getSummary()
 {
     std::stringstream ss;
     ss << "Downsampling Layer. Containers: "<< numberOfContainers << ", matrixH: "

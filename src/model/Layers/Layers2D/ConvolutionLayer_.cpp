@@ -3,7 +3,7 @@
 //
 
 #include <sstream>
-#include "_ConvolutionLayer.h"
+#include "ConvolutionLayer_.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
 #include "../../exceptions/Exceptions.h"
@@ -12,7 +12,7 @@
 #include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
 #include "../../ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
 
-_ConvolutionLayer::_ConvolutionLayer(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
+ConvolutionLayer_::ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
         : Layer2D{
             previousLayer,
             numberOfFeatureDetectors,
@@ -25,7 +25,7 @@ _ConvolutionLayer::_ConvolutionLayer(Layer* previousLayer, int numberOfFeatureDe
     if(previousLayer == nullptr) throw LayerCreatingException("Cannot create Convolution Layer before any preceding layers");
 }
 
-void _ConvolutionLayer::populate() {
+void ConvolutionLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
     docker->createContainers(
             *std::make_unique<InternallyWeightedMatricesFactory>(
@@ -37,7 +37,7 @@ void _ConvolutionLayer::populate() {
              *std::make_unique<ExternallyWeightedNeuronsFactory>());
 }
 
-void _ConvolutionLayer::connect() {
+void ConvolutionLayer_::connect() {
     docker->createConnections(
                 previousLayer->getDocker().get(),
                 *std::make_unique<ContainersConnecting1toRandom>(),
@@ -46,22 +46,22 @@ void _ConvolutionLayer::connect() {
             );
 }
 
-int _ConvolutionLayer::getFeatureDetectorHeight()
+int ConvolutionLayer_::getFeatureDetectorHeight()
 {
     return featureDetectorHeight;
 }
 
-int _ConvolutionLayer::getFeatureDetectorWidth()
+int ConvolutionLayer_::getFeatureDetectorWidth()
 {
     return featureDetectorWidth;
 }
 
-std::string _ConvolutionLayer::getSummary()
+std::string ConvolutionLayer_::getSummary()
 {
     std::stringstream ss;
     ss << "Convolution Layer. Containers: "<< numberOfContainers << ", matrixH: " << this->matrixHeight << ", matrixW: "
     << this->matrixWidth << ", detectorH: " << this->featureDetectorHeight << ", detectorW: " << this->featureDetectorWidth << std::endl;
-    //return ss.str() + Layer::getSummary(); TODO
+    //return ss.str() + Layer::getSummary(); TODO make getSummary recursive
     return ss.str();
 }
 

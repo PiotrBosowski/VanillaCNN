@@ -34,3 +34,12 @@ Neuron& Matrix::getNeuron(unsigned int row, unsigned int column)
         return *neurons[(unsigned long)row * (unsigned long)matrixWidth + column];
     else throw ContainerOutOfRangeException();
 }
+
+unsigned int Matrix::getHeightFromIndex(unsigned int neuronIndex) {
+    return neuronIndex/matrixHeight;
+}
+
+unsigned int Matrix::getWidthFromIndex(unsigned int neuronIndex) {
+    return neuronIndex%matrixWidth;
+}
+

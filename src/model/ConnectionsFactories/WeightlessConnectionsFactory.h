@@ -10,7 +10,7 @@
 
 class WeightlessConnectionsFactory : public ConnectionsFactory {
 public:
-    void makeConnections(Container &source, const std::vector<Neuron *> &connections) override;
+    void makeConnections(int neuronIndex, Container &source, const std::vector<Neuron *> &connections) override;
 };
 
 

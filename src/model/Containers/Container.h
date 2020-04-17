@@ -11,6 +11,7 @@
 #include "../ConnectionsFactories/ConnectionsFactory.h"
 
 class Neuron;
+class ConnectionsFactory;
 
 class Container
 {

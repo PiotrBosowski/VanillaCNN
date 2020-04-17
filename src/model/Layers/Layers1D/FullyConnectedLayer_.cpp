@@ -2,7 +2,7 @@
 // Created by piotr on 20/04/11.
 //
 
-#include "_FullyConnectedLayer.h"
+#include "FullyConnectedLayer_.h"
 #include "../../ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
 #include "../../ContainersConnectingStrategy/ContainersConnecting1toAll.h"
 #include "../../NeuronsConnections/NeuronsConnecting1toAll.h"
@@ -11,7 +11,7 @@
 #include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 #include <sstream>
 
-_FullyConnectedLayer::_FullyConnectedLayer(Layer* previousLayer, int numberOfNeurons)
+FullyConnectedLayer_::FullyConnectedLayer_(Layer* previousLayer, int numberOfNeurons)
         : Layer1D{ previousLayer,
                    1,
                    numberOfNeurons }
@@ -19,13 +19,13 @@ _FullyConnectedLayer::_FullyConnectedLayer(Layer* previousLayer, int numberOfNeu
     if(previousLayer == nullptr) throw LayerCreatingException("Cannot create Fully Connected Layer without any preceding layers");
 }
 
-void _FullyConnectedLayer::populate() {
+void FullyConnectedLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
     docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons),
                              *std::make_unique<WeightlessNeuronsFactory>());
 }
 
-void _FullyConnectedLayer::connect() {
+void FullyConnectedLayer_::connect() {
     docker->createConnections(
             previousLayer->getDocker().get(),
             *std::make_unique<ContainersConnecting1toAll>(),
@@ -34,7 +34,7 @@ void _FullyConnectedLayer::connect() {
     );
 }
 
-std::string _FullyConnectedLayer::getSummary()
+std::string FullyConnectedLayer_::getSummary()
 {
     std::stringstream ss;
     ss << "Fully Connected Layer. Containers: "<< numberOfContainers << ", neurons: " << this->numberOfNeurons << std::endl;

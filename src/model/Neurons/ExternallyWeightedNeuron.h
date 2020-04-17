@@ -11,8 +11,7 @@ class ExternallyWeightedNeuron :
         public Neuron
 {
 public:
-    void connect(Neuron &preceding) override;
-    void connect(Neuron& preceding, double& weightReference);
+    void acceptConnection(std::unique_ptr<Connection> connection) override;
 
     void calculateValue() override;
 };

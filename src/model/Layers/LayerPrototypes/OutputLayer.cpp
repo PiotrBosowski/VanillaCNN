@@ -3,7 +3,7 @@
 //
 
 #include "OutputLayer.h"
-#include "../Layers1D/_OutputLayer.h"
+#include "../Layers1D/OutputLayer_.h"
 
 OutputLayer::OutputLayer(int numberOfNeurons)
         : numberOfNeurons{ numberOfNeurons }
@@ -12,5 +12,5 @@ OutputLayer::OutputLayer(int numberOfNeurons)
 
 std::unique_ptr<Layer> OutputLayer::embodyLayer(Layer* previousLayer)
 {
-    return std::make_unique<_OutputLayer>(previousLayer, numberOfNeurons);
+    return std::make_unique<OutputLayer_>(previousLayer, numberOfNeurons);
 }

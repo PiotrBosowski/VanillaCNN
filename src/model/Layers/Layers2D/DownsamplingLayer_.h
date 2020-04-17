@@ -2,8 +2,8 @@
 // Created by piotr on 20/04/11.
 //
 
-#ifndef VANILLACNN_CLION__DOWNSAMPLINGLAYER_H
-#define VANILLACNN_CLION__DOWNSAMPLINGLAYER_H
+#ifndef VANILLACNN_CLION_DOWNSAMPLINGLAYER__H
+#define VANILLACNN_CLION_DOWNSAMPLINGLAYER__H
 
 
 #include <memory>
@@ -11,10 +11,10 @@
 #include "Layer2D.h"
 
 
-class _DownsamplingLayer : public Layer2D
+class DownsamplingLayer_ : public Layer2D
 {
 public:
-    _DownsamplingLayer(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth);
+    DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth);
 
     std::string getSummary() override;
 
@@ -33,4 +33,4 @@ public:
 
 
 
-#endif //VANILLACNN_CLION__DOWNSAMPLINGLAYER_H
+#endif //VANILLACNN_CLION_DOWNSAMPLINGLAYER__H

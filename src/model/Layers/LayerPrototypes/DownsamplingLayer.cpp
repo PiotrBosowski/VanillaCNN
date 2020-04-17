@@ -3,7 +3,7 @@
 //
 
 #include "DownsamplingLayer.h"
-#include "../Layers2D/_DownsamplingLayer.h"
+#include "../Layers2D/DownsamplingLayer_.h"
 
 DownsamplingLayer::DownsamplingLayer(int downsamplerHeight, int downsamplerWidth)
         : downsamplerHeight{ downsamplerHeight }, downsamplerWidth{ downsamplerWidth }
@@ -12,5 +12,5 @@ DownsamplingLayer::DownsamplingLayer(int downsamplerHeight, int downsamplerWidth
 
 std::unique_ptr<Layer> DownsamplingLayer::embodyLayer(Layer* previousLayer)
 {
-    return std::make_unique<_DownsamplingLayer>(previousLayer, downsamplerHeight, downsamplerWidth);
+    return std::make_unique<DownsamplingLayer_>(previousLayer, downsamplerHeight, downsamplerWidth);
 }

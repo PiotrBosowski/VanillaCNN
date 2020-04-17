@@ -4,7 +4,7 @@
 
 
 #include "FullyConnectedLayer.h"
-#include "../Layers1D/_FullyConnectedLayer.h"
+#include "../Layers1D/FullyConnectedLayer_.h"
 
 FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons)
         : numberOfNeurons{ numberOfNeurons }
@@ -13,5 +13,5 @@ FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons)
 
 std::unique_ptr<Layer> FullyConnectedLayer::embodyLayer(Layer* previousLayer)
 {
-    return std::make_unique<_FullyConnectedLayer>(previousLayer, numberOfNeurons);
+    return std::make_unique<FullyConnectedLayer_>(previousLayer, numberOfNeurons);
 }

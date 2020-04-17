@@ -19,11 +19,6 @@ public:
 
 private:
     int vectorHeight;
-
-public:
-    int getVectorHeight();
-
-
 };
 
 

@@ -6,9 +6,10 @@
 #define VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
 #include "Matrix.h"
 #include "../../Neurons/Weights.h"
+#include "../IInternallyWeightedContainer.h"
 
 
-class InternallyWeightedMatrix : public Matrix
+class InternallyWeightedMatrix : public Matrix, public IInternallyWeightedContainer
 {
 public:
     InternallyWeightedMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth, int weightsHeight, int weightsWidth);
@@ -21,7 +22,7 @@ public:
     void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
                  Container &precedingContainer) override;
 
-    double& getWeight(int neuronIndex);
+    double& getWeight(int neuronIndex) override;
 };
 
 

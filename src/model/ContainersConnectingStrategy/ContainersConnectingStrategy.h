@@ -13,7 +13,6 @@ class ContainersConnectingStrategy
 {
 public:
     virtual std::vector<std::tuple<Container*, Container*>> proposeConnections(Docker& source, Docker* preceding) = 0;
-    //TODO returning type: references instead of pointers
 };
 
 #endif //VANILLACNN_CLION_CONTAINERSCONNECTINGSTRATEGY_H

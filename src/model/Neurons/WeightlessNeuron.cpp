@@ -4,7 +4,7 @@
 
 #include "WeightlessNeuron.h"
 
-void WeightlessNeuron::connect(Neuron &preceding) {
+void WeightlessNeuron::acceptConnection(std::unique_ptr<Connection> connection) {
 }
 
 void WeightlessNeuron::calculateValue() {
