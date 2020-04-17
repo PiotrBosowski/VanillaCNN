@@ -22,7 +22,8 @@ private:
 
 public:
     int getVectorHeight();
-    unsigned int getNumberOfNeurons() override;
+
+
 };
 
 

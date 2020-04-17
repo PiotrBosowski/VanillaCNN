@@ -17,8 +17,3 @@ int Vector::getVectorHeight()
 {
     return vectorHeight;
 }
-
-unsigned int Vector::getNumberOfNeurons()
-{
-    return vectorHeight;
-}

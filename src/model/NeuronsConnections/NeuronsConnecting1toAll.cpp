@@ -14,5 +14,6 @@ std::vector<Neuron *> NeuronsConnecting1toAll::proposeSingleNeuronConnections(Co
         Neuron* previousNeuron = &preceding->getNeuron(j);
         result.emplace_back(previousNeuron);
     }
+    moveToTheNextNeuron((int)preceding->getNumberOfNeurons());
     return result;
 }

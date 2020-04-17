@@ -9,6 +9,7 @@
 #include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 #include "../../exceptions/Exceptions.h"
+#include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
 
 _DownsamplingLayer::_DownsamplingLayer(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth)
         : Layer2D{ previousLayer,
@@ -27,13 +28,13 @@ void _DownsamplingLayer::populate() {
     docker->createContainers(*std::make_unique<WeightlessMatricesFactory>(matrixHeight, matrixWidth),
                              *std::make_unique<WeightlessNeuronsFactory>());
 }
-
 void _DownsamplingLayer::connect() {
-    auto connections = ContainersConnecting1to1().proposeConnections(*docker, previousLayer->getDocker().get());
-    for(auto& conn : connections)
-    {
-        std::get<0>(conn)->connect(*std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth), *std::get<1>(conn));
-    }
+    docker->createConnections(
+            previousLayer->getDocker().get(),
+            *std::make_unique<ContainersConnecting1to1>(),
+            *std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth),
+            *std::make_unique<WeightlessConnectionsFactory>()
+    );
 }
 
 int _DownsamplingLayer::getDownsamplerHeight()

@@ -15,7 +15,6 @@ public:
     void connect(Neuron& preceding, double& weightReference);
 
     void calculateValue() override;
-
 };
 
 #endif //VANILLACNN_CLION_EXTERNALLYWEIGHTEDNEURON_H

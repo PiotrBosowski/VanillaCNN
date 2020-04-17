@@ -22,6 +22,7 @@ public:
 protected:
     int currentNeuronHeight = 0;
     int currentNeuronWidth = 0;
+    void moveToTheNextNeuron(int sourceHeight, int sourceWidth = 1);
 };
 
 #endif //VANILLACNN_CLION_NEURONSCONNECTINGSTRATEGY_H

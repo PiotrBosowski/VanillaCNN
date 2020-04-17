@@ -3,3 +3,7 @@
 //
 
 #include "WeightlessConnectionsFactory.h"
+
+void WeightlessConnectionsFactory::makeConnections(Container &source, const std::vector<Neuron *> &connections) {
+    source.getNeuron()
+}

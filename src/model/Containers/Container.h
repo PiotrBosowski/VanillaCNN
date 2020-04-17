@@ -8,6 +8,7 @@
 #include <memory>
 #include "../NeuronsConnections/NeuronsConnectingStrategy.h"
 #include "../NeuronsFactories/NeuronsFactory.h"
+#include "../ConnectionsFactories/ConnectionsFactory.h"
 
 class Neuron;
 
@@ -17,11 +18,9 @@ protected:
     std::vector<std::unique_ptr<Neuron>> neurons;
 
 public:
-    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, Container& preceedingContainer) = 0;
+    virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory, Container& precedingContainer) = 0;
     Neuron& getNeuron(unsigned int index);
     unsigned int getNumberOfNeurons();
 };
-
-
 
 #endif //VANILLACNN_CLION_CONTAINER_H

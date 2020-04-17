@@ -24,10 +24,9 @@ public:
     Docker(int numberOfContainers);
 
     std::vector<std::unique_ptr<Container>>& getContainers();
-    int size();
     void createContainers(ContainersFactory&, NeuronsFactory&);
     void createConnections(Docker* previousDocker, ContainersConnectingStrategy&, NeuronsConnectingStrategy&, ConnectionsFactory&);
-
+    int size();
 
 private:
     int numberOfContainers;

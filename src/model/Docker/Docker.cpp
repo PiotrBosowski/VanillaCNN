@@ -30,5 +30,9 @@ void Docker::createContainers(ContainersFactory& containersFactory, NeuronsFacto
 
 void Docker::createConnections(Docker* previousDocker, ContainersConnectingStrategy& containersConnectingStrategy, NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory)
 {
-    containersConnectingStrategy.proposeConnections(neuronsConnectingStrategy, *this, previousDocker);
+    auto connections = containersConnectingStrategy.proposeConnections(*this, previousDocker);
+    for(auto& conn : connections)
+    {
+        std::get<0>(conn)->connect(neuronsConnectingStrategy, connectionsFactory, *std::get<1>(conn));
+    }
 }

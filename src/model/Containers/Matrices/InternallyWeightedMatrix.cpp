@@ -14,18 +14,20 @@ InternallyWeightedMatrix::InternallyWeightedMatrix(NeuronsFactory& neuronsFactor
     weights = std::make_unique<Weights>(weightsHeight, weightsWidth);
 }
 
-void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy& neuronsConnectingStrategy,
-                                       Container &precedingContainer) {
+void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy,
+                                       ConnectionsFactory &connectionsFactory, Container &precedingContainer) {
     try{
         for (int i = 0; i < this->neurons.size(); ++i) {
             auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
-            for (int j = 0; j < connections.size(); j++)
-            {
-                dynamic_cast<ExternallyWeightedNeuron*>(neurons[i].get())->connect(*connections[j], weights->getWeight(j));
-            }
+            connectionsFactory.makeConnections(i, *this, connections);
         }
     }
     catch (const std::bad_cast&) {
         throw NeuronsConnectingException("Internally Weighted Matrices requires Externally Weighted Neurons");
     }
 }
+
+double &InternallyWeightedMatrix::getWeight(int neuronIndex) {
+    weights->getWeight(neuronIndex);
+}
+

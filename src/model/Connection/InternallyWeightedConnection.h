@@ -7,12 +7,11 @@
 
 
 #include "Connection.h"
-#include "Weight.h"
 
 class InternallyWeightedConnection : public Connection
 {
 protected:
-    Weight connectionWeight;
+    double connectionWeight;
 };
 
 

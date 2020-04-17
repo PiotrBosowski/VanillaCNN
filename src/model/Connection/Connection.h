@@ -6,6 +6,8 @@
 #define VANILLACNN_CLION_CONNECTION_H
 
 
+#include <memory>
+
 class Neuron;
 
 class Connection
@@ -17,6 +19,8 @@ protected:
     Neuron& connectedNeuron;
 public:
     Neuron& getNeuron();
+    static std::unique_ptr<Connection> getConnection(Neuron&, double&);
+    static std::unique_ptr<Connection> getConnection(Neuron&);
 };
 
 

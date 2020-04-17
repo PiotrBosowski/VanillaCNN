@@ -10,6 +10,7 @@
 #include "../../NeuronsConnections/NeuronsConnecting1toAll.h"
 #include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../exceptions/Exceptions.h"
+#include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 
 _OutputLayer::_OutputLayer(Layer* previousLayer, int numberOfNeurons)
         : Layer1D{ previousLayer,
@@ -26,12 +27,12 @@ void _OutputLayer::populate() {
 }
 
 void _OutputLayer::connect() {
-    if(previousLayer)
-        docker->createConnections(previousLayer->getDocker().get(),
-                                  *std::make_unique<ContainersConnecting1toAll>(),
-                                  *std::make_unique<NeuronsConnecting1toAll>(),
-                                  *std::make_unique<ConnectionsFactory>()
-        );
+    docker->createConnections(
+            previousLayer->getDocker().get(),
+            *std::make_unique<ContainersConnecting1toAll>(),
+            *std::make_unique<NeuronsConnecting1toAll>(),
+            *std::make_unique<InternallyWeightedConnectionsFactory>()
+    );
 }
 
 std::string _OutputLayer::getSummary()

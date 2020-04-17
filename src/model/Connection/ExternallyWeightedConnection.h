@@ -7,12 +7,13 @@
 
 
 #include "Connection.h"
-#include "Weight.h"
 
-class UnweightedConnection : public Connection
+class ExternallyWeightedConnection : public Connection
 {
 protected:
-    Weight& connectionWeight;
+    double& connectionWeight;
+public:
+    ExternallyWeightedConnection(Neuron &connectedNeuron, double &connectionWeight);
 };
 
 

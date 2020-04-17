@@ -9,7 +9,8 @@
 #include "ConnectionsFactory.h"
 
 class WeightlessConnectionsFactory : public ConnectionsFactory {
-
+public:
+    void makeConnections(Container &source, const std::vector<Neuron *> &connections) override;
 };
 
 

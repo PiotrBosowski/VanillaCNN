@@ -6,8 +6,12 @@
 #define VANILLACNN_CLION_CONNECTIONSFACTORY_H
 
 
+#include "../Containers/Container.h"
+
 class ConnectionsFactory {
 
+public:
+    virtual void makeConnections(int neuronIndex,Container& source, const std::vector<Neuron*>& connections) = 0;
 };
 
 

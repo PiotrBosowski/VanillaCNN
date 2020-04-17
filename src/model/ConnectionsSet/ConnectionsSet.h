@@ -17,7 +17,7 @@ class ConnectionsSet
 private:
     std::vector<std::unique_ptr<Connection>> connections;
 public:
-    void add(Neuron& newConnection);
+    void add(std::unique_ptr<Connection> newConnection);
     int getNumberOfConnections();
     const Neuron& get(int index);
     double getNeuronsValue(int index);

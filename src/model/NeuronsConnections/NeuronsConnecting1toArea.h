@@ -19,7 +19,6 @@ private:
     int areaHeight;
     int areaWidth;
 
-    void moveToTheNextNeuron(int sourceHeight, int sourceWidth);
 };
 
 

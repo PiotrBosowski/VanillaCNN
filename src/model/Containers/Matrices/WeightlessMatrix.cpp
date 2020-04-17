@@ -9,18 +9,16 @@
 WeightlessMatrix::WeightlessMatrix(NeuronsFactory& neuronsFactory, int matrixHeight, int matrixWidth)
     : Matrix(neuronsFactory, matrixHeight, matrixWidth) {}
 
-void WeightlessMatrix::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, Container &precedingContainer) {
+void
+WeightlessMatrix::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
+                          Container &precedingContainer) {
     try{
-        for (auto & neuron : neurons) {
-            auto connections = neuronsConnectingStrategy.proposeConnections(*neuron, &precedingContainer);
-            for (auto & conn : connections)
-            {
-                dynamic_cast<WeightlessNeuron*>(neuron.get())->connect(*conn);
-            }
+        for (int i = 0; i < this->neurons.size(); ++i) {
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
+            connectionsFactory.makeConnections(*this, connections);
         }
     }
     catch (const std::bad_cast&) {
         throw NeuronsConnectingException("Weightless Matrix can only be used with Weightless Neurons");
     }
 }
-

@@ -11,7 +11,8 @@ class WeightlessVector : public Vector
 public:
     WeightlessVector(NeuronsFactory &neuronFactory, int vectorHeight);
 
-    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, Container &preceedingContainer) override;
+    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
+                 Container &preceedingContainer) override;
 };
 
 #endif //VANILLACNN_CLION_WEIGHTLESSVECTOR_H

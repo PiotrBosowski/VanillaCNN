@@ -10,6 +10,7 @@
 #include "../../ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
 #include "../../NeuronsFactories/ExternallyWeightedNeuronsFactory.h"
 #include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
+#include "../../ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
 
 _ConvolutionLayer::_ConvolutionLayer(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
         : Layer2D{
@@ -26,17 +27,23 @@ _ConvolutionLayer::_ConvolutionLayer(Layer* previousLayer, int numberOfFeatureDe
 
 void _ConvolutionLayer::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
-    docker->createContainers(*std::make_unique<InternallyWeightedMatricesFactory>(
-            matrixHeight, matrixWidth, featureDetectorHeight, featureDetectorWidth),
-                             *std::make_unique<ExternallyWeightedNeuronsFactory>());
+    docker->createContainers(
+            *std::make_unique<InternallyWeightedMatricesFactory>(
+                    matrixHeight,
+                    matrixWidth,
+                    featureDetectorHeight,
+                    featureDetectorWidth
+                ),
+             *std::make_unique<ExternallyWeightedNeuronsFactory>());
 }
 
 void _ConvolutionLayer::connect() {
-    auto connections = ContainersConnecting1toRandom().proposeConnections(*docker, previousLayer->getDocker().get());
-    for(auto& conn : connections)
-    {
-        std::get<0>(conn)->connect(*std::make_unique<NeuronsConnecting1toArea>(this->featureDetectorHeight, featureDetectorWidth), *std::get<1>(conn));
-    }
+    docker->createConnections(
+                previousLayer->getDocker().get(),
+                *std::make_unique<ContainersConnecting1toRandom>(),
+                *std::make_unique<NeuronsConnecting1toArea>(featureDetectorHeight, featureDetectorWidth),
+                *std::make_unique<ExternallyWeightedConnectionsFactory>()
+            );
 }
 
 int _ConvolutionLayer::getFeatureDetectorHeight()

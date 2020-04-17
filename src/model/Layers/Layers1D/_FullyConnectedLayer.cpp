@@ -8,6 +8,7 @@
 #include "../../NeuronsConnections/NeuronsConnecting1toAll.h"
 #include "../../NeuronsFactories/WeightlessNeuronsFactory.h"
 #include "../../exceptions/Exceptions.h"
+#include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 #include <sstream>
 
 _FullyConnectedLayer::_FullyConnectedLayer(Layer* previousLayer, int numberOfNeurons)
@@ -21,15 +22,16 @@ _FullyConnectedLayer::_FullyConnectedLayer(Layer* previousLayer, int numberOfNeu
 void _FullyConnectedLayer::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
     docker->createContainers(*std::make_unique<WeightlessVectorsFactory>(numberOfNeurons),
-                             *std::make_unique<InternallyWeightedNeuronsFactory>());
+                             *std::make_unique<WeightlessNeuronsFactory>());
 }
 
 void _FullyConnectedLayer::connect() {
-    auto connections = ContainersConnecting1toAll().proposeConnections(*docker, previousLayer->getDocker().get());
-    for(auto& conn : connections)
-    {
-        std::get<0>(conn)->connect(*std::make_unique<NeuronsConnecting1toAll>(), *std::get<1>(conn));
-    }
+    docker->createConnections(
+            previousLayer->getDocker().get(),
+            *std::make_unique<ContainersConnecting1toAll>(),
+            *std::make_unique<NeuronsConnecting1toAll>(),
+            *std::make_unique<InternallyWeightedConnectionsFactory>()
+    );
 }
 
 std::string _FullyConnectedLayer::getSummary()

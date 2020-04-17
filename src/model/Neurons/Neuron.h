@@ -36,7 +36,7 @@ public:
     /**
     @brief Adds a connection to preceeding Neuron to @c this->Neuron::connections.
     @arg @c preceding - Reference to the preceding Neuron.*/
-    virtual void connect(Neuron& preceding);
+    virtual void connect(Neuron& preceding) = 0;
 
     /**
     @brief Calculates new Neuron's value and stores it in Neuron::value.*/

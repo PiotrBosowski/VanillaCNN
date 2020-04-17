@@ -11,10 +11,12 @@
 WeightlessVector::WeightlessVector(NeuronsFactory &neuronFactory, int vectorHeight)
 : Vector(neuronFactory, vectorHeight) {}
 
-void WeightlessVector::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, Container &preceedingContainer) {
+void
+WeightlessVector::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
+                          Container &precedingContainer) {
     try {
         for (auto & neuron : neurons) {
-            auto connections = neuronsConnectingStrategy.proposeConnections(*neuron, &preceedingContainer);
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(*this, &precedingContainer);
             for(auto& conn : connections)
             {
                 dynamic_cast<WeightlessNeuron*>(neuron.get())->connect(*conn);

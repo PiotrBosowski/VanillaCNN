@@ -5,7 +5,6 @@
 #include "WeightlessNeuron.h"
 
 void WeightlessNeuron::connect(Neuron &preceding) {
-    Neuron::connect(preceding);
 }
 
 void WeightlessNeuron::calculateValue() {

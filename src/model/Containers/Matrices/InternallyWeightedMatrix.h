@@ -18,7 +18,10 @@ private:
     int weightsWidth;
     std::unique_ptr<Weights> weights;
 public:
-    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, Container &preceedingContainer) override;
+    void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
+                 Container &precedingContainer) override;
+
+    double& getWeight(int neuronIndex);
 };
 
 

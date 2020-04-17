@@ -6,9 +6,9 @@
 #include "../Neurons/Neuron.h"
 #include "../Connection/Connection.h"
 
-void ConnectionsSet::add(Neuron& newConnection)
+void ConnectionsSet::add(std::unique_ptr<Connection> newConnection)
 {
-    connections.emplace_back(std::make_unique<Connection>(newConnection));
+    connections.push_back(std::move(newConnection));
 }
 
 int ConnectionsSet::getNumberOfConnections()
