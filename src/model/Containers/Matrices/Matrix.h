@@ -24,5 +24,4 @@ public:
     Neuron& getNeuron(unsigned int row, unsigned int column);
 };
 
-
 #endif //VANILLACNN_CLION_MATRIX_H
