@@ -6,7 +6,7 @@
 #define VANILLACNN_CLION_CONNECTIONSFACTORY_H
 
 
-#include "../Containers/Container.h"
+#include "../../Containers/Container.h"
 
 class ConnectionsFactory {
 

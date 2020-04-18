@@ -4,7 +4,7 @@
 
 #include "Neuron.h"
 
-double Neuron::getValue()
+double Neuron::getValue() const
 {
     return value;
 }

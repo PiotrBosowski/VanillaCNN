@@ -3,8 +3,8 @@
 //
 
 #include "ConnectionsSet.h"
-#include "../Neurons/Neuron.h"
-#include "../Connection/Connection.h"
+#include "../../Neurons/Neuron.h"
+#include "../Connection.h"
 
 void ConnectionsSet::add(std::unique_ptr<Connection> newConnection)
 {

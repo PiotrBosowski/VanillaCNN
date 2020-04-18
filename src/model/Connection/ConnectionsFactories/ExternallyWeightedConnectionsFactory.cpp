@@ -3,8 +3,8 @@
 //
 
 #include "ExternallyWeightedConnectionsFactory.h"
-#include "../Containers/Matrices/InternallyWeightedMatrix.h"
-#include "../Connection/ExternallyWeightedConnection.h"
+#include "../../Containers/Matrices/InternallyWeightedMatrix.h"
+#include "../ExternallyWeightedConnection.h"
 
 
 void ExternallyWeightedConnectionsFactory::makeConnections(int neuronIndex, Container &source,

@@ -4,7 +4,7 @@
 
 
 #include "WeightlessMatricesFactory.h"
-#include "../../Containers/Matrices/WeightlessMatrix.h"
+#include "../../Matrices/WeightlessMatrix.h"
 
 WeightlessMatricesFactory::WeightlessMatricesFactory(int matrixHeight, int matrixWidth)
         : matrixHeight{ matrixHeight }, matrixWidth{ matrixWidth }

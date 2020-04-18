@@ -3,8 +3,8 @@
 //
 
 #include "WeightlessVectorsFactory.h"
-#include "../../Containers/Vectors/Vector.h"
-#include "../../Containers/Vectors/WeightlessVector.h"
+#include "../../Vectors/Vector.h"
+#include "../../Vectors/WeightlessVector.h"
 
 WeightlessVectorsFactory::WeightlessVectorsFactory(int numberOfNeurons)
         : numberOfNeurons{ numberOfNeurons }

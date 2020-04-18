@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <memory>
-#include "../Connection/Connection.h"
+#include "../Connection.h"
 
 class Connection;
 class Neuron;

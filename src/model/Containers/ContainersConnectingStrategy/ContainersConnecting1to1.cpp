@@ -3,8 +3,8 @@
 //
 
 #include "ContainersConnecting1to1.h"
-#include "../exceptions/Exceptions.h"
-#include "../Layers/Layer.h"
+#include "../../exceptions/Exceptions.h"
+#include "../../Layers/Layer.h"
 
 std::vector<std::tuple<Container*, Container*>> ContainersConnecting1to1::proposeConnections(Docker &source, Docker *preceding) {
     auto result = std::vector<std::tuple<Container*, Container*>>();

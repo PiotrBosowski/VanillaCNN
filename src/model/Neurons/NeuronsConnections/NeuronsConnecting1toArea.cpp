@@ -3,8 +3,8 @@
 //
 
 #include "NeuronsConnecting1toArea.h"
-#include "../Containers/Matrices/Matrix.h"
-#include "../exceptions/Exceptions.h"
+#include "../../Containers/Matrices/Matrix.h"
+#include "../../exceptions/Exceptions.h"
 
 NeuronsConnecting1toArea::NeuronsConnecting1toArea(int areaHeight, int areaWidth)
         : areaHeight{ areaHeight },

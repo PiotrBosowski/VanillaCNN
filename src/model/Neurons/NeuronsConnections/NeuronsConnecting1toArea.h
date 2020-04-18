@@ -7,7 +7,7 @@
 
 
 #include "NeuronsConnectingStrategy.h"
-#include "../Containers/Container.h"
+#include "../../Containers/Container.h"
 
 class NeuronsConnecting1toArea : public NeuronsConnectingStrategy
 {

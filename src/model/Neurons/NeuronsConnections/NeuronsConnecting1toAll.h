@@ -6,7 +6,7 @@
 #define VANILLACNN_CLION_NEURONSCONNECTING1TOALL_H
 
 #include "NeuronsConnectingStrategy.h"
-#include "../Containers/Container.h"
+#include "../../Containers/Container.h"
 
 class NeuronsConnecting1toAll : public NeuronsConnectingStrategy
 {

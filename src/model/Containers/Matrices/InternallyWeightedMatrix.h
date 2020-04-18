@@ -5,7 +5,7 @@
 #ifndef VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
 #define VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
 #include "Matrix.h"
-#include "../../Neurons/Weights.h"
+#include "../../Weights/Weights.h"
 #include "../IInternallyWeightedContainer.h"
 
 

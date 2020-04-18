@@ -29,7 +29,7 @@ public:
     /**
     @brief Neuron's value getter.
     @return returns Neuron's /c value*/
-    double getValue();
+    [[nodiscard]] double getValue() const;
 
     /**
     @brief Adds a connection to preceeding Neuron to @c this->Neuron::connections.

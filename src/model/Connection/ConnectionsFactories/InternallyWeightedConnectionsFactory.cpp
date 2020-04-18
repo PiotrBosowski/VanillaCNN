@@ -3,8 +3,8 @@
 //
 
 #include "InternallyWeightedConnectionsFactory.h"
-#include "../Containers/Matrices/WeightlessMatrix.h"
-#include "../Connection/InternallyWeightedConnection.h"
+#include "../../Containers/Matrices/WeightlessMatrix.h"
+#include "../InternallyWeightedConnection.h"
 
 
 void InternallyWeightedConnectionsFactory::
