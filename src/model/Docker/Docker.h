@@ -8,9 +8,8 @@
 
 #include <vector>
 #include <memory>
-#include "../ContainersFactories/ContainersFactory.h"
+#include <ostream>
 #include "../Containers/Container.h"
-#include "../ConnectionsFactories/ConnectionsFactory.h"
 
 class ContainersConnectingStrategy;
 class ContainersFactory;
@@ -20,10 +19,13 @@ class Docker
 {
 
 public:
-    Docker(int numberOfContainers);
+    explicit Docker(int numberOfContainers);
 
     std::vector<std::unique_ptr<Container>>& getContainers();
     void createContainers(ContainersFactory&);
+
+    friend std::ostream &operator<<(std::ostream &os, const Docker &docker);
+
     void createConnections(Docker* previousDocker, ContainersConnectingStrategy&, NeuronsConnectingStrategy&, ConnectionsFactory&);
     int size();
 

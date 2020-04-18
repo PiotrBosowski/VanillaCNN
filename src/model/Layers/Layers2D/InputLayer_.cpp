@@ -4,8 +4,8 @@
 
 #include <sstream>
 #include "InputLayer_.h"
-#include "../../ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 #include "../../exceptions/Exceptions.h"
+#include "../../Containers/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 
 InputLayer_::InputLayer_(int inputHeight, int inputWidth)
         : Layer2D{ nullptr,
@@ -24,10 +24,14 @@ void InputLayer_::connect() {
     throw LayerConnectingError("Cannot append Input Layer to any preceding layer");
 }
 
-std::string InputLayer_::getSummary() {
+std::stringstream InputLayer_::getSummary() {
     std::stringstream ss;
-    ss << "Input layer. Containers: "<< numberOfContainers << ", matrixH: " << matrixHeight << ", matrixW: " << matrixWidth << std::endl;
-    return ss.str();
+    ss << this << " "<< getName() << "{ " << Layer2D::getSummary().str() << " }";
+    return ss;
+}
+
+std::string InputLayer_::getName() {
+    return "Input Layer";
 }
 
 

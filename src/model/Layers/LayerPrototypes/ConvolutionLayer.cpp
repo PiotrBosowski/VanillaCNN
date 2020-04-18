@@ -16,3 +16,15 @@ std::unique_ptr<Layer> ConvolutionLayer::embodyLayer(Layer* previousLayer)
 {
     return std::make_unique<ConvolutionLayer_>(previousLayer, numberOfFeatureDetectors, featureDetectorHeight, featureDetectorWidth);
 }
+
+std::stringstream ConvolutionLayer::getSummary() {
+    std::stringstream ss;
+    ss << getName() << "numberOfFeatureDetectors: " << numberOfFeatureDetectors
+       << ", featureDetectorHeight: " << featureDetectorHeight
+       << ", featureDetectorWidth: " << featureDetectorWidth;
+    return ss;
+}
+
+std::string ConvolutionLayer::getName() {
+    return "Convolution Layer ";
+}

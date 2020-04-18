@@ -8,14 +8,12 @@
 #include "../Neurons/Neuron.h"
 #include <memory>
 #include "../Containers/Container.h"
-#include "../ContainersConnectingStrategy/ContainersConnectingStrategy.h"
-#include "../ContainersFactories/ContainersFactory.h"
-#include "../NeuronsConnections/NeuronsConnectingStrategy.h"
 #include "../Docker/Docker.h"
 #include "IConnectible.h"
 #include "IPrintable.h"
 #include "IPopulatible.h"
 #include <string>
+#include <ostream>
 
 class Layer : public IPopulatible, public IConnectible, public IPrintable
 {
@@ -27,11 +25,14 @@ protected:
     int numberOfContainers;
     Layer *previousLayer;
     std::unique_ptr<Docker> docker;
-public:
-    [[nodiscard]] const std::unique_ptr<Docker> &getDocker() const;
 
 public:
-    int getNumberOfContainers();
+    [[nodiscard]] const std::unique_ptr<Docker> &getDocker() const;
+    [[nodiscard]] int getNumberOfContainers() const;
+
+    std::stringstream getSummary() override;
+
+    std::string getName() override;
 };
 
 

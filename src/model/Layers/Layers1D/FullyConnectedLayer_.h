@@ -19,7 +19,9 @@ public:
 
     void populate() override;
 
-    std::string getSummary() override;
+    std::stringstream getSummary() override;
+
+    std::string getName() override;
 };
 
 

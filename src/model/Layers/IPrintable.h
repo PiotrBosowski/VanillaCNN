@@ -6,10 +6,11 @@
 #define VANILLACNN_CLION_IPRINTABLE_H
 
 
-#include <string>
+#include <sstream>
 
 struct IPrintable {
-    virtual std::string getSummary() = 0;
+    virtual std::string getName() = 0;
+    virtual std::stringstream getSummary() = 0;
 };
 
 

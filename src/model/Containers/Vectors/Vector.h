@@ -7,7 +7,6 @@
 
 
 #include "../Container.h"
-#include "../../NeuronsConnections/NeuronsConnectingStrategy.h"
 #include <vector>
 #include <memory>
 #include "../../Neurons/Neuron.h"
@@ -15,7 +14,7 @@
 class Vector : public Container
 {
 public:
-    Vector(int vectorHeight);
+    explicit Vector(int vectorHeight);
 
 private:
     int vectorHeight;

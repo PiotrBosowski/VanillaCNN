@@ -4,12 +4,12 @@
 
 #include <sstream>
 #include "ConvolutionLayer_.h"
-#include "../../ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
-#include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
-#include "../../exceptions/Exceptions.h"
-#include "../../ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
-#include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
-#include "../../ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
+#include "../../Exceptions/Exceptions.h"
+#include "../../Containers/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
+#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
+#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toArea.h"
+#include "../../Connections/ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
+
 
 ConvolutionLayer_::ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
         : Layer2D{
@@ -44,22 +44,25 @@ void ConvolutionLayer_::connect() {
             );
 }
 
-int ConvolutionLayer_::getFeatureDetectorHeight()
+[[maybe_unused]] int ConvolutionLayer_::getFeatureDetectorHeight() const
 {
     return featureDetectorHeight;
 }
 
-int ConvolutionLayer_::getFeatureDetectorWidth()
+[[maybe_unused]] int ConvolutionLayer_::getFeatureDetectorWidth() const
 {
     return featureDetectorWidth;
 }
 
-std::string ConvolutionLayer_::getSummary()
+std::stringstream ConvolutionLayer_::getSummary()
 {
     std::stringstream ss;
-    ss << "Convolution Layer. Containers: "<< numberOfContainers << ", matrixH: " << this->matrixHeight << ", matrixW: "
-    << this->matrixWidth << ", detectorH: " << this->featureDetectorHeight << ", detectorW: " << this->featureDetectorWidth << std::endl;
-    //return ss.str() + Layer::getSummary(); TODO make getSummary recursive
-    return ss.str();
+    ss << this << " " << getName() << "{ featureDetectorHeight: " << featureDetectorHeight
+    << ", featureDetectorWidth: " << featureDetectorWidth << ", " << Layer2D::getSummary().str() << " }";
+    return ss;
+}
+
+std::string ConvolutionLayer_::getName() {
+    return "Convolution Layer";
 }
 

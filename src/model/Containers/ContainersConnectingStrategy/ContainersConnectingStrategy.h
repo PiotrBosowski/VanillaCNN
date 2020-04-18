@@ -5,7 +5,7 @@
 #ifndef VANILLACNN_CLION_CONTAINERSCONNECTINGSTRATEGY_H
 #define VANILLACNN_CLION_CONTAINERSCONNECTINGSTRATEGY_H
 
-#include "../NeuronsConnections/NeuronsConnectingStrategy.h"
+#include "../Container.h"
 
 class Docker;
 

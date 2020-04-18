@@ -4,6 +4,7 @@
 
 #include "InternallyWeightedMatrix.h"
 #include "../../exceptions/Exceptions.h"
+#include "../../Connections/ConnectionsFactories/ConnectionsFactory.h"
 
 InternallyWeightedMatrix::InternallyWeightedMatrix(int matrixHeight, int matrixWidth,
                                                    int weightsHeight, int weightsWidth)

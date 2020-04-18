@@ -13,7 +13,6 @@
 #include "Layer1D.h"
 #include <iostream>
 #include <memory>
-#include "../../ContainersFactories/VectorsFactories/VectorsFactory.h"
 
 class Layer1D : public Layer
 {
@@ -21,6 +20,10 @@ public:
     Layer1D(Layer* previousLayer,
             int numberOfContainers,
             int vectorLength);
+
+    std::stringstream getSummary() override;
+
+    std::string getName() override;
 
 protected:
     int numberOfNeurons;

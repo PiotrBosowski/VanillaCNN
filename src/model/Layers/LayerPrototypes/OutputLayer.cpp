@@ -14,3 +14,13 @@ std::unique_ptr<Layer> OutputLayer::embodyLayer(Layer* previousLayer)
 {
     return std::make_unique<OutputLayer_>(previousLayer, numberOfNeurons);
 }
+
+std::string OutputLayer::getName() {
+    return "Output Layer ";
+}
+
+std::stringstream OutputLayer::getSummary() {
+    std::stringstream ss;
+    ss << getName() << "numberOfNeurons: " << numberOfNeurons;
+    return ss;
+}

@@ -13,6 +13,10 @@ public:
     DownsamplingLayer(int downsamplerHeight, int downsamplerWidth);
     std::unique_ptr<Layer> embodyLayer(Layer* previousLayer) override;
 
+    std::string getName() override;
+
+    std::stringstream getSummary() override;
+
 private:
     int downsamplerHeight;
     int downsamplerWidth;

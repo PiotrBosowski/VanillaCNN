@@ -4,6 +4,7 @@
 
 #include "Docker.h"
 #include "../Layers/Layer.h"
+#include "../Containers/ContainersFactories/ContainersFactory.h"
 
 Docker::Docker(int numberOfContainers)
         : numberOfContainers(numberOfContainers)
@@ -35,4 +36,9 @@ void Docker::createConnections(Docker* previousDocker, ContainersConnectingStrat
     {
         std::get<0>(conn)->connect(neuronsConnectingStrategy, connectionsFactory, *std::get<1>(conn));
     }
+}
+
+std::ostream &operator<<(std::ostream &os, const Docker &docker) {
+    os << "numberOfContainers: " << docker.numberOfContainers << " containers: " << docker.containers.size();
+    return os;
 }

@@ -5,6 +5,7 @@
 #ifndef VANILLACNN_CLION_NEURALNETWORK_H
 #define VANILLACNN_CLION_NEURALNETWORK_H
 
+//TODO add README.md
 
 #include <memory>
 #include <vector>

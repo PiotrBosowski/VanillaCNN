@@ -15,11 +15,13 @@ public:
     OutputLayer_(Layer* previousLayer, int numberOfNeurons);
 
 public:
-    std::string getSummary() override;
+    std::stringstream getSummary() override;
 
     void connect() override;
 
     void populate() override;
+
+    std::string getName() override;
 };
 
 

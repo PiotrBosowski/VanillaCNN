@@ -19,7 +19,7 @@ public:
 protected:
     std::unique_ptr<OutputPrinter> printer;
 
-private:
+protected:
     bool printingEnabled;
 
 public:

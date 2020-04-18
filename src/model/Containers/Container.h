@@ -6,8 +6,10 @@
 #define VANILLACNN_CLION_CONTAINER_H
 
 #include <memory>
-#include "../NeuronsConnections/NeuronsConnectingStrategy.h"
-#include "../ConnectionsFactories/ConnectionsFactory.h"
+#include <ostream>
+#include "../Neurons/NeuronsConnections/NeuronsConnectingStrategy.h"
+#include "../Connections/ConnectionsFactories/ConnectionsFactory.h"
+
 
 class Neuron;
 class ConnectionsFactory;
@@ -21,6 +23,8 @@ public:
     virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory, Container& precedingContainer) = 0;
     Neuron& getNeuron(unsigned int index);
     unsigned int getNumberOfNeurons();
+
+    friend std::ostream &operator<<(std::ostream &os, const Container &container);
 };
 
 #endif //VANILLACNN_CLION_CONTAINER_H

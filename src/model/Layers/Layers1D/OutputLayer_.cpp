@@ -4,11 +4,11 @@
 
 #include <sstream>
 #include "OutputLayer_.h"
-#include "../../ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
-#include "../../ContainersConnectingStrategy/ContainersConnecting1toAll.h"
-#include "../../NeuronsConnections/NeuronsConnecting1toAll.h"
-#include "../../exceptions/Exceptions.h"
-#include "../../ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
+#include "../../Exceptions/Exceptions.h"
+#include "../../Containers/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
+#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1toAll.h"
+#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toAll.h"
+#include "../../Connections/ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 
 OutputLayer_::OutputLayer_(Layer* previousLayer, int numberOfNeurons)
         : Layer1D{ previousLayer,
@@ -32,10 +32,13 @@ void OutputLayer_::connect() {
     );
 }
 
-std::string OutputLayer_::getSummary()
+std::stringstream OutputLayer_::getSummary()
 {
     std::stringstream ss;
-    ss << "Output Layer. Containers: "<< numberOfContainers << ", neurons: " << this->numberOfNeurons << std::endl;
-    return ss.str();
+    ss << this << " "<< getName() << "{ " << Layer1D::getSummary().str() << " }";
+    return ss;
 }
 
+std::string OutputLayer_::getName() {
+    return "Output Layer";
+}

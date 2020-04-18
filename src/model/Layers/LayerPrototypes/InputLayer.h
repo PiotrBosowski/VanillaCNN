@@ -13,6 +13,11 @@ class InputLayer : public PrototypeLayer
 public:
     InputLayer(int inputHeight, int inputWidth);
     std::unique_ptr<Layer> embodyLayer(Layer* previousLayer) override;
+
+    std::string getName() override;
+
+    std::stringstream getSummary() override;
+
 private:
     int inputHeight;
     int inputWidth;

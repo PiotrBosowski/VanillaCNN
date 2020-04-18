@@ -16,7 +16,7 @@ class DownsamplingLayer_ : public Layer2D
 public:
     DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth);
 
-    std::string getSummary() override;
+    std::stringstream getSummary() override;
 
 protected:
     int downsamplerHeight;
@@ -29,6 +29,8 @@ public:
     void connect() override;
 
     void populate() override;
+
+    std::string getName() override;
 };
 
 

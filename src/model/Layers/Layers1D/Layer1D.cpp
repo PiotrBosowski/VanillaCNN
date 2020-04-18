@@ -13,3 +13,13 @@ Layer1D::Layer1D(Layer* previousLayer,
 {
 
 }
+
+std::stringstream Layer1D::getSummary() {
+    std::stringstream ss;
+    ss << Layer1D::getName() << "{ numberOfNeurons: " << numberOfNeurons << ", "<< Layer::getSummary().str() << " }";
+    return ss;
+}
+
+std::string Layer1D::getName() {
+    return "Layer1D";
+}

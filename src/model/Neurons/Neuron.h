@@ -6,7 +6,7 @@
 #ifndef VANILLACNN_CLION_NEURON_H
 #define VANILLACNN_CLION_NEURON_H
 #include <ostream>
-#include "../ConnectionsSet/ConnectionsSet.h"
+#include "../Connections/ConnectionsSet/ConnectionsSet.h"
 
 /**
 @brief Base class for all neuron types.

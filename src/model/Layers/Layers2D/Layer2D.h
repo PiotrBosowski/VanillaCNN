@@ -9,7 +9,6 @@
 #include "../Layer.h"
 #include "../../Containers/Matrices/Matrix.h"
 #include <memory>
-#include "../../ContainersFactories/MatricesFactories/MatricesFactory.h"
 
 class Layer2D : public Layer
 {
@@ -26,6 +25,10 @@ protected:
 public:
     int getMatrixHeight();
     int getMatrixWidth();
+
+    std::stringstream getSummary() override;
+
+    std::string getName() override;
 };
 
 

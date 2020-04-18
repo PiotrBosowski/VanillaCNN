@@ -21,14 +21,17 @@ private:
     int featureDetectorHeight;
     int featureDetectorWidth;
 public:
-    int getFeatureDetectorHeight();
-    int getFeatureDetectorWidth();
+    [[maybe_unused]] [[nodiscard]] int getFeatureDetectorHeight() const;
+
+    [[maybe_unused]] [[nodiscard]] int getFeatureDetectorWidth() const;
 
     void connect() override;
 
     void populate() override;
 
-    std::string getSummary() override;
+    std::stringstream getSummary() override;
+
+    std::string getName() override;
 };
 
 

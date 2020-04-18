@@ -11,8 +11,12 @@
 class FullyConnectedLayer : public PrototypeLayer
 {
 public:
-    FullyConnectedLayer(int numberOfNeurons);
+    explicit FullyConnectedLayer(int numberOfNeurons);
     std::unique_ptr<Layer> embodyLayer(Layer* previousLayer) override;
+
+    std::string getName() override;
+
+    std::stringstream getSummary() override;
 
 private:
     int numberOfNeurons;

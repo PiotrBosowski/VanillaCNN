@@ -14,6 +14,10 @@ public:
     ConvolutionLayer(int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth);
     std::unique_ptr<Layer> embodyLayer(Layer* previousLayer) override;
 
+    std::string getName() override;
+
+    std::stringstream getSummary() override;
+
 private:
     int numberOfFeatureDetectors;
     int featureDetectorHeight;

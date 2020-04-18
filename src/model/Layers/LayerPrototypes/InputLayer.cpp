@@ -15,3 +15,14 @@ std::unique_ptr<Layer> InputLayer::embodyLayer(Layer* previousLayer)
 {
     return std::make_unique<InputLayer_>(inputHeight, inputWidth);
 }
+
+std::string InputLayer::getName() {
+    return "Input Layer ";
+}
+
+std::stringstream InputLayer::getSummary() {
+    std::stringstream ss;
+    ss << getName() << "inputHeight: " << inputHeight
+       << ", inputWidth: " << inputWidth;
+    return ss;
+}

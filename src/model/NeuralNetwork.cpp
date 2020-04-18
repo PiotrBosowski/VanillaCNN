@@ -7,7 +7,7 @@
 #include <memory>
 #include <cstdlib>
 #include <ctime>
-
+#include <sstream>
 
 NeuralNetwork::NeuralNetwork(bool printingEnabled)
         : OutputSource{ printingEnabled }
@@ -27,11 +27,9 @@ void NeuralNetwork::compile()
     try
     {
         createLayersFromPrototypes();
-        printer->print("After prototyping:");
         populateLayers();
-        printer->print("After populating:");
         connectLayers();
-        printer->print("After connecting:");
+        printer->print("");
     }
     catch (const std::exception & ex)
     {
@@ -46,8 +44,7 @@ void NeuralNetwork::createLayersFromPrototypes()
     try{
         for (int i = 1; i < prototypeLayers.size(); i++)
         {
-            printer->print("Right before layer creation:");
-            layers.push_back(std::move(prototypeLayers[i]->embodyLayer(layers[i - 1].get())));
+            layers.push_back(prototypeLayers[i]->embodyLayer(layers[i - 1].get()));
         }
     }
     catch(...)
@@ -68,8 +65,21 @@ void NeuralNetwork::connectLayers() {
 }
 
 std::string NeuralNetwork::getOutput() const {
-    std::string result;
-    for (auto& layer : layers)
-        result += layer->getSummary();
-    return result;
+    if(printingEnabled)
+    {
+        std::stringstream result;
+        result << "Neural network: " << this
+        << ", printer: " << &this->printer
+        << ", printingEnabled: " << printingEnabled << std::endl
+        << "Prototype layers: [" << std::endl;
+        for (auto& protLayer : prototypeLayers)
+            result << "\t" << protLayer->getSummary().str() << "\n";
+        result << "]" << std::endl
+        << "Real layers: [" << std::endl;
+        for (auto& layer : layers)
+            result << "\t" << layer->getSummary().str() << "\n";
+        result << "]" << std::endl;
+        return result.str();
+    }
+    else return "";
 }

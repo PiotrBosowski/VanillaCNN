@@ -4,6 +4,7 @@
 
 #include "WeightlessMatrix.h"
 #include "../../exceptions/Exceptions.h"
+#include "../../Connections/ConnectionsFactories/ConnectionsFactory.h"
 
 WeightlessMatrix::WeightlessMatrix(int matrixHeight, int matrixWidth)
     : Matrix(matrixHeight, matrixWidth) {}

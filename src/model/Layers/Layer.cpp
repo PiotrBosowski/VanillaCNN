@@ -4,7 +4,6 @@
 
 
 #include <iostream>
-#include "../ContainersFactories/ContainersFactory.h"
 #include "Layer.h"
 
 Layer::Layer(Layer* previousLayer,
@@ -13,13 +12,21 @@ Layer::Layer(Layer* previousLayer,
 {
 }
 
-int Layer::getNumberOfContainers()
+int Layer::getNumberOfContainers() const
 {
     return numberOfContainers;
 }
 
-
-
 const std::unique_ptr<Docker> &Layer::getDocker() const {
     return docker;
+}
+
+std::stringstream Layer::getSummary() {
+    std::stringstream ss;
+    ss << Layer::getName() << "{ numberOfContainers: " << numberOfContainers << ", previousLayer: " << previousLayer << " }";
+    return ss;
+}
+
+std::string Layer::getName() {
+    return "Layer";
 }

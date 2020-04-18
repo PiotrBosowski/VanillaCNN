@@ -27,3 +27,13 @@ int Layer2D::getMatrixWidth()
 {
     return matrixWidth;
 }
+
+std::stringstream Layer2D::getSummary() {
+    std::stringstream ss;
+    ss << Layer2D::getName() << "{ matrixHeight: " << matrixHeight << ", matrixWidth: " << matrixWidth << ", "<< Layer::getSummary().str() << " }";
+    return ss;
+}
+
+std::string Layer2D::getName() {
+    return "Layer2D";
+}

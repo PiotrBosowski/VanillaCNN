@@ -15,3 +15,8 @@ Neuron& Container::getNeuron(unsigned int index)
 unsigned int Container::getNumberOfNeurons() {
     return neurons.size();
 }
+
+std::ostream &operator<<(std::ostream &os, const Container &container) {
+    os << "neurons: " << container.neurons.size();
+    return os;
+}

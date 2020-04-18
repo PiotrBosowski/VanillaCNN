@@ -4,11 +4,11 @@
 
 #include <sstream>
 #include "DownsamplingLayer_.h"
-#include "../../NeuronsConnections/NeuronsConnecting1toArea.h"
-#include "../../ContainersConnectingStrategy/ContainersConnecting1to1.h"
-#include "../../ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 #include "../../exceptions/Exceptions.h"
-#include "../../ConnectionsFactories/WeightlessConnectionsFactory.h"
+#include "../../Containers/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
+#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1to1.h"
+#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toArea.h"
+#include "../../Connections/ConnectionsFactories/WeightlessConnectionsFactory.h"
 
 DownsamplingLayer_::DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth)
         : Layer2D{ previousLayer,
@@ -45,10 +45,14 @@ int DownsamplingLayer_::getDownsamplerWidth()
     return downsamplerWidth;
 }
 
-std::string DownsamplingLayer_::getSummary()
+std::stringstream DownsamplingLayer_::getSummary()
 {
     std::stringstream ss;
-    ss << "Downsampling Layer. Containers: "<< numberOfContainers << ", matrixH: "
-    << this->matrixHeight << ", matrixW: " << this->matrixWidth << ", downsamplerH: " << this->downsamplerHeight << ", downsamplerW: " << downsamplerWidth << std::endl;
-    return ss.str();
+    ss << this << " "<< getName() << "{ downsamplerHeight: " << matrixHeight
+       << ", downsamplerWidth: " << matrixWidth << ", " << Layer2D::getSummary().str() << " }";
+    return ss;
+}
+
+std::string DownsamplingLayer_::getName() {
+    return "Downsampling Layer";
 }

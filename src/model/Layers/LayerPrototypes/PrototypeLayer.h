@@ -8,7 +8,7 @@
 #include <memory>
 #include "../Layer.h"
 
-class PrototypeLayer
+class PrototypeLayer : public IPrintable
 {
 public:
     virtual std::unique_ptr<Layer> embodyLayer(Layer * previousLayer) = 0;
