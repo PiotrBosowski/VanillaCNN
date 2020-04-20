@@ -7,7 +7,6 @@
 #include <memory>
 #include <cstdlib>
 #include <ctime>
-#include <sstream>
 
 NeuralNetwork::NeuralNetwork(bool printingEnabled)
         : OutputSource{ printingEnabled }

@@ -4,7 +4,6 @@
 
 
 #include "Vector.h"
-#include "../../exceptions/Exceptions.h"
 
 Vector::Vector(int vectorHeight)
           : vectorHeight{ vectorHeight }

@@ -6,7 +6,7 @@
 #define VANILLACNN_CLION_OUTPUTLAYER__H
 
 
-#include "../Layer.h"
+#include "Layers/Layer.h"
 #include "Layer1D.h"
 
 class OutputLayer_ : public Layer1D

@@ -4,7 +4,7 @@
 
 
 #include "InputLayer.h"
-#include "../Layers2D/InputLayer_.h"
+#include "Layers/Layers2D/InputLayer_.h"
 
 InputLayer::InputLayer(int inputHeight, int inputWidth)
         : inputHeight{ inputHeight }, inputWidth{ inputWidth }

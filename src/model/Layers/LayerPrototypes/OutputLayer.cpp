@@ -3,7 +3,7 @@
 //
 
 #include "OutputLayer.h"
-#include "../Layers1D/OutputLayer_.h"
+#include "Layers/Layers1D/OutputLayer_.h"
 
 OutputLayer::OutputLayer(int numberOfNeurons)
         : numberOfNeurons{ numberOfNeurons }

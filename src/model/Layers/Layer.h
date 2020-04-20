@@ -5,15 +5,16 @@
 #ifndef VANILLACNN_CLION_LAYER_H
 #define VANILLACNN_CLION_LAYER_H
 
-#include "../Neurons/Neuron.h"
 #include <memory>
-#include "../Containers/Container.h"
-#include "../Docker/Docker.h"
+#include <string>
+#include <ostream>
+
+#include "Neurons/Neuron.h"
+#include "Containers/Container.h"
+#include "Docker/Docker.h"
 #include "IConnectible.h"
 #include "IPrintable.h"
 #include "IPopulatible.h"
-#include <string>
-#include <ostream>
 
 class Layer : public IPopulatible, public IConnectible, public IPrintable
 {

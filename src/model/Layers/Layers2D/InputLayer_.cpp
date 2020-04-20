@@ -4,8 +4,8 @@
 
 #include <sstream>
 #include "InputLayer_.h"
-#include "../../exceptions/Exceptions.h"
-#include "../../Containers/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
+#include "Exceptions/Exceptions.h"
+#include "ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 
 InputLayer_::InputLayer_(int inputHeight, int inputWidth)
         : Layer2D{ nullptr,

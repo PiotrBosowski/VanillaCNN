@@ -5,10 +5,11 @@
 #ifndef VANILLACNN_CLION_INPUTLAYER__H
 #define VANILLACNN_CLION_INPUTLAYER__H
 
-#include "../Layer.h"
-#include "Layer2D.h"
 #include <vector>
 #include <string>
+
+#include "Layers/Layer.h"
+#include "Layer2D.h"
 
 class InputLayer_ : public Layer2D
 {

@@ -5,7 +5,7 @@
 
 
 #include "ConvolutionLayer.h"
-#include "../Layers2D/ConvolutionLayer_.h"
+#include "Layers/Layers2D/ConvolutionLayer_.h"
 
 ConvolutionLayer::ConvolutionLayer(int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
         : numberOfFeatureDetectors{ numberOfFeatureDetectors }, featureDetectorHeight{ featureDetectorHeight }, featureDetectorWidth{ featureDetectorWidth }

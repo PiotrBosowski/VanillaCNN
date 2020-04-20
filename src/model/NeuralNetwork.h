@@ -9,10 +9,10 @@
 
 #include <memory>
 #include <vector>
-#include "exceptions/Exceptions.h"
+#include "Exceptions/Exceptions.h"
 #include "Layers/LayerPrototypes/PrototypeLayer.h"
 #include "Layers/Layer.h"
-#include "../output/OutputSource.h"
+#include "OutputSource.h"
 
 class NeuralNetwork : public OutputSource
 {

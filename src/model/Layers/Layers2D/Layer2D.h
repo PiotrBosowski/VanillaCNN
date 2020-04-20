@@ -6,8 +6,8 @@
 #define VANILLACNN_CLION_LAYER2D_H
 
 
-#include "../Layer.h"
-#include "../../Containers/Matrices/Matrix.h"
+#include "Layers/Layer.h"
+#include "Containers/Matrices/Matrix.h"
 #include <memory>
 
 class Layer2D : public Layer

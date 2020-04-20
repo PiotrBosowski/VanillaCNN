@@ -4,11 +4,11 @@
 
 #include <sstream>
 #include "OutputLayer_.h"
-#include "../../Exceptions/Exceptions.h"
-#include "../../Containers/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
-#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1toAll.h"
-#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toAll.h"
-#include "../../Connections/ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
+#include "Exceptions/Exceptions.h"
+#include "ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
+#include "ContainersConnectingStrategy/ContainersConnecting1toAll.h"
+#include "NeuronsConnections/NeuronsConnecting1toAll.h"
+#include "ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 
 OutputLayer_::OutputLayer_(Layer* previousLayer, int numberOfNeurons)
         : Layer1D{ previousLayer,

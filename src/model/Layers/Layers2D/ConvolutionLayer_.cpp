@@ -4,11 +4,11 @@
 
 #include <sstream>
 #include "ConvolutionLayer_.h"
-#include "../../Exceptions/Exceptions.h"
-#include "../../Containers/ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
-#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
-#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toArea.h"
-#include "../../Connections/ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
+#include "Exceptions/Exceptions.h"
+#include "ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
+#include "ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
+#include "NeuronsConnections/NeuronsConnecting1toArea.h"
+#include "ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
 
 
 ConvolutionLayer_::ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)

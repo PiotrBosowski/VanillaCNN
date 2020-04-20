@@ -3,11 +3,11 @@
 //
 
 #include "FullyConnectedLayer_.h"
-#include "../../exceptions/Exceptions.h"
-#include "../../Containers/ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
-#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1toAll.h"
-#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toAll.h"
-#include "../../Connections/ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
+#include "Exceptions/Exceptions.h"
+#include "ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
+#include "ContainersConnectingStrategy/ContainersConnecting1toAll.h"
+#include "NeuronsConnections/NeuronsConnecting1toAll.h"
+#include "ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 #include <sstream>
 
 FullyConnectedLayer_::FullyConnectedLayer_(Layer* previousLayer, int numberOfNeurons)

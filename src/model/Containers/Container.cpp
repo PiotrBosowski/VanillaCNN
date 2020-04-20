@@ -3,7 +3,7 @@
 //
 
 #include "Container.h"
-#include "../exceptions/Exceptions.h"
+#include "Exceptions/Exceptions.h"
 
 Neuron& Container::getNeuron(unsigned int index)
 {

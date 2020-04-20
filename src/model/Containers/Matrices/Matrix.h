@@ -6,9 +6,9 @@
 #define VANILLACNN_CLION_MATRIX_H
 
 #include <vector>
-#include "../../Neurons/Neuron.h"
-#include "../Container.h"
-#include "../IContainer2D.h"
+#include "Neurons/Neuron.h"
+#include "Containers/Container.h"
+#include "Containers/IContainer2D.h"
 
 
 class Matrix : public Container, public IContainer2D

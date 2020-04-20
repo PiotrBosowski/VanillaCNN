@@ -4,11 +4,11 @@
 
 #include <sstream>
 #include "DownsamplingLayer_.h"
-#include "../../exceptions/Exceptions.h"
-#include "../../Containers/ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
-#include "../../Containers/ContainersConnectingStrategy/ContainersConnecting1to1.h"
-#include "../../Neurons/NeuronsConnections/NeuronsConnecting1toArea.h"
-#include "../../Connections/ConnectionsFactories/WeightlessConnectionsFactory.h"
+#include "Exceptions/Exceptions.h"
+#include "ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
+#include "ContainersConnectingStrategy/ContainersConnecting1to1.h"
+#include "NeuronsConnections/NeuronsConnecting1toArea.h"
+#include "ConnectionsFactories/WeightlessConnectionsFactory.h"
 
 DownsamplingLayer_::DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth)
         : Layer2D{ previousLayer,

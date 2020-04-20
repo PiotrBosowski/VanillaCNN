@@ -4,7 +4,7 @@
 
 
 #include "Matrix.h"
-#include "../../exceptions/Exceptions.h"
+#include "Exceptions/Exceptions.h"
 
 Matrix::Matrix(int matrixHeight, int matrixWidth)
             :

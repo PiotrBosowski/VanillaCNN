@@ -5,8 +5,8 @@
 #ifndef VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
 #define VANILLACNN_CLION_INTERNALLYWEIGHTEDMATRIX_H
 #include "Matrix.h"
-#include "../../Weights/Weights.h"
-#include "../IInternallyWeightedContainer.h"
+#include "Weights/Weights.h"
+#include "Containers/IInternallyWeightedContainer.h"
 
 
 class InternallyWeightedMatrix : public Matrix, public IInternallyWeightedContainer

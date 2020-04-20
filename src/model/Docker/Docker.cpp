@@ -3,8 +3,8 @@
 //
 
 #include "Docker.h"
-#include "../Layers/Layer.h"
-#include "../Containers/ContainersFactories/ContainersFactory.h"
+#include "Layers/Layer.h"
+#include "ContainersFactories/ContainersFactory.h"
 
 Docker::Docker(int numberOfContainers)
         : numberOfContainers(numberOfContainers)

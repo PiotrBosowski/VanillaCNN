@@ -6,7 +6,7 @@
 #define VANILLACNN_CLION_PROTOTYPELAYER_H
 
 #include <memory>
-#include "../Layer.h"
+#include "Layers/Layer.h"
 
 class PrototypeLayer : public IPrintable
 {

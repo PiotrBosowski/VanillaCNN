@@ -3,7 +3,7 @@
 //
 
 #include "DownsamplingLayer.h"
-#include "../Layers2D/DownsamplingLayer_.h"
+#include "Layers/Layers2D/DownsamplingLayer_.h"
 
 DownsamplingLayer::DownsamplingLayer(int downsamplerHeight, int downsamplerWidth)
         : downsamplerHeight{ downsamplerHeight }, downsamplerWidth{ downsamplerWidth }

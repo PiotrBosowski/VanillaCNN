@@ -7,7 +7,7 @@
 
 
 #include <string>
-#include "../Layer.h"
+#include "Layers/Layer.h"
 #include "Layer1D.h"
 
 class FullyConnectedLayer_ : public Layer1D

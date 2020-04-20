@@ -4,7 +4,7 @@
 
 
 #include "FullyConnectedLayer.h"
-#include "../Layers1D/FullyConnectedLayer_.h"
+#include "Layers/Layers1D/FullyConnectedLayer_.h"
 
 FullyConnectedLayer::FullyConnectedLayer(int numberOfNeurons)
         : numberOfNeurons{ numberOfNeurons }

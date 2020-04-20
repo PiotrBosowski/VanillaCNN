@@ -4,7 +4,7 @@
 
 #include "Vector.h"
 #include "WeightlessVector.h"
-#include "../../exceptions/Exceptions.h"
+#include "Exceptions/Exceptions.h"
 
 WeightlessVector::WeightlessVector(int vectorHeight)
 : Vector(vectorHeight) {}

@@ -8,7 +8,7 @@
 
 #include <memory>
 #include <vector>
-#include "../model/Layers/Layer.h"
+#include "Layers/Layer.h"
 #include "OutputPrinter.h"
 
 class OutputSource

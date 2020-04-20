@@ -9,7 +9,7 @@
 #include <vector>
 #include <memory>
 #include <ostream>
-#include "../Containers/Container.h"
+#include "Containers/Container.h"
 
 class ContainersConnectingStrategy;
 class ContainersFactory;

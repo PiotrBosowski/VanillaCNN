@@ -5,11 +5,10 @@
 #ifndef VANILLACNN_CLION_VECTOR_H
 #define VANILLACNN_CLION_VECTOR_H
 
-
-#include "../Container.h"
 #include <vector>
 #include <memory>
-#include "../../Neurons/Neuron.h"
+#include "Containers/Container.h"
+#include "Neurons/Neuron.h"
 
 class Vector : public Container
 {

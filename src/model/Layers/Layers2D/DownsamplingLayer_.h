@@ -5,11 +5,9 @@
 #ifndef VANILLACNN_CLION_DOWNSAMPLINGLAYER__H
 #define VANILLACNN_CLION_DOWNSAMPLINGLAYER__H
 
-
 #include <memory>
 #include <string>
 #include "Layer2D.h"
-
 
 class DownsamplingLayer_ : public Layer2D
 {

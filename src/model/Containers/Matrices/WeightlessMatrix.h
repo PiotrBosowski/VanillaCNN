@@ -7,7 +7,7 @@
 
 
 #include "Matrix.h"
-#include "../IWeightlessContainer.h"
+#include "Containers/IWeightlessContainer.h"
 
 class WeightlessMatrix : public Matrix, public IWeightlessContainer
 {

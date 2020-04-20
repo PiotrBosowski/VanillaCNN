@@ -4,7 +4,7 @@
 
 
 #include "Connection.h"
-#include "../Neurons/Neuron.h"
+#include "Neurons/Neuron.h"
 
 
 Neuron& Connection::getNeuron()

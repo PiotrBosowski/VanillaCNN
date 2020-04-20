@@ -4,7 +4,7 @@
 
 #include <cstdlib>
 #include "Weights.h"
-#include "../exceptions/Exceptions.h"
+#include "Exceptions/Exceptions.h"
 
 Weights::Weights(int height, int width)
 {

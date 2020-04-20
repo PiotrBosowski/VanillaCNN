@@ -3,8 +3,7 @@
 //
 
 #include "InternallyWeightedMatrix.h"
-#include "../../exceptions/Exceptions.h"
-#include "../../Connections/ConnectionsFactories/ConnectionsFactory.h"
+#include "Exceptions/Exceptions.h"
 
 InternallyWeightedMatrix::InternallyWeightedMatrix(int matrixHeight, int matrixWidth,
                                                    int weightsHeight, int weightsWidth)

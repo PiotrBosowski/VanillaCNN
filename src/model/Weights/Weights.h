@@ -5,7 +5,6 @@
 #ifndef VANILLACNN_CLION_WEIGHTS_H
 #define VANILLACNN_CLION_WEIGHTS_H
 
-
 #include <vector>
 
 class Weights
