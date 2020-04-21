@@ -6,7 +6,9 @@
 #ifndef VANILLACNN_CLION_NEURON_H
 #define VANILLACNN_CLION_NEURON_H
 #include <ostream>
-#include "ConnectionsSet/ConnectionsSet.h"
+#include <vector>
+#include <random>
+#include "Connections/Connection.h"
 
 /**
 @brief Base class for all neuron types.
@@ -19,17 +21,23 @@ class Neuron
 protected:
     /**
     @brief Stores Neuron's connections. Weights are stored separately, since the way of storing them depends on Neuron type.*/
-    ConnectionsSet connections;
+    std::vector<std::unique_ptr<Connection>> connections;
 
     /**
     @brief Stores Neuron's current value.*/
     double value;
+
+
+    static double getRandomWeight();
+
 
 public:
     /**
     @brief Neuron's value getter.
     @return returns Neuron's /c value*/
     [[nodiscard]] double getValue() const;
+
+    Neuron();
 
     /**
     @brief Adds a connection to preceeding Neuron to @c this->Neuron::connections.
@@ -39,6 +47,12 @@ public:
     /**
     @brief Calculates new Neuron's value and stores it in Neuron::value.*/
     void calculateValue();
+
+    /**
+    @brief Returns number of Neuron's Connections.
+    @return returns number of Neuron's Connections. */
+    int getNumberOfConnections();
+
 };
 
 #endif //VANILLACNN_CLION_NEURON_H

@@ -9,7 +9,7 @@
 int main()
 {
     NeuralNetwork firstOfTheYear;
-    firstOfTheYear.addLayer(new InputLayer(1600,1600)); //DONT!!! delete the object you pass to the function, the ownership is transferred to unique_ptr from now on
+    firstOfTheYear.addLayer(new InputLayer(160,160)); //DONT!!! delete the object you pass to the function, the ownership is transferred to unique_ptr from now on
     firstOfTheYear.addLayer(new ConvolutionLayer(6, 5, 5));
     firstOfTheYear.addLayer(new DownsamplingLayer(2, 2));
     firstOfTheYear.addLayer(new ConvolutionLayer(16, 5, 5));

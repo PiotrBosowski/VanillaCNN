@@ -77,8 +77,6 @@ add_library(vanilla_lib
         model/Containers/Matrices/Matrix.h
         model/Containers/Matrices/WeightlessMatrix.cpp
         model/Containers/Matrices/WeightlessMatrix.h
-        model/ConnectionsSet/ConnectionsSet.cpp
-        model/ConnectionsSet/ConnectionsSet.h
         model/Connections/Connection.cpp
         model/Connections/Connection.h
         model/Connections/ExternallyWeightedConnection.cpp

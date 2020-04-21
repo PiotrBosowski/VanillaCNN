@@ -5,13 +5,10 @@
 #include "NeuralNetwork.h"
 #include <iostream>
 #include <memory>
-#include <cstdlib>
-#include <ctime>
 
 NeuralNetwork::NeuralNetwork(bool printingEnabled)
         : OutputSource{ printingEnabled }
 {
-    srand((unsigned int)time(NULL));
 }
 
 void NeuralNetwork::addLayer(PrototypeLayer* layer)
