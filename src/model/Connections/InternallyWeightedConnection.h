@@ -6,6 +6,7 @@
 #define VANILLACNN_CLION_INTERNALLYWEIGHTEDCONNECTION_H
 
 
+#include <Weights/Weight.h>
 #include "Connection.h"
 
 class InternallyWeightedConnection : public Connection
@@ -13,7 +14,9 @@ class InternallyWeightedConnection : public Connection
 public:
     explicit InternallyWeightedConnection(Neuron& connNeuron);
 protected:
-    double connectionWeight;
+    Weight connectionWeight;
+public:
+    Weight &getWeight() override;
 };
 
 

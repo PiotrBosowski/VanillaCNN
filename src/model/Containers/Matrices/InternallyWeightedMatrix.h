@@ -22,7 +22,7 @@ public:
     void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
                  Container &precedingContainer) override;
 
-    double& getWeight(int neuronIndex) override;
+    Weight& getWeight(int neuronIndex) override;
 };
 
 

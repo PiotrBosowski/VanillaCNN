@@ -26,7 +26,7 @@ void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy &neuronsConnect
     }
 }
 
-double &InternallyWeightedMatrix::getWeight(int neuronIndex) {
+Weight& InternallyWeightedMatrix::getWeight(int neuronIndex) {
     return weights->getWeight(neuronIndex);
 }
 

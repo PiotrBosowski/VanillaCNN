@@ -11,9 +11,11 @@
 class ExternallyWeightedConnection : public Connection
 {
 protected:
-    double& connectionWeight;
+    Weight& connectionWeight;
 public:
-    ExternallyWeightedConnection(Neuron &connectedNeuron, double &connectionWeight);
+    ExternallyWeightedConnection(Neuron &connectedNeuron, Weight &connectionWeight);
+
+    Weight &getWeight() override;
 };
 
 

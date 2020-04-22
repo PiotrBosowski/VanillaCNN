@@ -13,3 +13,6 @@ Neuron& Connection::getNeuron()
 }
 
 Connection::Connection(Neuron &connectedNeuron) : connectedNeuron(connectedNeuron) {}
+
+
+

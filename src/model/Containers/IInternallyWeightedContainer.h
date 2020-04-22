@@ -7,7 +7,7 @@
 
 
 struct IInternallyWeightedContainer {
-    virtual double& getWeight(int neuronIndex) = 0;
+    virtual Weight& getWeight(int neuronIndex) = 0;
 };
 
 

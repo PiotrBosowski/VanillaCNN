@@ -97,7 +97,7 @@ add_library(vanilla_lib
         model/ConnectionsFactories/InternallyWeightedConnectionsFactory.h
         model/Containers/IContainer2D.h
         model/Containers/IWeightlessContainer.h
-        model/Containers/IInternallyWeightedContainer.h)
+        model/Containers/IInternallyWeightedContainer.h model/Weights/Weight.cpp model/Weights/Weight.h)
 
 
 target_include_directories(vanilla_lib PUBLIC

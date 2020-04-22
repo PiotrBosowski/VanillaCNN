@@ -7,21 +7,23 @@
 #include "Exceptions/Exceptions.h"
 
 Weights::Weights(int height, int width)
+ : weights(std::vector<Weight>(height * width))
 {
-    for (int i = 0; i < height * width; ++i) {
-        weights.push_back((double)rand()/(double)RAND_MAX);
-    }
+    if(height < 0 || width < 0) throw WeightsOutOfRangeError();
 }
 
 Weights::Weights(int length)
+: weights(std::vector<Weight>(length))
 {
-    for (int i = 0; i < length; ++i) {
-        weights.push_back((double)rand()/(double)RAND_MAX);
-    }
 }
 
-double &Weights::getWeight(int index) {
+Weight& Weights::getWeight(int index) {
     if(index < weights.size())
         return weights[index];
     throw WeightsOutOfRangeError("Error trying to access weight beyond the vector");
 }
+
+int Weights::size() {
+    return weights.size();
+}
+

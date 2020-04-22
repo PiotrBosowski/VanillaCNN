@@ -20,16 +20,12 @@ class Neuron
 {
 protected:
     /**
-    @brief Stores Neuron's connections. Weights are stored separately, since the way of storing them depends on Neuron type.*/
+    @brief Stores Neuron's connections. Single connection is a pair of neuron's reference and attached weight (or weight's reference).*/
     std::vector<std::unique_ptr<Connection>> connections;
 
     /**
     @brief Stores Neuron's current value.*/
     double value;
-
-
-    static double getRandomWeight();
-
 
 public:
     /**
@@ -37,10 +33,8 @@ public:
     @return returns Neuron's /c value*/
     [[nodiscard]] double getValue() const;
 
-    Neuron();
-
     /**
-    @brief Adds a connection to preceeding Neuron to @c this->Neuron::connections.
+    @brief Adds a connection to preceding Neuron to @c this->Neuron::connections.
     @arg @c preceding - Reference to the preceding Neuron.*/
     virtual void acceptConnection(std::unique_ptr<Connection> connection);
 

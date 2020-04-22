@@ -4,6 +4,10 @@
 
 #include "InternallyWeightedConnection.h"
 
-InternallyWeightedConnection::InternallyWeightedConnection(Neuron &connNeuron) : Connection(connNeuron), connectionWeight(0.1997)
+InternallyWeightedConnection::InternallyWeightedConnection(Neuron &connNeuron) : Connection(connNeuron)
 {}
+
+Weight &InternallyWeightedConnection::getWeight() {
+    return connectionWeight;
+}
 

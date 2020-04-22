@@ -10,7 +10,11 @@
 
 class WeightlessConnection : public Connection {
 
+public:
+    explicit WeightlessConnection(Neuron &connectedNeuron);
+    Weight &getWeight() override;
 };
+
 
 
 #endif //VANILLACNN_CLION_WEIGHTLESSCONNECTION_H

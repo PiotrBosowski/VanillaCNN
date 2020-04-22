@@ -7,6 +7,7 @@
 
 
 #include <memory>
+#include <Weights/Weight.h>
 
 class Neuron;
 
@@ -17,10 +18,10 @@ public:
 
 protected:
     Neuron& connectedNeuron;
+
 public:
     Neuron& getNeuron();
-    static std::unique_ptr<Connection> getConnection(Neuron&, double&);
-    static std::unique_ptr<Connection> getConnection(Neuron&);
+    virtual Weight& getWeight() = 0;
 };
 
 
