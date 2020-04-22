@@ -1,8 +1,8 @@
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 add_executable(runBasicTests
-        neuron_tests.cpp
-        weight_test.cpp weights_test.cpp weightless_connection_test.cpp internally_weighted_connection_test.cpp externally_weighted_connection_test.cpp)
+        neurons_tests/neuron_tests.cpp
+        weights_tests/weight_test.cpp weights_tests/weights_test.cpp connections_tests/weightless_connection_test.cpp connections_tests/internally_weighted_connection_test.cpp connections_tests/externally_weighted_connection_test.cpp connections_factories_tests/internally_weighted_connections_factory_test.cpp connections_factories_tests/externally_weighted_connections_factory_test.cpp connections_factories_tests/weightless_connections_factory_test.cpp matrices_tests/internally_weighted_matrix_test.cpp vectors_test/weightless_vector_test.cpp matrices_tests/weightless_matrix.cpp containers_connecting_tests/containers_connecting_1_to_1.cpp containers_connecting_tests/containers_connecting_1_to_all.cpp containers_connecting_tests/containers_connecting_1_to_random_test.cpp)
 
 target_link_libraries(runBasicTests gtest gtest_main)
 target_link_libraries(runBasicTests vanilla_lib)

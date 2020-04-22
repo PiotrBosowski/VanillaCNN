@@ -21,7 +21,7 @@ void InputLayer_::populate() {
 }
 
 void InputLayer_::connect() {
-    throw LayerConnectingError("Cannot append Input Layer to any preceding layer");
+    throw LayersConnectingException("Cannot append Input Layer to any preceding layer");
 }
 
 std::stringstream InputLayer_::getSummary() {

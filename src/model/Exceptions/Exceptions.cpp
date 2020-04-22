@@ -41,7 +41,7 @@ NetworkCreatingException::NetworkCreatingException(const char *details)
 : BaseException("Error creating network", details) {
 }
 
-LayerConnectingError::LayerConnectingError(const char *details)
+LayersConnectingException::LayersConnectingException(const char *details)
     : BaseException{ "Error connecting Layers.", details }
 {
 }
@@ -51,6 +51,9 @@ NeuronsConnectingException::NeuronsConnectingException(const char *details)
 
 }
 
-WeightsOutOfRangeError::WeightsOutOfRangeError(const char *details)
+WeightsOutOfRangeException::WeightsOutOfRangeException(const char *details)
 : BaseException("Error trying to access Weight beyond vector bounds") {
 }
+
+ContainersCreatingException::ContainersCreatingException(const char *details)
+: BaseException("Error creating Container", details) {}

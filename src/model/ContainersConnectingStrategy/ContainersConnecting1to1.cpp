@@ -12,6 +12,8 @@ std::vector<std::tuple<Container*, Container*>> ContainersConnecting1to1::propos
     auto& previousContainers = preceding->getContainers();
     if (sourceContainers.size() != previousContainers.size())
         throw ConnectingException{"1 to 1 containers connecting strategy requires preceding and following layers to have the same number of containers"};
+    if(sourceContainers.empty() || previousContainers.empty())
+        throw ConnectingException{"containers cannot be empty"};
     for (int i = 0; i < sourceContainers.size(); i++)
     {
         result.emplace_back(sourceContainers[i].get(), previousContainers[i].get());

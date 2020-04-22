@@ -18,9 +18,9 @@ private:
 
 };
 
-class LayerConnectingError : public BaseException {
+class LayersConnectingException : public BaseException {
 public:
-    explicit LayerConnectingError(const char* details = "");
+    explicit LayersConnectingException(const char* details = "");
 };
 
 class PopulatingException : public BaseException
@@ -65,11 +65,15 @@ public:
     explicit NeuronsConnectingException(const char* details = "");
 };
 
-class WeightsOutOfRangeError : public BaseException
+class WeightsOutOfRangeException : public BaseException
 {
 public:
-    explicit WeightsOutOfRangeError(const char* details = "");
+    explicit WeightsOutOfRangeException(const char* details = "");
 };
 
-
+class ContainersCreatingException : public BaseException
+{
+public:
+    explicit ContainersCreatingException(const char *details = "");
+};
 #endif //VANILLACNN_CLION_EXCEPTIONS_H

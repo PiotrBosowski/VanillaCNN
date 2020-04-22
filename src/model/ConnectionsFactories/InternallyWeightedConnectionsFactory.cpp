@@ -10,8 +10,7 @@
 void InternallyWeightedConnectionsFactory::
 makeConnections(int neuronIndex, Container &source, const std::vector<Neuron *> &connections)
 {
-    auto weightlessContainer = dynamic_cast<IWeightlessContainer*>(&source);
-    //requirements met otherwise std::bad_cast is thrown
+    auto _ = dynamic_cast<IWeightlessContainer&>(source); //throws std::bad_cast if connecting to non WeightlessContainer
     for (auto& connection : connections)
     {
         source.getNeuron(neuronIndex).acceptConnection(std::make_unique<InternallyWeightedConnection>(*connection));

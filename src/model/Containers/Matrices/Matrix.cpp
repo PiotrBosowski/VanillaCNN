@@ -7,15 +7,11 @@
 #include "Exceptions/Exceptions.h"
 
 Matrix::Matrix(int matrixHeight, int matrixWidth)
-            :
+            : Container(matrixHeight*matrixWidth),
             matrixHeight{ matrixHeight },
              matrixWidth{ matrixWidth }
 {
-    if (matrixHeight < 1 || matrixWidth < 1) throw LayerCreatingException("bad matrix initialization");
-    for (int i = 0; i < matrixWidth * matrixHeight; i++)
-    {
-        neurons.push_back(std::make_unique<Neuron>());
-    }
+    if (matrixHeight < 0 || matrixWidth < 0) throw ContainersCreatingException("bad matrix initialization");
 }
 
 int Matrix::getMatrixHeight() const

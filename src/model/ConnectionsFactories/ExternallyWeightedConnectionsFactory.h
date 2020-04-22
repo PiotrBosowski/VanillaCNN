@@ -13,5 +13,4 @@ public:
     void makeConnections(int neuronIndex, Container &source, const std::vector<Neuron *> &connections) override;
 };
 
-
 #endif //VANILLACNN_CLION_EXTERNALLYWEIGHTEDCONNECTIONSFACTORY_H

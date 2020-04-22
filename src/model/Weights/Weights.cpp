@@ -9,7 +9,7 @@
 Weights::Weights(int height, int width)
  : weights(std::vector<Weight>(height * width))
 {
-    if(height < 0 || width < 0) throw WeightsOutOfRangeError();
+    if(height < 0 || width < 0) throw WeightsOutOfRangeException();
 }
 
 Weights::Weights(int length)
@@ -20,7 +20,7 @@ Weights::Weights(int length)
 Weight& Weights::getWeight(int index) {
     if(index < weights.size())
         return weights[index];
-    throw WeightsOutOfRangeError("Error trying to access weight beyond the vector");
+    throw WeightsOutOfRangeException("Error trying to access weight beyond the vector");
 }
 
 int Weights::size() {

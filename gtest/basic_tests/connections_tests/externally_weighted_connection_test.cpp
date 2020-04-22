@@ -2,10 +2,6 @@
 // Created by piotr on 20/04/22.
 //
 
-//
-// Created by piotr on 20/04/22.
-//
-
 #include "Connections/ExternallyWeightedConnection.h"
 #include "gtest/gtest.h"
 #include "Neurons/Neuron.h"

@@ -26,6 +26,8 @@ protected:
     /**
     @brief Stores Neuron's current value.*/
     double value;
+public:
+    explicit Neuron(double init = 0.0);
 
 public:
     /**
@@ -36,7 +38,7 @@ public:
     /**
     @brief Adds a connection to preceding Neuron to @c this->Neuron::connections.
     @arg @c preceding - Reference to the preceding Neuron.*/
-    virtual void acceptConnection(std::unique_ptr<Connection> connection);
+    void acceptConnection(std::unique_ptr<Connection> connection);
 
     /**
     @brief Calculates new Neuron's value and stores it in Neuron::value.*/

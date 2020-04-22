@@ -23,6 +23,10 @@ public:
                  Container &precedingContainer) override;
 
     Weight& getWeight(int neuronIndex) override;
+
+    int getWeightsHeight() override;
+
+    int getWeightsWidth() override;
 };
 
 

@@ -2,12 +2,11 @@
 // Created by piotr on 20/04/11.
 //
 
-
+#include <Exceptions/Exceptions.h>
 #include "Vector.h"
 
 Vector::Vector(int vectorHeight)
-          : vectorHeight{ vectorHeight }
+          : Container (vectorHeight), vectorHeight{ vectorHeight }
 {
-    for(int i = 0; i < vectorHeight; i++)
-        neurons.push_back(std::make_unique<Neuron>());
+    if (vectorHeight < 0) throw ContainersCreatingException("cannot create vector with negative number of neurons");
 }

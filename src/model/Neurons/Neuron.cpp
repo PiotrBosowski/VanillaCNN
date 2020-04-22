@@ -20,3 +20,5 @@ void Neuron::calculateValue() {
 int Neuron::getNumberOfConnections() {
     return connections.size();
 }
+
+Neuron::Neuron(double init) : value(init) {}

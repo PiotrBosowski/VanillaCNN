@@ -10,6 +10,7 @@ InternallyWeightedMatrix::InternallyWeightedMatrix(int matrixHeight, int matrixW
                        : Matrix(matrixHeight, matrixWidth),
                        weightsHeight(weightsHeight), weightsWidth(weightsWidth)
 {
+    if(matrixHeight < 1 || matrixWidth < 1) throw ContainersCreatingException("Both H and W values must be larger than zero");
     weights = std::make_unique<Weights>(weightsHeight, weightsWidth);
 }
 
@@ -28,5 +29,13 @@ void InternallyWeightedMatrix::connect(NeuronsConnectingStrategy &neuronsConnect
 
 Weight& InternallyWeightedMatrix::getWeight(int neuronIndex) {
     return weights->getWeight(neuronIndex);
+}
+
+int InternallyWeightedMatrix::getWeightsHeight() {
+    return weightsHeight;
+}
+
+int InternallyWeightedMatrix::getWeightsWidth() {
+    return weightsWidth;
 }
 

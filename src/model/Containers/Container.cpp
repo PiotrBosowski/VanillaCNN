@@ -3,6 +3,7 @@
 //
 
 #include "Container.h"
+#include "Neurons/Neuron.h"
 #include "Exceptions/Exceptions.h"
 
 Neuron& Container::getNeuron(unsigned int index)
@@ -16,7 +17,9 @@ unsigned int Container::getNumberOfNeurons() {
     return neurons.size();
 }
 
-std::ostream &operator<<(std::ostream &os, const Container &container) {
-    os << "neurons: " << container.neurons.size();
-    return os;
+Container::Container(int numberOfNeurons)
+{
+    if(numberOfNeurons < 0) throw ContainersCreatingException("cannot create container with negative number of neurons");
+    for(int i = 0; i < numberOfNeurons; i++)
+        neurons.push_back(std::make_unique<Neuron>());
 }

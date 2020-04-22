@@ -10,6 +10,7 @@
 #include <memory>
 #include <ostream>
 #include "Containers/Container.h"
+#include "Neurons/Neuron.h"
 
 class ContainersConnectingStrategy;
 class ContainersFactory;

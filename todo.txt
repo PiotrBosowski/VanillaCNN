@@ -92,3 +92,6 @@ containers i container - kompozyt
 
 kazda warstwa musi byc IConnectcible
 
+Neuron nie ma referencji do poprzedniego neurona, tylko do jego value
+
+poruszanie się po wektorach - iteratory zamiast operator[]

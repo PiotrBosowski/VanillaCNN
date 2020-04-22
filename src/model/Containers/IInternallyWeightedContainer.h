@@ -8,6 +8,8 @@
 
 struct IInternallyWeightedContainer {
     virtual Weight& getWeight(int neuronIndex) = 0;
+    virtual int getWeightsHeight() = 0;
+    virtual int getWeightsWidth() = 0;
 };
 
 

@@ -10,7 +10,6 @@
 #include "NeuronsConnections/NeuronsConnectingStrategy.h"
 #include "ConnectionsFactories/ConnectionsFactory.h"
 
-
 class Neuron;
 class ConnectionsFactory;
 
@@ -18,13 +17,13 @@ class Container
 {
 protected:
     std::vector<std::unique_ptr<Neuron>> neurons;
+public:
+    Container(int numberOfNeurons);
 
 public:
     virtual void connect(NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory, Container& precedingContainer) = 0;
     Neuron& getNeuron(unsigned int index);
     unsigned int getNumberOfNeurons();
-
-    friend std::ostream &operator<<(std::ostream &os, const Container &container);
 };
 
 #endif //VANILLACNN_CLION_CONTAINER_H

@@ -11,7 +11,7 @@
 class WeightlessVector : public Vector, public IWeightlessContainer
 {
 public:
-    WeightlessVector(int vectorHeight);
+    explicit WeightlessVector(int vectorHeight);
 
     void connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
                  Container &preceedingContainer) override;
