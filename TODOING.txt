@@ -1,6 +1,4 @@
-add InternallyWeightedConnectionsFactoryTests
-add ExternallyWeightedConnectionsFactoryTests
-fix ConnectionsFactory bug - no throwing exception when dynamically casting pointers
-implement missed WeightlessConnectionsFactory::makeConnections
-refactor containers constructors
-add containers_connecting_tests
+fixed InternallyWeightedMatricesFactory no-throw bug
+add internallyweightedmatricesfacotiestests
+add weightlessmatricesfactoriestests
+add dockertests

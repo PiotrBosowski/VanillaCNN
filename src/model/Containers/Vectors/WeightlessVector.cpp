@@ -7,7 +7,10 @@
 #include "Exceptions/Exceptions.h"
 
 WeightlessVector::WeightlessVector(int vectorHeight)
-: Vector(vectorHeight) {}
+: Vector(vectorHeight)
+{
+    if(vectorHeight < 0) throw ContainersCreatingException("cant create vector with negative number of neurons");
+}
 
 void
 WeightlessVector::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, ConnectionsFactory &connectionsFactory,
