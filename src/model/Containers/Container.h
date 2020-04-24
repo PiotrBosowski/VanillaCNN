@@ -7,7 +7,7 @@
 
 #include <memory>
 #include <ostream>
-#include "NeuronsConnections/NeuronsConnectingStrategy.h"
+#include "NeuronsConnecting/NeuronsConnectingStrategy.h"
 #include "ConnectionsFactories/ConnectionsFactory.h"
 
 class Neuron;

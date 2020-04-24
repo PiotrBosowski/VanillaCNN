@@ -7,21 +7,21 @@
 #include "Exceptions/Exceptions.h"
 #include "ContainersFactories/MatricesFactories/InternallyWeightedMatricesFactory.h"
 #include "ContainersConnectingStrategy/ContainersConnecting1toRandom.h"
-#include "NeuronsConnections/NeuronsConnecting1toArea.h"
+#include "NeuronsConnecting/NeuronsConnecting1toArea.h"
 #include "ConnectionsFactories/ExternallyWeightedConnectionsFactory.h"
 
 
-ConvolutionLayer_::ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth)
+ConvolutionLayer_::ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth, int strideH, int strideW)
         : Layer2D{
             previousLayer,
             numberOfFeatureDetectors,
-            dynamic_cast<Layer2D&>(*previousLayer).getMatrixHeight() - (featureDetectorHeight / 2) * 2,
-            dynamic_cast<Layer2D&>(*previousLayer).getMatrixWidth() - (featureDetectorWidth / 2) * 2},
+            (dynamic_cast<Layer2D&>(*previousLayer).getMatrixHeight() - featureDetectorHeight)/strideH + 1,
+            (dynamic_cast<Layer2D&>(*previousLayer).getMatrixWidth() - featureDetectorWidth)/strideW + 1},
         featureDetectorHeight{ featureDetectorHeight },
-        featureDetectorWidth{ featureDetectorWidth }
+        featureDetectorWidth{ featureDetectorWidth },
+        strideH{strideH}, strideW{strideW}
 {
-    // suppress
-    if(previousLayer == nullptr) throw LayerCreatingException("Cannot create Convolution Layer before any preceding layers");
+    if(!dynamic_cast<Layer2D*>(previousLayer)) throw LayerCreatingException("Cannot create Convolution Layer before any preceding layers");
 }
 
 void ConvolutionLayer_::populate() {
@@ -37,9 +37,9 @@ void ConvolutionLayer_::populate() {
 
 void ConvolutionLayer_::connect() {
     docker->createConnections(
-                previousLayer->getDocker().get(),
+                previousLayer->getDocker(),
                 *std::make_unique<ContainersConnecting1toRandom>(),
-                *std::make_unique<NeuronsConnecting1toArea>(featureDetectorHeight, featureDetectorWidth),
+                *std::make_unique<NeuronsConnecting1toArea>(featureDetectorHeight, featureDetectorWidth, strideH, strideW),
                 *std::make_unique<ExternallyWeightedConnectionsFactory>()
             );
 }

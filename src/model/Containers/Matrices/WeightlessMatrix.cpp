@@ -13,7 +13,7 @@ WeightlessMatrix::connect(NeuronsConnectingStrategy &neuronsConnectingStrategy, 
                           Container &precedingContainer) {
     try{
         for (int i = 0; i < this->neurons.size(); ++i) {
-            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(i, *this, &precedingContainer);
+            auto connections = neuronsConnectingStrategy.proposeSingleNeuronConnections(i, *this, precedingContainer);
             connectionsFactory.makeConnections(i, *this, connections);
         }
     }

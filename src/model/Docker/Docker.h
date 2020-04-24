@@ -27,7 +27,7 @@ public:
 
     friend std::ostream &operator<<(std::ostream &os, const Docker &docker);
 
-    void createConnections(Docker* previousDocker, ContainersConnectingStrategy&, NeuronsConnectingStrategy&, ConnectionsFactory&);
+    void createConnections(Docker& previousDocker, ContainersConnectingStrategy&, NeuronsConnectingStrategy&, ConnectionsFactory&);
     int size();
 
 private:

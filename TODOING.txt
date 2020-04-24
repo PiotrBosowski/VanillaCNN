@@ -1,4 +1,6 @@
-fixed InternallyWeightedMatricesFactory no-throw bug
-add internallyweightedmatricesfacotiestests
-add weightlessmatricesfactoriestests
-add dockertests
+refactored docker getter (const unique_ptr<Docker> -> Docker&)
+refactored some arguments from pointers to references
+fixed a bug with calculating neurons position basing on its index
+fixed a neuronsconnecting1toarea bug, add vertical and horizontal stride;
+introduced stride (step in downsampling and convolution layers)
+added 2 optional parameters delegating constructor of downsampling layer

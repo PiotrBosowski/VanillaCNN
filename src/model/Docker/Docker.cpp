@@ -29,7 +29,7 @@ void Docker::createContainers(ContainersFactory& containersFactory)
     }
 }
 
-void Docker::createConnections(Docker* previousDocker, ContainersConnectingStrategy& containersConnectingStrategy, NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory)
+void Docker::createConnections(Docker& previousDocker, ContainersConnectingStrategy& containersConnectingStrategy, NeuronsConnectingStrategy& neuronsConnectingStrategy, ConnectionsFactory& connectionsFactory)
 {
     auto connections = containersConnectingStrategy.proposeConnections(*this, previousDocker);
     for(auto& conn : connections)

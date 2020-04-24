@@ -20,7 +20,7 @@ TEST(containers_connecting_1_to_1_check, proposeConnections_test_pos)
     ContainersConnecting1to1 connecting;
 
     //when
-    auto connections = connecting.proposeConnections(first, &second);
+    auto connections = connecting.proposeConnections(first, second);
 
     //then
     ASSERT_EQ(connections.size(), numberOfContainers);
@@ -47,9 +47,9 @@ TEST(containers_connecting_1_to_1_check, proposeConnections_test_neg)
     ContainersConnecting1to1 connecting;
 
     //when then
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first, &second););
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, &second_unpopulated););
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first, &second_unpopulated););
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, &second););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first, second););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, second_unpopulated););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first, second_unpopulated););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, second););
 }
 

@@ -9,11 +9,11 @@ add_library(vanilla_lib
         output/OutputPrinter.h
         output/OutputSource.cpp
         output/OutputSource.h
-        model/NeuronsConnections/NeuronsConnecting1toAll.cpp
-        model/NeuronsConnections/NeuronsConnecting1toAll.h
-        model/NeuronsConnections/NeuronsConnecting1toArea.cpp
-        model/NeuronsConnections/NeuronsConnecting1toArea.h
-        model/NeuronsConnections/NeuronsConnectingStrategy.h
+        model/NeuronsConnecting/NeuronsConnecting1toAll.cpp
+        model/NeuronsConnecting/NeuronsConnecting1toAll.h
+        model/NeuronsConnecting/NeuronsConnecting1toArea.cpp
+        model/NeuronsConnecting/NeuronsConnecting1toArea.h
+        model/NeuronsConnecting/NeuronsConnectingStrategy.h
         model/Weights/Weights.cpp
         model/Weights/Weights.h
         model/Layers/LayerPrototypes/ConvolutionLayer.cpp

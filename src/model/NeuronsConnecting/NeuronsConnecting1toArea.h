@@ -12,13 +12,12 @@
 class NeuronsConnecting1toArea : public NeuronsConnectingStrategy
 {
 public:
-    NeuronsConnecting1toArea(int areaHeight, int areaWidth);
-    std::vector<Neuron *> proposeSingleNeuronConnections(unsigned neuronIndex, Container &source, Container *preceding) override;
+    NeuronsConnecting1toArea(int areaHeight, int areaWidth, int verticalStride, int horizontalStride);
+    std::vector<Neuron *> proposeSingleNeuronConnections(unsigned neuronIndex, Container &source, Container &preceding) override;
 
 private:
-    int areaHeight;
-    int areaWidth;
-
+    int areaHeight, areaWidth;
+    int verticalStride, horizontalStride;
 };
 
 

@@ -21,7 +21,7 @@ TEST(containers_connecting_1_to_all_check, proposeConnections_test_pos)
     ContainersConnecting1toAll connecting;
 
     //when
-    auto connections = connecting.proposeConnections(source, &previous);
+    auto connections = connecting.proposeConnections(source, previous);
 
     //then
     ASSERT_EQ(connections.size(), numberOfContainers_source*numberOfContainers_previous);
@@ -52,9 +52,9 @@ TEST(containers_connecting_1_to_all_check, proposeConnections_test_neg)
     ContainersConnecting1toAll connecting;
 
     //when then
-    ASSERT_NO_THROW(auto connections = connecting.proposeConnections(first, &second););
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, &second_unpopulated););
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first, &second_unpopulated););
-    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, &second););
+    ASSERT_NO_THROW(auto connections = connecting.proposeConnections(first, second););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, second_unpopulated););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first, second_unpopulated););
+    ASSERT_ANY_THROW(auto connections = connecting.proposeConnections(first_unpopulated, second););
 }
 

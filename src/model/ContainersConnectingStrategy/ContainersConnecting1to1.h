@@ -12,7 +12,7 @@
 class ContainersConnecting1to1 : public ContainersConnectingStrategy
 {
 public:
-    std::vector<std::tuple<Container*, Container*>> proposeConnections(Docker& source, Docker* preceding) override;
+    std::vector<std::tuple<Container*, Container*>> proposeConnections(Docker& source, Docker& preceding) override;
 };
 
 #endif //VANILLACNN_CLION_CONTAINERSCONNECTING1TO1_H

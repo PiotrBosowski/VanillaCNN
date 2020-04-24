@@ -32,7 +32,7 @@ Neuron& Matrix::getNeuron(unsigned int row, unsigned int column)
 }
 
 unsigned int Matrix::getHeightFromIndex(unsigned int neuronIndex) {
-    return neuronIndex/matrixHeight;
+    return neuronIndex/matrixWidth;
 }
 
 unsigned int Matrix::getWidthFromIndex(unsigned int neuronIndex) {

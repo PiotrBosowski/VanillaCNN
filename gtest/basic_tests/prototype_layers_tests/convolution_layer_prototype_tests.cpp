@@ -2,6 +2,7 @@
 // Created by piotr on 20/04/23.
 //
 
+#include <Layers/Layers2D/ConvolutionLayer_.h>
 #include "gtest/gtest.h"
 #include "Layers/LayerPrototypes/ConvolutionLayer.h"
 #include "Layers/Layers2D/InputLayer_.h"
@@ -11,20 +12,21 @@ TEST(convolution_layer_prototype_check, initial_tests)
 {
     //given
     int numberOfFeatureDetectors = 16;
-    int inputH = 21;
-    int inputW = 24;
-    int featDetH = 11;
-    int featDetW = 13;
+    int inputH = 27;
+    int inputW = 28;
+    int featDetH = 7;
+    int featDetW = 8;
     InputLayer_ previousLayer(inputH, inputW);
     ConvolutionLayer layer(numberOfFeatureDetectors, featDetH, featDetW);
 
     //when
-    auto newLayer = layer.embodyLayer(static_cast<Layer*>(&previousLayer));
-    newLayer->populate();
+    auto newLayer = layer.embodyLayer(&previousLayer);
+    auto& newLayer_convol = dynamic_cast<ConvolutionLayer_&>(*newLayer);
+    newLayer_convol.populate();
 
     //then
-    ASSERT_EQ(dynamic_cast<Layer2D&>(*newLayer).getMatrixHeight(), inputH - (featDetH/2)*2);
-    ASSERT_EQ(dynamic_cast<Layer2D&>(*newLayer).getMatrixWidth(), inputW - (featDetW/2)*2);
-    ASSERT_EQ(dynamic_cast<IInternallyWeightedContainer&>(*newLayer->getDocker()->getContainers()[0]).getWeightsHeight(), featDetH);
-    ASSERT_EQ(dynamic_cast<IInternallyWeightedContainer&>(*newLayer->getDocker()->getContainers()[0]).getWeightsWidth(), featDetW);
+    ASSERT_EQ(newLayer_convol.getMatrixHeight(), 21);
+    ASSERT_EQ(newLayer_convol.getMatrixWidth(), 21);
+    ASSERT_EQ(dynamic_cast<IInternallyWeightedContainer&>(*newLayer->getDocker().getContainers()[0]).getWeightsHeight(), featDetH);
+    ASSERT_EQ(dynamic_cast<IInternallyWeightedContainer&>(*newLayer->getDocker().getContainers()[0]).getWeightsWidth(), featDetW);
 }

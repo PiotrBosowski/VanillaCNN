@@ -19,7 +19,7 @@ unsigned int Container::getNumberOfNeurons() {
 
 Container::Container(int numberOfNeurons)
 {
-    if(numberOfNeurons < 0) throw ContainersCreatingException("cannot create container with negative number of neurons");
+    if(numberOfNeurons < 1) throw ContainersCreatingException("cannot create empty container");
     for(int i = 0; i < numberOfNeurons; i++)
         neurons.push_back(std::make_unique<Neuron>());
 }

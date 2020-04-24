@@ -12,13 +12,15 @@
 class DownsamplingLayer_ : public Layer2D
 {
 public:
-    DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth);
+    DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth); // last two parameters will be provided with respectively: downsamplerHeight, downsamplerWidth
+    DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth, int strideH, int strideW);
 
     std::stringstream getSummary() override;
 
 protected:
     int downsamplerHeight;
     int downsamplerWidth;
+    int strideH, strideW;
 
 public:
     int getDownsamplerHeight();

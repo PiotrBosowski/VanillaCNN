@@ -25,7 +25,7 @@ void NeuralNetwork::compile()
         createLayersFromPrototypes();
         populateLayers();
         connectLayers();
-        printer->print("");
+        printer->print("after populating and connecting layers:");
     }
     catch (const std::exception & ex)
     {

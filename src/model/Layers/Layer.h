@@ -28,7 +28,7 @@ protected:
     std::unique_ptr<Docker> docker;
 
 public:
-    [[nodiscard]] const std::unique_ptr<Docker> &getDocker() const;
+    [[nodiscard]] Docker& getDocker() const;
     [[nodiscard]] int getNumberOfContainers() const;
 
     std::stringstream getSummary() override;

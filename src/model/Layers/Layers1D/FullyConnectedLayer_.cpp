@@ -6,7 +6,7 @@
 #include "Exceptions/Exceptions.h"
 #include "ContainersFactories/VectorsFactories/WeightlessVectorsFactory.h"
 #include "ContainersConnectingStrategy/ContainersConnecting1toAll.h"
-#include "NeuronsConnections/NeuronsConnecting1toAll.h"
+#include "NeuronsConnecting/NeuronsConnecting1toAll.h"
 #include "ConnectionsFactories/InternallyWeightedConnectionsFactory.h"
 #include <sstream>
 
@@ -15,7 +15,7 @@ FullyConnectedLayer_::FullyConnectedLayer_(Layer* previousLayer, int numberOfNeu
                    1,
                    numberOfNeurons }
 {
-    if(previousLayer == nullptr) throw LayerCreatingException("Cannot create Fully Connected Layer without any preceding layers");
+    if(!dynamic_cast<Layer*>(previousLayer)) throw LayerCreatingException("Cannot create Fully Connected Layer without any preceding layers");
 }
 
 void FullyConnectedLayer_::populate() {
@@ -25,7 +25,7 @@ void FullyConnectedLayer_::populate() {
 
 void FullyConnectedLayer_::connect() {
     docker->createConnections(
-            previousLayer->getDocker().get(),
+            previousLayer->getDocker(),
             *std::make_unique<ContainersConnecting1toAll>(),
             *std::make_unique<NeuronsConnecting1toAll>(),
             *std::make_unique<InternallyWeightedConnectionsFactory>()

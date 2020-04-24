@@ -8,7 +8,7 @@
 
 
 void ExternallyWeightedConnectionsFactory::makeConnections(int neuronIndex, Container &source,
-                                                           const std::vector<Neuron *> &connections)
+                                                           const std::vector<Neuron*> &connections)
 {
     auto& internallyWeightedContainer = dynamic_cast<IInternallyWeightedContainer&>(source);  //throws std::bad_cast if connecting to non InternallyWeightedContainer
     for (int j = 0; j < connections.size(); j++)

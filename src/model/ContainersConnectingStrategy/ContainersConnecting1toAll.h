@@ -10,7 +10,7 @@
 class ContainersConnecting1toAll : public ContainersConnectingStrategy
 {
 public:
-    std::vector<std::tuple<Container *, Container *>> proposeConnections(Docker &source, Docker *preceding) override;
+    std::vector<std::tuple<Container *, Container *>> proposeConnections(Docker &source, Docker &preceding) override;
 };
 
 

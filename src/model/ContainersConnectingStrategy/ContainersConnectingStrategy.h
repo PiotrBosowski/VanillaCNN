@@ -12,7 +12,7 @@ class Docker;
 class ContainersConnectingStrategy
 {
 public:
-    virtual std::vector<std::tuple<Container*, Container*>> proposeConnections(Docker& source, Docker* preceding) = 0;
+    virtual std::vector<std::tuple<Container*, Container*>> proposeConnections(Docker& source, Docker& preceding) = 0;
 };
 
 #endif //VANILLACNN_CLION_CONTAINERSCONNECTINGSTRATEGY_H

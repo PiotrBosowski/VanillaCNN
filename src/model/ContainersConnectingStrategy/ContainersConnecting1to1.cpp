@@ -6,10 +6,10 @@
 #include "Exceptions/Exceptions.h"
 #include "Layers/Layer.h"
 
-std::vector<std::tuple<Container*, Container*>> ContainersConnecting1to1::proposeConnections(Docker &source, Docker *preceding) {
+std::vector<std::tuple<Container*, Container*>> ContainersConnecting1to1::proposeConnections(Docker &source, Docker &preceding) {
     auto result = std::vector<std::tuple<Container*, Container*>>();
     auto& sourceContainers = source.getContainers();
-    auto& previousContainers = preceding->getContainers();
+    auto& previousContainers = preceding.getContainers();
     if (sourceContainers.size() != previousContainers.size())
         throw ConnectingException{"1 to 1 containers connecting strategy requires preceding and following layers to have the same number of containers"};
     if(sourceContainers.empty() || previousContainers.empty())

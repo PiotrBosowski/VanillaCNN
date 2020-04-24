@@ -17,8 +17,8 @@ int Layer::getNumberOfContainers() const
     return numberOfContainers;
 }
 
-const std::unique_ptr<Docker> &Layer::getDocker() const {
-    return docker;
+Docker& Layer::getDocker() const {
+    return *docker;
 }
 
 std::stringstream Layer::getSummary() {

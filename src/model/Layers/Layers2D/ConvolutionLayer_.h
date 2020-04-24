@@ -11,15 +11,15 @@
 #include <memory>
 #include <string>
 
-
 class ConvolutionLayer_ : public Layer2D
 {
 public:
-    ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth);
+    ConvolutionLayer_(Layer* previousLayer, int numberOfFeatureDetectors, int featureDetectorHeight, int featureDetectorWidth, int strideH = 1, int strideW = 1);
 
 private:
     int featureDetectorHeight;
     int featureDetectorWidth;
+    int strideH, strideW;
 public:
     [[maybe_unused]] [[nodiscard]] int getFeatureDetectorHeight() const;
 

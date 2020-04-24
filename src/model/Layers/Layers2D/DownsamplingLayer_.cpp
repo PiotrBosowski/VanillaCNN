@@ -7,20 +7,27 @@
 #include "Exceptions/Exceptions.h"
 #include "ContainersFactories/MatricesFactories/WeightlessMatricesFactory.h"
 #include "ContainersConnectingStrategy/ContainersConnecting1to1.h"
-#include "NeuronsConnections/NeuronsConnecting1toArea.h"
+#include "NeuronsConnecting/NeuronsConnecting1toArea.h"
 #include "ConnectionsFactories/WeightlessConnectionsFactory.h"
 
-DownsamplingLayer_::DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth)
+
+DownsamplingLayer_::DownsamplingLayer_(Layer *previousLayer, int downsamplerHeight, int downsamplerWidth, int strideH, int strideW)
         : Layer2D{ previousLayer,
                    previousLayer->getNumberOfContainers(),
-                   dynamic_cast<Layer2D&>(*previousLayer).getMatrixHeight() / downsamplerHeight,
-                   dynamic_cast<Layer2D&>(*previousLayer).getMatrixWidth() / downsamplerWidth,
-                   },
-         downsamplerHeight(downsamplerHeight),
-         downsamplerWidth(downsamplerWidth)
+                   (dynamic_cast<Layer2D&>(*previousLayer).getMatrixHeight() - downsamplerHeight)/strideH + 1,
+                   (dynamic_cast<Layer2D&>(*previousLayer).getMatrixWidth() - downsamplerWidth)/strideW + 1,
+},
+          downsamplerHeight(downsamplerHeight),
+          downsamplerWidth(downsamplerWidth),
+          strideH{strideH},
+          strideW{strideW}
 {
     if(previousLayer == nullptr) throw LayerCreatingException("Cannot create DownsamplingLayer before any preceeding layers");
 }
+
+DownsamplingLayer_::DownsamplingLayer_(Layer* previousLayer, int downsamplerHeight, int downsamplerWidth) // deleting constructor. woah thats cool af
+: DownsamplingLayer_(previousLayer, downsamplerHeight, downsamplerWidth, downsamplerHeight, downsamplerWidth)
+{}
 
 void DownsamplingLayer_::populate() {
     docker = std::make_unique<Docker>(numberOfContainers);
@@ -28,9 +35,9 @@ void DownsamplingLayer_::populate() {
 }
 void DownsamplingLayer_::connect() {
     docker->createConnections(
-            previousLayer->getDocker().get(),
+            previousLayer->getDocker(),
             *std::make_unique<ContainersConnecting1to1>(),
-            *std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth),
+            *std::make_unique<NeuronsConnecting1toArea>(downsamplerHeight, downsamplerWidth, downsamplerHeight, downsamplerWidth),
             *std::make_unique<WeightlessConnectionsFactory>()
     );
 }
